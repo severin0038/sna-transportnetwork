@@ -6,8 +6,7 @@
 /tools/
 /out
 
-/.gradle/
-/.idea/
+.idea/
 /.settings/*
 !/.settings/org.eclipse.core.resources.prefs
 .classpath
