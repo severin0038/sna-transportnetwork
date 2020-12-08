@@ -1,2 +1,23 @@
 # Project exclude paths
 /.gradle/
+/bin/
+/build/
+/docs/
+/tools/
+/out
+
+/.gradle/
+/.idea/
+/.settings/*
+!/.settings/org.eclipse.core.resources.prefs
+.classpath
+.project
+
+.idea
+*.iws
+*.iml
+*.ipr
+
+.vscode/
+.DS_Store
+/src/main/resources/
