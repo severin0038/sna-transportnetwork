@@ -1,0 +1,594 @@
+1;Sargans
+2;Basel SBB
+3;Visp
+4;Chur
+5;Zürich HB
+6;Landquart
+7;Olten
+8;Spiez
+9;Liestal
+10;Basel Bad Bf
+11;Le Locle
+12;La Chaux-de-Fonds
+13;Le Crêt-du-Locle
+14;Luzern
+15;Locarno
+16;Arth-Goldau
+17;Rotkreuz
+18;Lugano
+19;Bellinzona
+20;Mendrisio
+21;Corcelles-Peseux
+22;Les Deurres
+23;Neuchâtel
+24;Thun
+25;Interlaken Ost
+26;Lenzburg
+27;Aarau
+28;Sissach
+29;Gossau SG
+30;Uzwil
+31;Lausanne
+32;Bern
+33;Winterthur
+34;Zürich Flughafen
+35;Genève
+36;Reuchenette-Péry
+37;Biel/Bienne
+38;Fribourg/Freiburg
+39;St. Gallen
+40;La Heutte
+41;Frinvillier-Taubenloch
+42;Sonceboz-Sombeval
+43;Genève-Aéroport
+44;Grenchen Süd
+45;Renan BE
+46;Sonvilier
+47;Villeret
+48;Corgémont
+49;Cormoret
+50;Courtelary
+51;Zug
+52;Frauenfeld
+53;St-Imier
+54;Cortébert
+55;Bevaix
+56;Gorgier-St-Aubin
+57;Auvernier
+58;Boudry
+59;Colombier
+60;Neuchâtel-Serrières
+61;Moutier
+62;Malleray-Bévilard
+63;Tavannes
+64;Pontenet
+65;Court
+66;Reconvilier
+67;Sorvilier
+68;Le Landeron
+69;Ligerz
+70;Twann
+71;Cressier NE
+72;Cornaux
+73;La Neuveville
+74;Tüscherz
+75;St-Blaise CFF
+76;Solothurn
+77;Solothurn West
+78;Corcelles BE
+79;Im Holz
+80;Oberdorf SO
+81;Gänsbrunnen
+82;Langendorf
+83;Lommiswil
+84;Crémines-Zoo
+85;Crémines
+86;Grandval
+87;Bellach
+88;Bettlach
+89;Biel/Bienne Bözingenfeld/Champs-de-Boujean
+90;Pieterlen
+91;Biel Mett
+92;Lengnau
+93;Selzach
+94;Solothurn Allmend
+95;Olten Hammer
+96;Niederbipp
+97;Wangen bei Olten
+98;Egerkingen
+99;Oberbuchsiten
+100;Deitingen
+101;Wangen an der Aare
+102;Oensingen
+103;Hägendorf
+104;Luterbach-Attisholz
+105;Romanshorn
+106;Brig
+107;Amriswil
+108;Weinfelden
+109;Däniken
+110;Aarburg-Oftringen
+111;Roggwil-Wynau
+112;Zollikofen
+113;Rupperswil
+114;Birr
+115;Lupfig
+116;Baden
+117;Langenthal
+118;Turgi
+119;Schönenwerd SO
+120;Murgenthal
+121;Rothrist
+122;Othmarsingen
+123;Brugg AG
+124;Dottikon-Dintikon
+125;Wohlen AG
+126;Muri AG
+127;Hendschiken
+128;Mühlau
+129;Sins
+130;Benzenschwil
+131;Boswil-Bünzen
+132;Dulliken
+133;Oberrüti
+134;Chiasso
+135;Klingnau
+136;Koblenz
+137;Bad Zurzach
+138;Koblenz Dorf
+139;Siggenthal-Würenlingen
+140;Rietheim
+141;Döttingen
+142;Kölliken
+143;Safenwil
+144;Suhr
+145;Oberentfelden
+146;Kölliken Oberdorf
+147;Hunzenschwil
+148;Walterswil-Striegel
+149;Zofingen
+150;Küngoldingen
+151;Brittnau-Wikon
+152;Reiden
+153;Wauwil
+154;St. Erhard-Knutwil
+155;Nebikon
+156;Schinznach Bad
+157;Holderbank AG
+158;Wildegg
+159;Dagmersellen
+160;Sursee
+161;Rickenbach-Attikon
+162;Müllheim-Wigoltingen
+163;Cham
+164;Vallorbe
+165;Interlaken West
+166;Basel St. Johann
+167;Bonstetten-Wettswil
+168;Rapperswil
+169;Pfäffikon SZ
+170;Rüti ZH
+171;Wetzikon
+172;Urdorf Weihermatt
+173;Affoltern am Albis
+174;Steinhausen Rigiblick
+175;Knonau
+176;Urdorf
+177;Zürich Hardbrücke
+178;Villeneuve
+179;Veytaux-Chillon
+180;La Tour-de-Peilz
+181;Cully
+182;St-Prex
+183;Lonay-Préverenges
+184;Renens VD
+185;Clarens
+186;Morges
+187;Epesses
+188;Vevey
+189;Territet
+190;Burier
+191;Allaman
+192;Montreux
+193;Pully
+194;Prilly-Malley
+195;Etoy
+196;Denges-Echandens
+197;Lutry
+198;Morges-St-Jean
+199;Flüelen
+200;Bossière
+201;Grandvaux
+202;Puidoux
+203;La Conversion
+204;Moreillon
+205;Palézieux
+206;Pully-Nord
+207;Bussigny
+208;Cossonay-Penthalaz
+209;Grandson
+210;Yverdon-les-Bains
+211;Chavornay
+212;Gelterkinden
+213;Chexbres-Village
+214;Vevey-Funi
+215;Corseaux-Cornalles
+216;Henniez
+217;Avenches
+218;Palézieux-Village
+219;Corcelles-Nord
+220;Muntelier-Löwenberg
+221;Galmiz
+222;Kerzers
+223;Granges-Marnand
+224;Faoug
+225;Moudon
+226;Murten/Morat
+227;Payerne
+228;Châtillens
+229;Dompierre
+230;Ecublens-Rue
+231;Domdidier
+232;Lucens
+233;Romont
+234;Nyon
+235;Maroggia-Melano
+236;Lamone-Cadempino
+237;Mendrisio S. Martino
+238;Melide
+239;Lugano-Paradiso
+240;Balerna
+241;Mezzovico
+242;Taverne-Torricella
+243;Capolago-Riva S. Vitale
+244;Giubiasco
+245;Rivera-Bironico
+246;S. Antonino
+247;Ranzo-S. Abbondio
+248;S. Nazzaro
+249;Gerra (Gambarogno)
+250;Colmegna
+251;Quartino
+252;Pino-Tronzano
+253;Magadino-Vira
+254;Maccagno
+255;Cadenazzo
+256;Biasca
+257;Castione-Arbedo
+258;Lavorgo
+259;Bodio TI
+260;Stabio
+261;Cantello-Gaggiolo
+262;Riazzino
+263;Tenero
+264;Gordola
+265;Schaffhausen
+266;Thalwil
+267;Klus
+268;Baar
+269;Thalbrücke
+270;Balsthal
+271;Gisikon-Root
+272;Ebikon
+273;Iselle di Trasquera
+274;Wynigen
+275;Herzogenbuchsee
+276;Burgdorf
+277;Tecknau
+278;Rothenburg Dorf
+279;Oberkirch LU
+280;Emmenbrücke
+281;Itingen
+282;Basel Dreispitz
+283;Zwingen
+284;St-Ursanne
+285;Emmenbrücke Gersag
+286;Root D4
+287;Hünenberg Zythus
+288;Rothenburg
+289;Nottwil
+290;Sempach-Neuenkirch
+291;Buchrain
+292;Zug Chollermüli
+293;Baar Lindenpark
+294;Courtételle
+295;Opfikon
+296;Courfaivre
+297;Courgenay
+298;Lausen
+299;Frenkendorf-Füllinsdorf
+300;Delémont
+301;Zürich Stadelhofen
+302;Zollikon
+303;Winkel am Zürichsee
+304;Uetikon
+305;Feldbach
+306;Aigle
+307;Bex
+308;Effretikon
+309;Richterswil
+310;Siebnen-Wangen
+311;Reichenburg
+312;Zürich Oerlikon
+313;Zürich Wiedikon
+314;Kilchberg
+315;Horgen Oberdorf
+316;Wettingen
+317;Killwangen-Spreitenbach
+318;Glanzenberg
+319;Zürich Altstetten
+320;Rorschach
+321;Buchs SG
+322;Wil SG
+323;Flawil
+324;Altstätten SG
+325;St. Margrethen
+326;Heerbrugg
+327;Bad Ragaz
+328;Ziegelbrücke
+329;Wädenswil
+330;Walenstadt
+331;Sion
+332;Sierre/Siders
+333;Chambrelien
+334;Les Hauts-Geneveys
+335;Les Geneveys-sur-Coffrane
+336;Airolo
+337;Erstfeld
+338;Faido
+339;Ambrì-Piotta
+340;Göschenen
+341;Dietikon
+342;Bülach
+343;Flamatt
+344;Därligen
+345;Faulensee
+346;Goppenstein
+347;Münsingen
+348;Netstal
+349;Glarus
+350;Ennenda
+351;Benken SG
+352;Schänis
+353;Uznach
+354;Schmerikon
+355;Luchsingen-Hätzingen
+356;Blumenau
+357;Nieder- und Oberurnen
+358;Näfels-Mollis
+359;Schwanden GL
+360;Mitlödi
+361;Linthal
+362;Leuggelbach
+363;Linthal Braunwaldbahn
+364;Rüti GL
+365;Diesbach-Betschwanden
+366;Nidfurn-Haslen
+367;Dietlikon
+368;Schlieren
+369;Neuenhof
+370;Uster
+371;Hurden
+372;Hedingen
+373;Birmensdorf ZH
+374;Aathal
+375;Bubikon
+376;Jona
+377;Zürich Affoltern
+378;Zürich Tiefenbrunnen
+379;Regensdorf-Watt
+380;Kloten Balsberg
+381;Kloten
+382;Bassersdorf
+383;Herrliberg-Feldmeilen
+384;Küsnacht Goldbach
+385;Männedorf
+386;Pfäffikon ZH
+387;Wallisellen
+388;Zürich Enge
+389;Fehraltorf
+390;Zürich Wollishofen
+391;Bäch
+392;Horgen
+393;Illnau
+394;Freienbach SBB
+395;Altendorf
+396;Nänikon-Greifensee
+397;Stettbach
+398;Oberglatt
+399;Rümlang
+400;Dübendorf
+401;Glattbrugg
+402;Au ZH
+403;Oberrieden
+404;Rüschlikon
+405;Schübelbach-Buttikon
+406;Pratteln
+407;Muttenz
+408;Lachen
+409;Matran
+410;Neyruz
+411;Rosé
+412;Villaz-St-Pierre
+413;Cottens
+414;Villars-sur-Glâne
+415;Chénens
+416;Yverdon-Champ Pittet
+417;Cheyres
+418;Givisiez
+419;Belfaux CFF
+420;Grolley
+421;Léchelles
+422;Cugy FR
+423;Yvonand
+424;Estavayer-le-Lac
+425;Corcelles-Sud
+426;Cousset
+427;Laufen
+428;Grenchen Nord
+429;Kaiseraugst
+430;Eiken
+431;Möhlin
+432;Rheinfelden
+433;Pratteln Salina Raurica
+434;Martigny
+435;Münchenstein
+436;Grellingen
+437;Duggingen
+438;Aesch
+439;Dornach-Arlesheim
+440;Mumpf
+441;Stein-Säckingen
+442;Frick
+443;Leuk
+444;Rheinfelden Augarten
+445;Laufenburg
+446;Glovelier
+447;Porrentruy
+448;Bassecourt
+449;St-Maurice
+450;Rümlingen
+451;Trimbach
+452;Diepflingen
+453;Läufelfingen
+454;Buckten
+455;Sommerau
+456;Genève-Eaux-Vives
+457;Lancy-Bachet
+458;Lancy-Pont-Rouge
+459;Chêne-Bourg
+460;Genève-Champel
+461;Le Locle-Col-des-Roches
+462;Travers
+463;Grandgourt
+464;Boncourt
+465;Courtemaîche
+466;Buix
+467;Courchavon
+468;Unterterzen
+469;Bilten
+470;Kempten
+471;Coppet
+472;Rolle
+473;Gland
+474;Mettmenstetten
+475;Steinhausen
+476;Küsnacht ZH
+477;Meilen
+478;Buchs-Dällikon
+479;Otelfingen
+480;Otelfingen Golfpark
+481;Erlenbach ZH
+482;Würenlos
+483;Zürich Seebach
+484;Kemptthal
+485;Uerikon
+486;Stäfa
+487;Kempraten
+488;Eglisau
+489;Niederglatt
+490;Glattfelden
+491;Neuhausen
+492;Rafz
+493;Schwerzenbach ZH
+494;Hüntwangen-Wil
+495;Lottstetten
+496;Neuhausen Rheinfall
+497;Jestetten
+498;Reutlingen
+499;Winterthur Wallrüti
+500;Oberwinterthur
+501;Winterthur Seen
+502;Mellingen Heitersberg
+503;Sennhof-Kyburg
+504;Winterthur Grüze
+505;Mägenwil
+506;Seuzach
+507;Dachsen
+508;Hettlingen
+509;Schloss Laufen am Rheinfall
+510;Andelfingen
+511;Henggart
+512;Marthalen
+513;Hinwil
+514;Schöfflisdorf-Oberweningen
+515;Niederhasli
+516;Niederweningen
+517;Niederweningen Dorf
+518;Steinmaur
+519;Dielsdorf
+520;Zürich Wipkingen
+521;Wiesendangen
+522;Felben-Wellhausen
+523;Märstetten
+524;Oberrieden Dorf
+525;Hüttlingen-Mettendorf
+526;Islikon
+527;Kreuzlingen
+528;Cham Alpenblick
+529;Zug Schutzengel
+530;Baar Neufeld
+531;Hünenberg Chämleten
+532;Brunnen
+533;Schwyz
+534;Sisikon
+535;Steinen
+536;Immensee
+537;Meggen Zentrum
+538;Luzern Verkehrshaus
+539;Merlischachen
+540;Küssnacht am Rigi
+541;Meggen
+542;Ballwil
+543;Beinwil am See
+544;Hallwil
+545;Gelfingen
+546;Ermensee
+547;Seon
+548;Hitzkirch
+549;Birrwil
+550;Hochdorf Schönau
+551;Waldibrücke
+552;Baldegg
+553;Mosen
+554;Hochdorf
+555;Boniswil
+556;Baldegg Kloster
+557;Eschenbach
+558;Russin
+559;La Plaine
+560;Vernier
+561;Meyrin
+562;Satigny
+563;Zimeysa
+564;Genève-Sécheron
+565;Chambésy
+566;Les Tuileries
+567;Genthod-Bellevue
+568;Pont-Céard
+569;Versoix
+570;Mies
+571;Tannay
+572;Creux-de-Genthod
+573;Essert-Pittet
+574;Le Day
+575;Arnex
+576;Rivaz
+577;Ependes
+578;Eclépens
+579;Vufflens-la-Ville
+580;Bavois
+581;St-Saphorin
+582;Villette VD
+583;La Sarraz
+584;Croy-Romainmôtier
+585;Bretonnières
+586;Roche VD
+587;Leissigen
+588;Rubigen
+589;Flums
+590;Frutigen
+591;Sulgen
+592;Kandersteg
+593;Düdingen
+594;Maienfeld
