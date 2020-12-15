@@ -7,6 +7,8 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -45,8 +47,8 @@ public class Reader {
         while ((st = br.readLine()) != null) {
             String[] it = st.split(";");
             if(/*it[3].equals("SBB") &&*/ it[5].equals("Zug")) {
-                Date dateAn = new Date(0);
-                Date dateAb = new Date(3000);
+                LocalDateTime dateAn = LocalDateTime.of(1970, 01, 01, 00, 00);
+                LocalDateTime dateAb = LocalDateTime.of(2070, 01, 01, 00, 00);
                 Item item = new Item(it[0], it[1], it[2], it[3], it[4], it[5], it[6], it[7], it[8], it[9], Boolean.parseBoolean(it[10]), Boolean.parseBoolean(it[11]), it[12], it[13], parseStringToDate(it[14], DATE_FORMAT, dateAn), parseStringToDate(it[15], DATE_FORMAT_WITH_SECONDS, dateAn), it[16], parseStringToDate(it[17], DATE_FORMAT, dateAb), parseStringToDate(it[18], DATE_FORMAT_WITH_SECONDS, dateAb), it[19], it[20]);
                 items.add(item);
             }
@@ -54,9 +56,9 @@ public class Reader {
         return items;
     }
 
-    private Date parseStringToDate(String date, String format, Date dateIfEmpty ) throws ParseException {
+    private LocalDateTime parseStringToDate(String date, String format, LocalDateTime dateIfEmpty ) {
         if(!date.isEmpty()) {
-            return new SimpleDateFormat(format).parse(date);
+            return LocalDateTime.parse(date, DateTimeFormatter.ofPattern(format));
         } else {
             return dateIfEmpty;
         }

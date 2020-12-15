@@ -1,17 +1,24 @@
 package connection;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class SingleConnection extends Connection {
 
+    private String betreiber_abk;
     private String linienId;
-    private Date ankunftzszeit;
-    private Date ankunftProgrnose;
+    private LocalDateTime abfahrtszeit;
+    private LocalDateTime abfahrtPrognose;
+    private LocalDateTime ankunftszeit;
+    private LocalDateTime ankunftProgrnose;
 
-    public SingleConnection(String abfahrtsBahnhof, String ankunftsBahnhof, String linienId, Date ankunftzszeit, Date ankunftProgrnose) {
+    public SingleConnection(String abfahrtsBahnhof, String ankunftsBahnhof, String betreiber_abk, String linienId, LocalDateTime abfahrtszeit, LocalDateTime abfahrtPrognose, LocalDateTime ankunftszeit, LocalDateTime ankunftProgrnose) {
         super(abfahrtsBahnhof, ankunftsBahnhof);
+        this.betreiber_abk = betreiber_abk;
         this.linienId = linienId;
-        this.ankunftzszeit = ankunftzszeit;
+        this.abfahrtszeit = abfahrtszeit;
+        this.abfahrtPrognose = abfahrtPrognose;
+        this.ankunftszeit = ankunftszeit;
         this.ankunftProgrnose = ankunftProgrnose;
     }
 
@@ -22,6 +29,14 @@ public class SingleConnection extends Connection {
 
     /* Getter and Setter */
 
+    public String getBetreiber_abk() {
+        return betreiber_abk;
+    }
+
+    public void setBetreiber_abk(String betreiber_abk) {
+        this.betreiber_abk = betreiber_abk;
+    }
+
     public String getLinienId() {
         return linienId;
     }
@@ -30,19 +45,35 @@ public class SingleConnection extends Connection {
         this.linienId = linienId;
     }
 
-    public Date getAnkunftzszeit() {
-        return ankunftzszeit;
+    public LocalDateTime getAbfahrtszeit() {
+        return abfahrtszeit;
     }
 
-    public void setAnkunftzszeit(Date ankunftzszeit) {
-        this.ankunftzszeit = ankunftzszeit;
+    public void setAbfahrtszeit(LocalDateTime abfahrtszeit) {
+        this.abfahrtszeit = abfahrtszeit;
     }
 
-    public Date getAnkunftProgrnose() {
+    public LocalDateTime getAbfahrtPrognose() {
+        return abfahrtPrognose;
+    }
+
+    public void setAbfahrtPrognose(LocalDateTime abfahrtPrognose) {
+        this.abfahrtPrognose = abfahrtPrognose;
+    }
+
+    public LocalDateTime getAnkunftszeit() {
+        return ankunftszeit;
+    }
+
+    public void setAnkunftszeit(LocalDateTime ankunftszeit) {
+        this.ankunftszeit = ankunftszeit;
+    }
+
+    public LocalDateTime getAnkunftPrognose() {
         return ankunftProgrnose;
     }
 
-    public void setAnkunftProgrnose(Date ankunftProgrnose) {
+    public void setAnkunftProgrnose(LocalDateTime ankunftProgrnose) {
         this.ankunftProgrnose = ankunftProgrnose;
     }
 }
