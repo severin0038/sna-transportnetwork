@@ -1,7 +1,11 @@
+import connection.Connection;
+import connection.GroupConnection;
+import connection.SingleConnection;
+
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.net.URISyntaxException;
 import java.util.*;
+import java.util.function.Function;
 
 import static java.util.stream.Collectors.groupingBy;
 
@@ -19,9 +23,9 @@ public class Application {
         ArrayList<Item> items = reader.readFile();
 
         Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
-        ArrayList<Connection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
-        ArrayList<Connection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
-        ArrayList<Connection> connectionWithoutDuplicates = deleteDuplicatesInConnectionList(sortedConnections);
+        ArrayList<SingleConnection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
+        ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
+        ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionList(sortedConnections);
 
         System.out.println(connectionWithoutDuplicates);
     }
@@ -33,21 +37,20 @@ public class Application {
         return itemsGroupedByConnection;
     }
 
-    private ArrayList<Connection> groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection) {
+    private ArrayList<SingleConnection> groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection) {
 
-        ArrayList<Connection> connections = new ArrayList<>();
+        ArrayList<SingleConnection> connections = new ArrayList<>();
 
         itemsGroupedByConnection.forEach((linienId, listOfItems) -> {
             listOfItems.sort(Comparator.comparing(Item::getAnkunftszeit));
 
             for(int i = 0; i < listOfItems.size()-1; i++) {
                 Item item = listOfItems.get(i);
-                Connection conn = new Connection(
+                SingleConnection conn = new SingleConnection(
                         item.getHaltestellen_name(),
                         listOfItems.get(i+1).getHaltestellen_name(),
                         linienId, item.getAnkunftszeit(),
-                        item.getAn_prognose(),
-                        0);
+                        item.getAn_prognose());
                 connections.add(conn);
             }
         });
@@ -55,27 +58,13 @@ public class Application {
         return connections;
     }
 
-    private ArrayList<Connection> sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(ArrayList<Connection> connections) {
-        Collections.sort(connections, (Comparator) (o1, o2) -> {
-
-            String x1 = ((Connection) o1).getAbfahrtsBahnhof();
-            String x2 = ((Connection) o2).getAbfahrtsBahnhof();
-            int sComp = x1.compareTo(x2);
-
-            if (sComp != 0) {
-                return sComp;
-            }
-
-            String y1 = ((Connection) o1).getAnkunftsBahnhof();
-            String y2 = ((Connection) o2).getAnkunftsBahnhof();
-            return y1.compareTo(y2);
-        });
-
+    private ArrayList<SingleConnection> sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(ArrayList<SingleConnection> connections) {
+        Collections.sort(connections, Comparator.comparing((Function<SingleConnection, String>) Connection::getAbfahrtsBahnhof).thenComparing(Connection::getAnkunftsBahnhof));
         return connections;
     }
 
-    private ArrayList<Connection> deleteDuplicatesInConnectionList(ArrayList<Connection> connections) {
-        ArrayList<Connection> connectionsWithoutDuplicates = new ArrayList<>();
+    private ArrayList<GroupConnection> deleteDuplicatesInConnectionList(ArrayList<SingleConnection> connections) {
+        ArrayList<GroupConnection> connectionsWithoutDuplicates = new ArrayList<>();
         String abfahrtsBahnhof = "";
         String ankunftsBahnhof = "";
         int counter = 0;
@@ -85,7 +74,7 @@ public class Application {
                 counter++;
             } else {
                 if(i != 0) {
-                    connectionsWithoutDuplicates.add(new Connection(connections.get(i-1).getAbfahrtsBahnhof(), connections.get(i-1).getAnkunftsBahnhof(), counter));
+                    connectionsWithoutDuplicates.add(new GroupConnection(connections.get(i-1).getAbfahrtsBahnhof(), connections.get(i-1).getAnkunftsBahnhof(), counter));
                 }
                 counter = 1;
                 abfahrtsBahnhof = connections.get(i).getAbfahrtsBahnhof();
@@ -95,4 +84,5 @@ public class Application {
 
         return connectionsWithoutDuplicates;
     }
+
 }
