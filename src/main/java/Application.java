@@ -1,53 +1,56 @@
 import data.Connection;
 import data.GroupConnection;
 import data.SingleConnection;
-import data.Trainstation;
+import data.TrainStation;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.text.ParseException;
 import java.time.Duration;
 import java.util.*;
 import java.util.function.Function;
 
 import static java.util.stream.Collectors.groupingBy;
 
-public class Application {
+class Application {
 
     private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
     private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
-    private final String CSV_TRAINSTATION_HEADER = "*bahnhofId;bahnhofName";
+    private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
 
-    private ArrayList<Trainstation> trainstations = new ArrayList<>();
+    private String outputFileNameConnections;
+    private String outputFileNameTrainStations;
 
-    public Application() {
+    private ArrayList<TrainStation> trainStations = new ArrayList<>();
+
+    Application() {
     }
 
-    public void sbbDataSetToSnaGraph() throws URISyntaxException, IOException, ParseException {
+    void sbbDataSetToSnaGraph(String inputFile, String outputFileNameConnections, String outputFileNameTrainStations) throws URISyntaxException, IOException {
 
-//        Reader trainstationReader = new Reader("trainstations-ch.csv", this);
-//        trainstations = trainstationReader.readTrainstationFile();
+        this.outputFileNameConnections = outputFileNameConnections;
+        this.outputFileNameTrainStations = outputFileNameTrainStations;
 
-        Reader reader = new Reader("2020-04-04_istdaten.csv", this);
+        Reader reader = new Reader(inputFile, this);
         ArrayList<Item> items = reader.readFile();
 
         Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
         ArrayList<SingleConnection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
         ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
-        ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumOrAverageValues(sortedConnections);
+        ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
 
         System.out.println(connectionWithoutDuplicates);
 
+        initializeWriter(connectionWithoutDuplicates);
+    }
+
+    private void initializeWriter(ArrayList<GroupConnection> connections) throws IOException {
         Writer writer = new Writer();
-        writer.writeConnectionCSV(connectionWithoutDuplicates, "2020-04-04_network.csv", CSV_CONNECTION_HEADER);
-        writer.writeTrainstationCSV(trainstations, "trainstations.csv", CSV_TRAINSTATION_HEADER);
+        writer.writeConnectionCSV(connections, outputFileNameConnections, CSV_CONNECTION_HEADER);
+        writer.writeTrainstationCSV(trainStations, outputFileNameTrainStations, CSV_TRAINSTATION_HEADER);
     }
 
     private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {
-        Map<String, List<Item>> itemsGroupedByConnection =
-                items.stream().collect(groupingBy(it -> it.getLinien_id()+it.getBetreiber_abk()));
-
-        return itemsGroupedByConnection;
+        return items.stream().collect(groupingBy(it -> it.getLinien_id()+it.getBetreiber_abk()));
     }
 
     private ArrayList<SingleConnection> groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection) {
@@ -80,7 +83,7 @@ public class Application {
         return connections;
     }
 
-    private ArrayList<GroupConnection> deleteDuplicatesInConnectionListAndCalculateSomeSumOrAverageValues(ArrayList<SingleConnection> connections) {
+    private ArrayList<GroupConnection> deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(ArrayList<SingleConnection> connections) {
         ArrayList<GroupConnection> connectionsWithoutDuplicates = new ArrayList<>();
         int abfahrtsBahnhof = 0;
         int ankunftsBahnhof = 0;
@@ -135,7 +138,7 @@ public class Application {
         return connectionsWithoutDuplicates;
     }
 
-    public ArrayList<Trainstation> getTrainstations() {
-        return trainstations;
+    ArrayList<TrainStation> getTrainStations() {
+        return trainStations;
     }
 }

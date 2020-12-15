@@ -2,10 +2,10 @@ package data;
 
 public class Connection {
 
-    protected int abfahrtsBahnhofId;
-    protected int ankunftsBahnhofId;
+    int abfahrtsBahnhofId;
+    int ankunftsBahnhofId;
 
-    public Connection(int abfahrtsBahnhofId, int ankunftsBahnhofId) {
+    Connection(int abfahrtsBahnhofId, int ankunftsBahnhofId) {
         this.abfahrtsBahnhofId = abfahrtsBahnhofId;
         this.ankunftsBahnhofId = ankunftsBahnhofId;
     }

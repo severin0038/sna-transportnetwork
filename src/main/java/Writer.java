@@ -1,5 +1,5 @@
 import data.GroupConnection;
-import data.Trainstation;
+import data.TrainStation;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,12 +20,12 @@ class Writer {
         csvWriter.close();
     }
 
-    void writeTrainstationCSV(ArrayList<Trainstation> trainstations, String filename, String header) throws IOException {
+    void writeTrainstationCSV(ArrayList<TrainStation> trainStations, String filename, String header) throws IOException {
 
         FileWriter csvWriter = new FileWriter(filename);
         csvWriter.append(header).append("\n");
 
-        for (Trainstation trainstation : trainstations) {
+        for (TrainStation trainstation : trainStations) {
             csvWriter.append(trainstation.toCSVString(";")).append("\n");
         }
 

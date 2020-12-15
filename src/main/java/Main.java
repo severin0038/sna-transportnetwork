@@ -10,7 +10,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException {
         Application application = new Application();
-        application.sbbDataSetToSnaGraph();
-
+        application.sbbDataSetToSnaGraph("2020-04-04_istdaten.csv", "2020-04-04_network.csv", "trainStations.csv");
     }
 }
