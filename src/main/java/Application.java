@@ -32,7 +32,7 @@ public class Application {
 
     private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {
         Map<String, List<Item>> itemsGroupedByConnection =
-                items.stream().collect(groupingBy(it -> it.getLinien_id()));
+                items.stream().collect(groupingBy(it -> it.getLinien_id()+it.getBetreiber_abk()));
 
         return itemsGroupedByConnection;
     }
@@ -68,6 +68,7 @@ public class Application {
         String abfahrtsBahnhof = "";
         String ankunftsBahnhof = "";
         int counter = 0;
+        int countDelayedConnections = 0;
 
         for(int i = 0; i < connections.size()-1; i++) {
             if(abfahrtsBahnhof.equals(connections.get(i).getAbfahrtsBahnhof()) && ankunftsBahnhof.equals((connections.get(i).getAnkunftsBahnhof()))) {
