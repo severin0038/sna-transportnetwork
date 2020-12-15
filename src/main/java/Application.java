@@ -14,8 +14,9 @@ import static java.util.stream.Collectors.groupingBy;
 public class Application {
 
     private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
+    private final String CSV_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
 
-    public Application() throws URISyntaxException, IOException {
+    public Application() {
     }
 
     public void sbbDataSetToSnaGraph() throws URISyntaxException, IOException, ParseException {
@@ -32,6 +33,9 @@ public class Application {
         ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumOrAverageValues(sortedConnections);
 
         System.out.println(connectionWithoutDuplicates);
+
+        Writer writer = new Writer();
+        writer.writeCSV(connectionWithoutDuplicates, "2020-04-04_network.csv", CSV_HEADER);
     }
 
     private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {

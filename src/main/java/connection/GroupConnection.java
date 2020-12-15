@@ -23,7 +23,22 @@ public class GroupConnection extends  Connection {
 
     @Override
     public String toString() {
-        return "\n" + abfahrtsBahnhof + " nach " + ankunftsBahnhof + " (" + verbindungenProTag + " Verbindungen)\n Verspätete Abfahrten: " + relativeAnzahlVerspaeteteAbfahrt*100 + "%, mit Ø " + durchschnittlicheAbfahrtsverspaetung +  "s Verspätung (resp. " + durchschnittlicheAbfahrtsverspaetungNurVerspaetete + "s)\n Verspätete Ankünfte: " + relativeAnzahlVerspaeteteAnkunft*100 + "%, mit Ø " + durchschnittlicheAnkunftsverspaetung + "s Verspätung (resp. " + durchschnittlicheAnkunftsverspaetungNurVerspaetete + "s)\n";
+        return abfahrtsBahnhof + " nach " + ankunftsBahnhof + " (" + verbindungenProTag + " Verbindungen)\n"+
+                "Verspätete Abfahrten: " + relativeAnzahlVerspaeteteAbfahrt*100 + "%, mit Ø " + durchschnittlicheAbfahrtsverspaetung +  "s Verspätung (resp. " + durchschnittlicheAbfahrtsverspaetungNurVerspaetete + "s)\n" +
+                "Verspätete Ankünfte: " + relativeAnzahlVerspaeteteAnkunft*100 + "%, mit Ø " + durchschnittlicheAnkunftsverspaetung + "s Verspätung (resp. " + durchschnittlicheAnkunftsverspaetungNurVerspaetete + "s)\n\n";
+    }
+
+    public String toCSVString() {
+        return abfahrtsBahnhof + ";" +
+                ankunftsBahnhof + ";" +
+                verbindungenProTag + ";" +
+                relativeAnzahlVerspaeteteAbfahrt + ";" +
+                relativeAnzahlVerspaeteteAnkunft + ";" +
+                durchschnittlicheAbfahrtsverspaetung + ";" +
+                durchschnittlicheAnkunftsverspaetung + ";" +
+                durchschnittlicheAbfahrtsverspaetungNurVerspaetete+ ";" +
+                durchschnittlicheAnkunftsverspaetungNurVerspaetete + ";";
+
     }
 
     /* Getter and Setter */
