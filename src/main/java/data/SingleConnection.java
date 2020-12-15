@@ -1,7 +1,6 @@
-package connection;
+package data;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public class SingleConnection extends Connection {
 
@@ -12,7 +11,7 @@ public class SingleConnection extends Connection {
     private LocalDateTime ankunftszeit;
     private LocalDateTime ankunftProgrnose;
 
-    public SingleConnection(String abfahrtsBahnhof, String ankunftsBahnhof, String betreiber_abk, String linienId, LocalDateTime abfahrtszeit, LocalDateTime abfahrtPrognose, LocalDateTime ankunftszeit, LocalDateTime ankunftProgrnose) {
+    public SingleConnection(int abfahrtsBahnhof, int ankunftsBahnhof, String betreiber_abk, String linienId, LocalDateTime abfahrtszeit, LocalDateTime abfahrtPrognose, LocalDateTime ankunftszeit, LocalDateTime ankunftProgrnose) {
         super(abfahrtsBahnhof, ankunftsBahnhof);
         this.betreiber_abk = betreiber_abk;
         this.linienId = linienId;
@@ -24,7 +23,7 @@ public class SingleConnection extends Connection {
 
     @Override
     public String toString() {
-        return abfahrtsBahnhof + " nach " + ankunftsBahnhof;
+        return abfahrtsBahnhofId + " nach " + ankunftsBahnhofId;
     }
 
     /* Getter and Setter */

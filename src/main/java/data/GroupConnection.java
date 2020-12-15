@@ -1,4 +1,6 @@
-package connection;
+package data;
+
+import static java.lang.String.valueOf;
 
 public class GroupConnection extends  Connection {
 
@@ -10,7 +12,7 @@ public class GroupConnection extends  Connection {
     private int durchschnittlicheAbfahrtsverspaetungNurVerspaetete;
     private int durchschnittlicheAnkunftsverspaetungNurVerspaetete;
 
-    public GroupConnection(String abfahrtsBahnhof, String ankunftsBahnhof, int verbindungenProTag, double relativeAnzahlVerspaeteteAbfahrt, double relativeAnzahlVerspaeteteAnkunft, int durchschnittlicheAbfahrtsverspaetung, int durchschnittlicheAnkunftsverspaetung, int durchschnittlicheAbfahrtsverspaetungNurVerspaetete, int durchschnittlicheAnkunftsverspaetungNurVerspaetete) {
+    public GroupConnection(int abfahrtsBahnhof, int ankunftsBahnhof, int verbindungenProTag, double relativeAnzahlVerspaeteteAbfahrt, double relativeAnzahlVerspaeteteAnkunft, int durchschnittlicheAbfahrtsverspaetung, int durchschnittlicheAnkunftsverspaetung, int durchschnittlicheAbfahrtsverspaetungNurVerspaetete, int durchschnittlicheAnkunftsverspaetungNurVerspaetete) {
         super(abfahrtsBahnhof, ankunftsBahnhof);
         this.verbindungenProTag = verbindungenProTag;
         this.relativeAnzahlVerspaeteteAbfahrt = relativeAnzahlVerspaeteteAbfahrt;
@@ -23,22 +25,21 @@ public class GroupConnection extends  Connection {
 
     @Override
     public String toString() {
-        return abfahrtsBahnhof + " nach " + ankunftsBahnhof + " (" + verbindungenProTag + " Verbindungen)\n"+
+        return abfahrtsBahnhofId + " nach " + ankunftsBahnhofId + " (" + verbindungenProTag + " Verbindungen)\n"+
                 "Verspätete Abfahrten: " + relativeAnzahlVerspaeteteAbfahrt*100 + "%, mit Ø " + durchschnittlicheAbfahrtsverspaetung +  "s Verspätung (resp. " + durchschnittlicheAbfahrtsverspaetungNurVerspaetete + "s)\n" +
                 "Verspätete Ankünfte: " + relativeAnzahlVerspaeteteAnkunft*100 + "%, mit Ø " + durchschnittlicheAnkunftsverspaetung + "s Verspätung (resp. " + durchschnittlicheAnkunftsverspaetungNurVerspaetete + "s)\n\n";
     }
 
-    public String toCSVString() {
-        return abfahrtsBahnhof + ";" +
-                ankunftsBahnhof + ";" +
-                verbindungenProTag + ";" +
-                relativeAnzahlVerspaeteteAbfahrt + ";" +
-                relativeAnzahlVerspaeteteAnkunft + ";" +
-                durchschnittlicheAbfahrtsverspaetung + ";" +
-                durchschnittlicheAnkunftsverspaetung + ";" +
-                durchschnittlicheAbfahrtsverspaetungNurVerspaetete+ ";" +
-                durchschnittlicheAnkunftsverspaetungNurVerspaetete + ";";
-
+    public String toCSVString(String delimeter) {
+        return String.join(delimeter, valueOf(abfahrtsBahnhofId),
+                valueOf(ankunftsBahnhofId),
+                valueOf(verbindungenProTag),
+                valueOf(relativeAnzahlVerspaeteteAbfahrt),
+                valueOf(relativeAnzahlVerspaeteteAnkunft),
+                valueOf(durchschnittlicheAbfahrtsverspaetung),
+                valueOf(durchschnittlicheAnkunftsverspaetung),
+                valueOf(durchschnittlicheAbfahrtsverspaetungNurVerspaetete),
+                valueOf(durchschnittlicheAnkunftsverspaetungNurVerspaetete));
     }
 
     /* Getter and Setter */

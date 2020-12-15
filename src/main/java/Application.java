@@ -1,6 +1,7 @@
-import connection.Connection;
-import connection.GroupConnection;
-import connection.SingleConnection;
+import data.Connection;
+import data.GroupConnection;
+import data.SingleConnection;
+import data.Trainstation;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -14,17 +15,20 @@ import static java.util.stream.Collectors.groupingBy;
 public class Application {
 
     private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
-    private final String CSV_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
+    private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
+    private final String CSV_TRAINSTATION_HEADER = "*bahnhofId;bahnhofName";
+
+    private ArrayList<Trainstation> trainstations = new ArrayList<>();
 
     public Application() {
     }
 
     public void sbbDataSetToSnaGraph() throws URISyntaxException, IOException, ParseException {
 
-        Reader trainstationReader = new Reader("trainstations-ch.csv");
-        ArrayList<Trainstation> trainstations = trainstationReader.readTrainstationFile();
+//        Reader trainstationReader = new Reader("trainstations-ch.csv", this);
+//        trainstations = trainstationReader.readTrainstationFile();
 
-        Reader reader = new Reader("2020-04-04_istdaten.csv");
+        Reader reader = new Reader("2020-04-04_istdaten.csv", this);
         ArrayList<Item> items = reader.readFile();
 
         Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
@@ -35,7 +39,8 @@ public class Application {
         System.out.println(connectionWithoutDuplicates);
 
         Writer writer = new Writer();
-        writer.writeCSV(connectionWithoutDuplicates, "2020-04-04_network.csv", CSV_HEADER);
+        writer.writeConnectionCSV(connectionWithoutDuplicates, "2020-04-04_network.csv", CSV_CONNECTION_HEADER);
+        writer.writeTrainstationCSV(trainstations, "trainstations.csv", CSV_TRAINSTATION_HEADER);
     }
 
     private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {
@@ -55,8 +60,8 @@ public class Application {
             for(int i = 0; i < listOfItems.size()-1; i++) {
                 Item item = listOfItems.get(i);
                 SingleConnection conn = new SingleConnection(
-                        item.getHaltestellen_name(),
-                        listOfItems.get(i+1).getHaltestellen_name(),
+                        item.getHaltestellen_id(),
+                        listOfItems.get(i+1).getHaltestellen_id(),
                         item.getBetreiber_abk(),
                         linienId,
                         item.getAbfahrtszeit(),
@@ -71,14 +76,14 @@ public class Application {
     }
 
     private ArrayList<SingleConnection> sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(ArrayList<SingleConnection> connections) {
-        Collections.sort(connections, Comparator.comparing((Function<SingleConnection, String>) Connection::getAbfahrtsBahnhof).thenComparing(Connection::getAnkunftsBahnhof));
+        Collections.sort(connections, Comparator.comparing((Function<SingleConnection, Integer>) Connection::getAbfahrtsBahnhofId).thenComparing(Connection::getAnkunftsBahnhofId));
         return connections;
     }
 
     private ArrayList<GroupConnection> deleteDuplicatesInConnectionListAndCalculateSomeSumOrAverageValues(ArrayList<SingleConnection> connections) {
         ArrayList<GroupConnection> connectionsWithoutDuplicates = new ArrayList<>();
-        String abfahrtsBahnhof = "";
-        String ankunftsBahnhof = "";
+        int abfahrtsBahnhof = 0;
+        int ankunftsBahnhof = 0;
         int counter = 0;
         int countDelayedConnectionsAnkunft = 0;
         int countDelayedConnectionsAbfahrt = 0;
@@ -93,7 +98,7 @@ public class Application {
         int durchschnittlicheAnkunftsverspaetungNurVerspaetete;
 
         for(int i = 0; i < connections.size()-1; i++) {
-            if(abfahrtsBahnhof.equals(connections.get(i).getAbfahrtsBahnhof()) && ankunftsBahnhof.equals((connections.get(i).getAnkunftsBahnhof()))) {
+            if((abfahrtsBahnhof == connections.get(i).getAbfahrtsBahnhofId()) && (ankunftsBahnhof == connections.get(i).getAnkunftsBahnhofId())) {
                 counter++;
                 long delayAnkunft = Duration.between(connections.get(i).getAnkunftszeit(), connections.get(i).getAnkunftPrognose()).toSeconds();
                 long delayAbfahrt = Duration.between(connections.get(i).getAbfahrtszeit(), connections.get(i).getAbfahrtPrognose()).toSeconds();
@@ -115,19 +120,22 @@ public class Application {
                     if(countDelayedConnectionsAbfahrt != 0) { durchschnittlicheAbfahrtsverspaetungNurVerspaetete = countDelayInSecondsAbfahrt/countDelayedConnectionsAbfahrt; } else { durchschnittlicheAbfahrtsverspaetungNurVerspaetete = 0; }
                     if(countDelayInSecondsAnkunft != 0) { durchschnittlicheAnkunftsverspaetungNurVerspaetete = countDelayInSecondsAnkunft/countDelayedConnectionsAnkunft; } else { durchschnittlicheAnkunftsverspaetungNurVerspaetete = 0; }
 
-                    connectionsWithoutDuplicates.add(new GroupConnection(connections.get(i-1).getAbfahrtsBahnhof(), connections.get(i-1).getAnkunftsBahnhof(), counter, relativeAnzahlVerspaeteteAbfahrt, relativeAnzahlVerspaeteteAnkunft, durchschnittlicheAbfahrtsverspaetung, durchschnittlicheAnkunftsverspaetung, durchschnittlicheAbfahrtsverspaetungNurVerspaetete, durchschnittlicheAnkunftsverspaetungNurVerspaetete));
+                    connectionsWithoutDuplicates.add(new GroupConnection(connections.get(i-1).getAbfahrtsBahnhofId(), connections.get(i-1).getAnkunftsBahnhofId(), counter, relativeAnzahlVerspaeteteAbfahrt, relativeAnzahlVerspaeteteAnkunft, durchschnittlicheAbfahrtsverspaetung, durchschnittlicheAnkunftsverspaetung, durchschnittlicheAbfahrtsverspaetungNurVerspaetete, durchschnittlicheAnkunftsverspaetungNurVerspaetete));
                 }
                 counter = 1;
                 countDelayedConnectionsAnkunft = 0;
                 countDelayedConnectionsAbfahrt = 0;
                 countDelayInSecondsAnkunft = 0;
                 countDelayInSecondsAbfahrt = 0;
-                abfahrtsBahnhof = connections.get(i).getAbfahrtsBahnhof();
-                ankunftsBahnhof = connections.get(i).getAnkunftsBahnhof();
+                abfahrtsBahnhof = connections.get(i).getAbfahrtsBahnhofId();
+                ankunftsBahnhof = connections.get(i).getAnkunftsBahnhofId();
             }
         }
 
         return connectionsWithoutDuplicates;
     }
 
+    public ArrayList<Trainstation> getTrainstations() {
+        return trainstations;
+    }
 }

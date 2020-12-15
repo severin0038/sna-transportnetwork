@@ -1,18 +1,32 @@
-import connection.GroupConnection;
+import data.GroupConnection;
+import data.Trainstation;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Writer {
+class Writer {
 
-    public void writeCSV(ArrayList<GroupConnection> connections, String filename, String header) throws IOException {
+    void writeConnectionCSV(ArrayList<GroupConnection> connections, String filename, String header) throws IOException {
 
         FileWriter csvWriter = new FileWriter(filename);
-        csvWriter.append(header + "\n");
+        csvWriter.append(header).append("\n");
 
-        for(int i=0;i<connections.size();i++) {
-            csvWriter.append(connections.get(i).toCSVString() + "\n");
+        for (GroupConnection connection : connections) {
+            csvWriter.append(connection.toCSVString(";")).append("\n");
+        }
+
+        csvWriter.flush();
+        csvWriter.close();
+    }
+
+    void writeTrainstationCSV(ArrayList<Trainstation> trainstations, String filename, String header) throws IOException {
+
+        FileWriter csvWriter = new FileWriter(filename);
+        csvWriter.append(header).append("\n");
+
+        for (Trainstation trainstation : trainstations) {
+            csvWriter.append(trainstation.toCSVString(";")).append("\n");
         }
 
         csvWriter.flush();

@@ -1,18 +1,22 @@
+package data;
+
+import static java.lang.String.valueOf;
+
 public class Trainstation {
 
-    private Integer stationId;
+    private int stationId;
+    private static int stationIdCounter = 1;
     private String stationName;
 
-    Trainstation(Integer stationId, String stationName) {
-        this.stationId = stationId;
+    public Trainstation(String stationName) {
+        this.stationId = stationIdCounter++;
         this.stationName = stationName;
     }
 
-    public String infoAsLine(String delimeter) {
+    public String toCSVString(String delimeter) {
         return String.join(delimeter,
-                Integer.toString(getStationId()),
-                getStationName()
-        );
+                valueOf(getStationId()),
+                getStationName());
     }
 
     @Override
