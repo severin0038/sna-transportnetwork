@@ -1,12 +1,14 @@
 package connection;
 
+import java.util.Date;
+
 public class SingleConnection extends Connection {
 
     private String linienId;
-    private String ankunftzszeit;
-    private String ankunftProgrnose;
+    private Date ankunftzszeit;
+    private Date ankunftProgrnose;
 
-    public SingleConnection(String abfahrtsBahnhof, String ankunftsBahnhof, String linienId, String ankunftzszeit, String ankunftProgrnose) {
+    public SingleConnection(String abfahrtsBahnhof, String ankunftsBahnhof, String linienId, Date ankunftzszeit, Date ankunftProgrnose) {
         super(abfahrtsBahnhof, ankunftsBahnhof);
         this.linienId = linienId;
         this.ankunftzszeit = ankunftzszeit;
@@ -28,19 +30,19 @@ public class SingleConnection extends Connection {
         this.linienId = linienId;
     }
 
-    public String getAnkunftzszeit() {
+    public Date getAnkunftzszeit() {
         return ankunftzszeit;
     }
 
-    public void setAnkunftzszeit(String ankunftzszeit) {
+    public void setAnkunftzszeit(Date ankunftzszeit) {
         this.ankunftzszeit = ankunftzszeit;
     }
 
-    public String getAnkunftProgrnose() {
+    public Date getAnkunftProgrnose() {
         return ankunftProgrnose;
     }
 
-    public void setAnkunftProgrnose(String ankunftProgrnose) {
+    public void setAnkunftProgrnose(Date ankunftProgrnose) {
         this.ankunftProgrnose = ankunftProgrnose;
     }
 }

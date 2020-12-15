@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Item {
 
     private String betriebstag;
@@ -14,15 +16,15 @@ public class Item {
     private boolean faellt_aus_tf;
     private String bpuic;
     private String haltestellen_name;
-    private String ankunftszeit;
-    private String an_prognose;
+    private Date ankunftszeit;
+    private Date an_prognose;
     private String an_prognose_status;
-    private String abfahrtszeit;
-    private String ab_prognose;
+    private Date abfahrtszeit;
+    private Date ab_prognose;
     private String ab_prognose_status;
     private String durchfahrt_tf;
 
-    public Item(String betriebstag, String fahrt_bezeichner, String betreiber_id, String betreiber_abk, String betreiber_name, String produkt_id, String linien_id, String linien_text, String umlauf_id, String verkehrsmittel_text, boolean zusatzfahrt_tf, boolean faellt_aus_tf, String bpuic, String haltestellen_name, String ankunftszeit, String an_prognose, String an_prognose_status, String abfahrtszeit, String ab_prognose, String ab_prognose_status, String durchfahrt_tf) {
+    public Item(String betriebstag, String fahrt_bezeichner, String betreiber_id, String betreiber_abk, String betreiber_name, String produkt_id, String linien_id, String linien_text, String umlauf_id, String verkehrsmittel_text, boolean zusatzfahrt_tf, boolean faellt_aus_tf, String bpuic, String haltestellen_name, Date ankunftszeit, Date an_prognose, String an_prognose_status, Date abfahrtszeit, Date ab_prognose, String ab_prognose_status, String durchfahrt_tf) {
         this.betriebstag = betriebstag;
         this.fahrt_bezeichner = fahrt_bezeichner;
         this.betreiber_id = betreiber_id;
@@ -132,11 +134,11 @@ public class Item {
         return haltestellen_name;
     }
 
-    public String getAnkunftszeit() {
+    public Date getAnkunftszeit() {
         return ankunftszeit;
     }
 
-    public String getAn_prognose() {
+    public Date getAn_prognose() {
         return an_prognose;
     }
 
@@ -144,11 +146,11 @@ public class Item {
         return an_prognose_status;
     }
 
-    public String getAbfahrtszeit() {
+    public Date getAbfahrtszeit() {
         return abfahrtszeit;
     }
 
-    public String getAb_prognose() {
+    public Date getAb_prognose() {
         return ab_prognose;
     }
 

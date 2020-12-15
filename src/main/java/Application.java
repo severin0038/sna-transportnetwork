@@ -4,6 +4,7 @@ import connection.SingleConnection;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.text.ParseException;
 import java.util.*;
 import java.util.function.Function;
 
@@ -14,7 +15,7 @@ public class Application {
     public Application() throws URISyntaxException, IOException {
     }
 
-    public void sbbDataSetToSnaGraph() throws URISyntaxException, IOException {
+    public void sbbDataSetToSnaGraph() throws URISyntaxException, IOException, ParseException {
 
         Reader trainstationReader = new Reader("trainstations-ch.csv");
         ArrayList<Trainstation> trainstations = trainstationReader.readTrainstationFile();
