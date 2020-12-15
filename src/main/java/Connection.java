@@ -5,18 +5,26 @@ public class Connection {
     private String linienId;
     private String ankunftzszeit;
     private String ankunftProgrnose;
+    private int verbindungenProTag;
 
-    public Connection(String abfahrtsBahnhof, String ankunftsBahnhof, String linienId, String ankunftzszeit, String ankunftProgrnose) {
+    public Connection(String abfahrtsBahnhof, String ankunftsBahnhof, String linienId, String ankunftzszeit, String ankunftProgrnose, int verbindungenProTag) {
         this.abfahrtsBahnhof = abfahrtsBahnhof;
         this.ankunftsBahnhof = ankunftsBahnhof;
         this.linienId = linienId;
         this.ankunftzszeit = ankunftzszeit;
         this.ankunftProgrnose = ankunftProgrnose;
+        this.verbindungenProTag = verbindungenProTag;
+    }
+
+    public Connection(String abfahrtsBahnhof, String ankunftsBahnhof, int verbindungenProTag) {
+        this.abfahrtsBahnhof = abfahrtsBahnhof;
+        this.ankunftsBahnhof = ankunftsBahnhof;
+        this.verbindungenProTag = verbindungenProTag;
     }
 
     @Override
     public String toString() {
-        return abfahrtsBahnhof + " nach " + ankunftsBahnhof;
+        return abfahrtsBahnhof + " nach " + ankunftsBahnhof + ": " + verbindungenProTag;
     }
 
     /* Getter and Setter */
@@ -59,5 +67,13 @@ public class Connection {
 
     public void setAnkunftProgrnose(String ankunftProgrnose) {
         this.ankunftProgrnose = ankunftProgrnose;
+    }
+
+    public int getVerbindungenProTag() {
+        return verbindungenProTag;
+    }
+
+    public void setVerbindungenProTag(int verbindungenProTag) {
+        this.verbindungenProTag = verbindungenProTag;
     }
 }
