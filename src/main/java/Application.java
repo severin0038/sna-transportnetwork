@@ -85,8 +85,8 @@ class Application {
 
     private ArrayList<GroupConnection> deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(ArrayList<SingleConnection> connections) {
         ArrayList<GroupConnection> connectionsWithoutDuplicates = new ArrayList<>();
-        int abfahrtsBahnhof = 0;
-        int ankunftsBahnhof = 0;
+        int abfahrtsBahnhof = -1;
+        int ankunftsBahnhof = -1;
         int counter = 0;
         int countDelayedConnectionsAnkunft = 0;
         int countDelayedConnectionsAbfahrt = 0;
@@ -103,8 +103,8 @@ class Application {
         for(int i = 0; i < connections.size()-1; i++) {
             if((abfahrtsBahnhof == connections.get(i).getAbfahrtsBahnhofId()) && (ankunftsBahnhof == connections.get(i).getAnkunftsBahnhofId())) {
                 counter++;
-                long delayAnkunft = Duration.between(connections.get(i).getAnkunftszeit(), connections.get(i).getAnkunftPrognose()).toSeconds();
-                long delayAbfahrt = Duration.between(connections.get(i).getAbfahrtszeit(), connections.get(i).getAbfahrtPrognose()).toSeconds();
+                long delayAnkunft = Duration.between(connections.get(i).getAnkunftszeit(), connections.get(i).getAnkunftPrognose()).getSeconds();
+                long delayAbfahrt = Duration.between(connections.get(i).getAbfahrtszeit(), connections.get(i).getAbfahrtPrognose()).getSeconds();
 
                 if(delayAnkunft >= DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS && delayAnkunft < 60*60*24) {
                     countDelayedConnectionsAnkunft++;

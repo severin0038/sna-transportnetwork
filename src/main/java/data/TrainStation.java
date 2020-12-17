@@ -5,7 +5,7 @@ import static java.lang.String.valueOf;
 public class TrainStation {
 
     private int trainStationId;
-    private static int trainStationIdCounter = 1;
+    private static int trainStationIdCounter = 0;
     private String trainStationName;
 
     public TrainStation(String trainStationName) {
