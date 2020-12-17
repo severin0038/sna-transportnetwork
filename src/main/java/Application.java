@@ -15,7 +15,9 @@ class Application {
 
     private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
     private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
+    private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
     private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
+    private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label";
 
     private String outputFileNameConnections;
     private String outputFileNameTrainStations;
@@ -45,8 +47,8 @@ class Application {
 
     private void initializeWriter(ArrayList<GroupConnection> connections) throws IOException {
         Writer writer = new Writer();
-        writer.writeConnectionCSV(connections, outputFileNameConnections, CSV_CONNECTION_HEADER);
-        writer.writeTrainstationCSV(trainStations, outputFileNameTrainStations, CSV_TRAINSTATION_HEADER);
+        writer.writeConnectionCSV(connections, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
+        writer.writeTrainstationCSV(trainStations, outputFileNameTrainStations, CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI);
     }
 
     private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {
