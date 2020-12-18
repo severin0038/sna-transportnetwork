@@ -31,8 +31,12 @@ class Application {
         Reader reader = new Reader(inputFile, this);
         ArrayList<Item> items = reader.readFile();
 
+        //schleife durch liste aller csv
         Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
         ArrayList<SingleConnection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
+        //ende der schleife
+
+        //erst nach der schleife
         ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
         ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
 
