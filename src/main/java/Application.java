@@ -19,18 +19,14 @@ class Application {
     private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
     private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label";
 
-    private String outputFileNameConnections;
-    private String outputFileNameTrainStations;
-
     private ArrayList<TrainStation> trainStations = new ArrayList<>();
+
+    private Writer writer = new Writer();
 
     Application() {
     }
 
-    void sbbDataSetToSnaGraph(String inputFile, String outputFileNameConnections, String outputFileNameTrainStations) throws URISyntaxException, IOException {
-
-        this.outputFileNameConnections = outputFileNameConnections;
-        this.outputFileNameTrainStations = outputFileNameTrainStations;
+    void sbbDataSetToSnaGraph(String inputFile, String outputFileNameConnections) throws URISyntaxException, IOException {
 
         Reader reader = new Reader(inputFile, this);
         ArrayList<Item> items = reader.readFile();
@@ -42,12 +38,10 @@ class Application {
 
         System.out.println(connectionWithoutDuplicates);
 
-        initializeWriter(connectionWithoutDuplicates);
+        writer.writeConnectionCSV(connectionWithoutDuplicates, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
     }
 
-    private void initializeWriter(ArrayList<GroupConnection> connections) throws IOException {
-        Writer writer = new Writer();
-        writer.writeConnectionCSV(connections, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
+    void trainStationsToNodesList(String outputFileNameTrainStations) throws IOException {
         writer.writeTrainstationCSV(trainStations, outputFileNameTrainStations, CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI);
     }
 
