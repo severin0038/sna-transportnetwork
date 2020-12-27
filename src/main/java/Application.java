@@ -3,7 +3,9 @@ import data.GroupConnection;
 import data.SingleConnection;
 import data.TrainStation;
 
+import javax.print.URIException;
 import java.io.IOException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
 import java.util.*;
@@ -17,7 +19,7 @@ class Application {
     private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
     private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
     private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
-    private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label";
+    private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label;Longitude;Latitude";
 
     private ArrayList<TrainStation> trainStations = new ArrayList<>();
 
@@ -43,6 +45,23 @@ class Application {
         System.out.println(connectionWithoutDuplicates);
 
         writer.writeConnectionCSV(connectionWithoutDuplicates, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
+    }
+
+
+
+    void addGeolocationToTrainstations(String GeoLocationFile) throws URISyntaxException, IOException {
+            Reader reader = new Reader(GeoLocationFile, this);
+            ArrayList<GeoItem> geolocation = reader.readGeoLocationFile();
+
+            // todo verbessern: Bei gleichem Namen werden Daten einfach überschrieben
+            for (TrainStation ts: trainStations ) {
+                for (int i = 1; i < geolocation.size(); i++) {
+                    if(ts.getTrainStationName().equals(geolocation.get(i).getBahnhofsname())) {
+                        ts.setLongitude(geolocation.get(i).getLongitude());
+                        ts.setLatitude(geolocation.get(i).getLatitude());
+                    }
+                }
+            }
     }
 
     void trainStationsToNodesList(String outputFileNameTrainStations) throws IOException {

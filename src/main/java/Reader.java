@@ -84,6 +84,26 @@ public class Reader {
         return items;
     }
 
+    ArrayList<GeoItem> readGeoLocationFile() throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(file));
+
+        ArrayList<GeoItem> geoItems = new ArrayList<>();
+        String st;
+
+        while ((st = br.readLine()) != null) {
+            String[] it = st.split(",");
+
+            // todo: input file bereinigen
+            // todo verbessern: Ortbezeichnungen nach Komma werden nicht eingelesen
+                GeoItem geoItem = new GeoItem(
+                        it[0],
+                        it[1],
+                        it[2]);
+                geoItems.add(geoItem);
+        }
+        return geoItems;
+    }
+
     private int returnTrainstationIdAndCreateTrainstationIfDoesntExists(String trainstationName) {
         int trainstationId;
 
