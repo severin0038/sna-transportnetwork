@@ -12,7 +12,7 @@ public class Main {
         Application application = new Application();
         application.sbbDataSetToSnaGraph("2020-04-04_istdaten.csv", "2020-04-04_network.csv");
 //        application.sbbDataSetToSnaGraph("2019-04-06istdaten.csv", "2019-04-06_network.csv");
-        application.addGeolocationToTrainstations("stations_geolocation_v02.csv");
+        application.addGeolocationToTrainstations("stations_geolocation_v03.csv");
         application.trainStationsToNodesList("trainStations.csv");
     }
 }
