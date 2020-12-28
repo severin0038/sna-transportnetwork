@@ -1,12 +1,14 @@
 Longitude,Latitude,Remark
 9.733756,46.922368,Fideris
 7.389462,47.191804,Grenchen
+9.873959,48.577852,Amstetten (Württ)
 7.589551,47.547405,Basel
 7.395229,46.937482,Bern Bümpliz
 6.838953,46.949588,Boudry TN
 8.500049,47.114619,Lothenbach
 8.500049,47.114619,Lothenbach (See)
 9.132959,47.659618,Tägerwilen
+5.992531,46.227068,Val-Thoiry
 8.595545,47.409209,Wallisellen Glatt
 8.595545,47.409209,Wallisellen Zentrum Glatt
 7.498923,47.018936,Schönbühl
@@ -14,8 +16,10 @@ Longitude,Latitude,Remark
 7.784182,46.939239,Langnau
 7.555374,47.182924,Biberist
 7.941564,47.555477,Bad Säckingen Friedrichstrasse
+8.431886,49.006337,Karlsruhe Tullastr./VKB
 7.927363,47.551197,Bad Säckingen Jurastrasse
 7.841469,47.996765,Freiburg (D) Hauptbahnhof/ZOB
+8.527189,49.003464,Berghausen Kirche
 8.756199,47.207308,Freienbach
 6.838953,46.949588,Boudry station TN
 7.68936,47.196374,Bahn-2000-Strecke
@@ -29,6 +33,9 @@ Longitude,Latitude,Remark
 8.591156,46.604329,Gotthard-Panoramastrecke
 8.64444,46.652359,Oberalp
 8.091198,46.276342,Simplon
+10.237281,48.61995,Autobahn
+11.397834,47.253332,Innsbruck Stubaitalbf Betrieb.
+11.397834,47.253332,Innsbruck Stubaitalbf Pastor
 8.765599,46.680773,Gotthard-Basistunnel
 7.904318,47.401134,Hauenstein-Basistunnel
 8.521961,47.351679,Zimmerberg-Basistunnel
@@ -38,6 +45,10 @@ Longitude,Latitude,Remark
 7.378476,46.967959,Hinterkappelen
 9.811342,46.574006,Albulatunnel
 8.296209,46.145484,Preglia Via Sempione
+8.114832,45.980509,Varzo Stazione
+8.430353,45.932237,Gravellona Toce stazione
+8.412661,45.871857,Omegna staz. ferroviaria
+8.414248,45.971169,Ornavasso staz. ferroviaria
 8.260862,46.024418,Piedimulera staz. ferroviaria
 8.283509,46.021614,Vogogna staz. ferroviaria
 7.847774,47.704629,Zell (Wiesental)
@@ -51,6 +62,7 @@ Longitude,Latitude,Remark
 7.762099,47.637898,Steinen (D)
 7.659646,47.551118,Grenzach (D)
 7.589471,47.810828,Neuenburg (D)
+7.884383,48.113116,Emmendingen Bahnhof
 7.697833,47.919961,Bad Krozingen
 7.625506,47.808078,Müllheim(Baden)
 7.868706,47.673436,Hausen-Raitbach
@@ -61,14 +73,42 @@ Longitude,Latitude,Remark
 7.595277,47.602965,Weil am Rhein Rebgartenweg
 7.664443,47.601322,Lörrach Hauptstr.
 7.585033,47.653454,Efringen-Kirchen
+7.808091,48.147548,Riegel a. K. Bahnhof
 7.841469,47.996765,Freiburg (Breisgau) Busbhf.
+7.733965,48.585314,Strasbourg gare Routière
 8.968983,47.735873,Radolfzell am Bodensee ZOB
+11.592709,48.087034,München Hbf Nord
+11.592709,48.087034,München Hbf Nord II
+11.592709,48.087034,München Hbf Nord III
+11.592709,48.087034,München Hbf Nord IV
+8.71112,45.627214,Malpensa Aeroporto terminal 1
+8.345058,45.989902,Anzola chiesa
 8.131773,47.592235,Albbruck Papierfabrik
 8.018724,47.553452,Murg (Baden)
 8.07369,47.566163,Laufenburg (Baden) Ostbahnhof
 8.218506,47.620729,Waldshut Busbahnhof
+8.371879,48.504105,Baiersbronn Bahnhof
+8.453916,49.492623,Mannheim Handelshafen
+8.469818,49.480177,Mannheim Hauptbahnhof 1
+8.29182,49.038937,Maximiliansau West
+8.319998,48.805772,Gaggenau Bahnhof
+8.255547,48.834662,Kuppenheim Bahnhof
+8.190846,48.790329,Baden-Baden Bahnhof
+8.69348,49.036898,Bretten Bahnhof
+8.215649,48.86049,Rastatt Bahnhof
+8.336739,48.768309,Gernsbach Bahnhof
+9.067166,48.823907,Ditzingen Bahnhof
+8.932209,48.774721,Renningen Bahnhof
+9.319383,48.815531,Rommelshausen Bahnhof
+9.12094,48.82678,Korntal Bahnhof
+9.168685,48.829564,Stuttgart Zuffenhausen
+9.526347,48.807145,Schorndorf (Württ) ZOB
+8.547776,48.453711,Schopfloch (Freudenstadt) Bhf
+8.864337,48.594061,Herrenberg ZOB/Bahnhofstrasse
+9.984065,48.481944,Beimerstetten Bahnhofstrasse
 8.345805,46.167254,Altoggio
 8.11362,46.06012,Antronapiana
+8.345715,45.989869,Anzola
 8.319256,46.261501,Baceno
 8.299276,46.079061,Beura Cardezza centro
 8.21077,46.122297,Bognanco T. Villa Elda
@@ -76,8 +116,10 @@ Longitude,Latitude,Remark
 8.362637,46.297878,Cadarese
 8.286194,46.134018,Caddo
 8.280416,46.091645,Calice
+8.045859,45.969567,Campioli
 8.411756,46.409183,Cascate del Toce
 8.214886,46.020588,Castiglione
+8.069922,45.971036,Ceppo Morelli
 8.427875,46.353086,Chiesa (Val Formazza)
 8.311827,46.096749,Cosasca di Trontano
 8.232894,46.066405,Cresti
@@ -85,6 +127,9 @@ Longitude,Latitude,Remark
 8.321316,46.214183,Crodo Bagni
 8.323562,46.224016,Crodo paese
 8.311941,46.11036,Croppo di Trontano
+8.415831,45.899457,Crusinallo
+8.414604,45.897812,Crusinallo stazione
+8.372325,45.995014,Cuzzago bivio FS
 8.279177,46.050632,Cuzzego di Cardezza
 8.289519,46.123179,Domodossola Cappuccina
 8.291514,46.125027,Domodossola Corso Cairoli 20
@@ -96,14 +141,27 @@ Longitude,Latitude,Remark
 8.284041,46.121161,Domodossola via Scappacino
 8.296316,46.108671,Domodossola via Torino
 8.28911,46.121005,Domodossola via Turati
+8.490038,45.945918,Fondotoce (ex stab. Gewa)
 8.425862,46.344566,Fondovalle
 8.404346,46.33338,Foppiano
 8.237229,46.121609,Gabbio
 8.331623,46.158299,Giosio
 8.241875,46.018896,Gozzi
+8.435652,45.930814,Gravellona Toce crociera
+8.430353,45.932237,Gravellona Toce bivio FS
+8.431713,45.928996,Gravellona Toce via Sempione
+8.564642,45.942218,Intra rimessa
 8.134004,46.05244,Locasca
+7.985094,45.962862,Macugnaga Borca
+7.953363,45.972466,Macugnaga Pecetto
+8.012674,45.959342,Macugnaga Pestarena
+7.967501,45.968298,Macugnaga Staffa
 8.14156,46.048255,Madonna (Valle d'Antrona)
+8.712831,45.626322,Malpensa aeroporto
 8.326237,46.136796,Masera
+8.307941,45.99158,Megolo
+8.307941,45.99158,Megolo Mezzo
+8.395595,45.986812,Migiandone Bivio
 8.32337,46.232132,Miramonti
 8.275088,46.123647,Mocogna
 8.185892,46.009908,Molini
@@ -111,6 +169,12 @@ Longitude,Latitude,Remark
 8.336532,46.169505,Nava
 8.340763,46.159927,Naviledo
 8.315782,46.174697,Oira
+8.412661,45.871857,Omegna stazione
+8.410911,45.873411,Omegna Ospedale
+8.411004,45.876478,Omegna via de Amicis
+8.414248,45.971169,Ornavasso
+8.414248,45.971169,Ornavasso stazione
+8.554776,45.928246,Pallanza Tribunale
 8.260482,46.042961,Pallanzeno stazione
 8.381444,46.315122,Passo
 8.3526,46.279112,Piedilago
@@ -119,6 +183,7 @@ Longitude,Latitude,Remark
 8.264066,46.009947,Pieve Vergonte centro
 8.304389,46.152888,Ponte di Crevola
 8.426911,46.376539,Ponte Formazza
+8.1474,45.990483,Pontegrande
 8.323451,46.180458,Pontemaglio
 8.314202,46.150519,Pontetto di Montecrestese
 8.279933,46.0385,Prata di Vogogna
@@ -128,12 +193,18 @@ Longitude,Latitude,Remark
 8.415888,46.416956,Riale di Formezza
 8.391191,46.3275,Rivasco
 8.324332,46.154164,Roldo
+8.288192,45.993899,Rumianca
+8.133007,45.988189,San Carlo
 8.200081,46.126715,San Lorenzo
 8.429319,46.36744,San Michele
 8.367396,46.302931,San Rocco
 8.156605,46.04484,Schieranco
 8.214593,46.057266,Seppiana
+8.16105,45.994075,Valbianca
 8.427514,46.372503,Valdo
+8.114947,45.980418,Vanzone
+8.114832,45.980509,Varzo stazione
+8.57546,45.935929,Verbania Intra imb. Vecchio
 8.194345,46.051664,Viganella
 8.26307,46.068095,Villadossola Bivio Gaggio
 8.258225,46.067294,Villadossola Corso Italia
@@ -144,9 +215,268 @@ Longitude,Latitude,Remark
 8.260554,46.070048,Villadossola Villagio Sisma
 8.283509,46.021614,Vogogna bivio FS
 8.303687,46.004117,Vogogna/Piedimulera
+10.135093,48.300999,Weissenhorn Eschach
+9.222943,49.19341,Neckarsulm Mitte
+8.161602,49.57622,Asselheim (D)
+8.170781,49.573355,Grünstadt-Nord
+10.097804,48.317443,Witzighausen
+9.982243,48.399432,Ulm ZOB
+10.497863,48.850841,Nördlingen
+10.71096,48.75621,Ebermergen
+10.597832,48.806806,Möttingen
+10.653198,48.803817,Hoppingen
+10.698455,48.778898,Harburg (Schwab)
+10.714478,48.731977,Wörnitzstein
+10.771443,48.714026,Donauwörth
+10.82518,48.660485,Mertingen Bahnhof
+10.837306,48.593434,Nordendorf
+10.84805,48.545997,Meitingen
+10.872533,48.380772,Augsburg-Oberhausen
+10.943376,48.352977,Augsburg-Hochzoll
+10.278656,48.460335,Günzburg
+10.215369,48.450171,Leipheim
+10.118003,48.430141,Nersingen
+10.004823,48.393039,Neu-Ulm
+10.269707,48.438377,Wasserburg(Günz)
+10.288497,48.411659,Kleinkötz
+10.298007,48.389121,Hochwang (D)
+10.302138,48.370187,Ichenhausen
+10.338371,48.34214,Ellzee
+10.365536,48.302557,Neuburg(Kammel)
+10.358162,48.275562,Billenhausen
+10.358619,48.24759,Krumbach (Schwab)
+10.361165,48.23542,Krumbach(Schwab)Schule
+10.376003,48.481846,Offingen
+10.407905,48.455978,Mindelaltheim
+10.427012,48.424797,Burgau (Schwab)
+10.445473,48.399126,Jettingen
+10.5022,48.384704,Freihalden
+10.586675,48.342638,Dinkelscherben
+10.696338,48.334775,Kutzenhausen
+10.732382,48.333715,Gessertshausen
+10.776823,48.35609,Diedorf (Schwab)
+10.818233,48.385991,Westheim (Schwab)
+10.83352,48.394392,Neusäss
+10.88557,48.365441,Augsburg Hbf
+10.900985,48.355285,Augsburg Haunstetterstrasse
+10.959553,48.300922,Kissing
+10.988291,48.262698,Mering
+11.063003,48.236374,Althegnenberg
+11.098784,48.223263,Haspelmoor
+11.174618,48.216826,Mammendorf
+11.037736,48.105776,Geltendorf
+10.716217,48.033723,Buchloe
+10.854595,48.080835,Kaufering
+10.617439,48.04569,Türkheim (Bay) Bahnhof
+10.374503,48.221344,Niederraunau
+10.383631,48.201313,Aletshausen
+10.38243,48.180467,Haupeltshofen
+10.390907,48.162511,Loppenhausen
+10.408505,48.138586,Breitenbrunn(Schwab)
+10.451825,48.117794,Pfaffenhausen
+10.429623,48.125996,Weilbach(Unterallg)
+10.482517,48.101004,Hausen(Schwab)
+10.503797,48.078066,Nassenbeuren
+10.362265,48.289531,Hirschfelden
+10.501626,48.044917,Mindelheim
+10.026228,48.389993,Neu-Ulm Finninger Strasse
+10.037282,48.351332,Gerlenhofen
+10.050502,48.324016,Senden
+10.1945,48.269558,Weissenhorn
+10.083628,48.279088,Vöhringen
+10.09039,48.254645,Bellenberg
+10.099942,48.222828,Illertissen
+10.109983,48.161191,Altenstadt(Iller)
+10.124616,48.120286,Kellmünz
+10.186853,47.985581,Memmingen
+10.253715,47.882468,Bad Grönenbach
+10.290481,47.812866,Dietmannsried
+10.31761,47.711745,Kempten (Allgäu) Hbf
+10.33205,47.731293,Kempten (Allgäu) Ost
+10.273777,47.629207,Martinszell (Allgäu)
+10.213999,47.559203,Immenstadt
+10.258796,47.543741,Blaichach (Allgäu)
+10.272344,47.513241,Sonthofen
+10.071559,48.314065,Wullenstetten
 9.680469,47.544341,Lindau Hbf
 9.639062,47.571899,Wasserburg (Bodensee)
 9.612676,47.575118,Nonnenhorn
+10.280907,47.48855,Altstädten(Allgäu)
+10.271717,47.456591,Fischen
+10.276032,47.436588,Langenwang (Schwab)
+10.278097,47.411032,Oberstdorf
+9.228679,49.202096,Neckarsulm Nord
+8.118732,49.738134,Alzey Süd
+8.453645,49.025938,Karlsruhe Hagsfeld
+8.045236,49.386201,Neidenfels (D)
+7.773047,49.203132,Hinterweidenthal-Ost
+8.565384,49.979,Mörfelden
+8.494709,49.912279,Gross Gerau-Dornberg
+8.493656,49.877507,Gross Gerau-Dornheim
+8.493098,49.853937,Riedstadt-Wolfskehlen
+8.489187,49.83323,Riedstadt-Goddelau
+8.47244,49.809433,Stockstadt (Rhein)
+8.473978,49.781977,Biebesheim
+8.4902,49.753598,Gernsheim
+8.476857,49.714066,Gross Rohrheim
+8.450413,49.688881,Biblis
+8.40897,49.659467,Hofheim (Ried)
+8.451786,49.663251,Bobstadt
+8.459072,49.645125,Bürstadt
+8.49595,49.647488,Riedrode
+8.566262,49.659093,Lorsch
+8.478489,49.598215,Lampertheim
+8.656787,49.993612,Langen (Hess)
+8.636586,49.855426,Darmstadt Süd
+8.62582,49.813922,Darmstadt-Eberstadt
+8.603415,49.759632,Bickenbach (Bergstr)
+8.606664,49.73935,Hähnlein Alsbach
+8.609119,49.725902,Zwingenberg (Bergstr)
+8.613366,49.701557,Bensheim-Auerbach
+8.616717,49.681329,Bensheim
+8.633379,49.641553,Heppenheim (Bergstrasse)
+8.644539,49.612076,Laudenbach(Bergstr)
+8.648722,49.590869,Hemsbach
+8.665351,49.553302,Weinheim(Bgstr)
+8.708359,49.561039,Birkenau
+8.720015,49.57797,Reisen(Hess)
+8.730987,49.597299,Mörlenbach
+8.75322,49.609367,Zotzenbach
+8.757296,49.627348,Rimbach
+8.764441,49.638678,Lörzenbach-Fahrenbach
+8.781003,49.648534,Fürth (Odenw)
+8.649501,49.527385,Lützelsachsen
+8.633746,49.509408,Heddesheim/Hirschberg
+8.602803,49.474242,Ladenburg
+8.629636,49.872503,Darmstadt Hbf
+11.08552,49.447657,Nürnberg ZOB
+8.113836,49.189514,Landau (Pfalz) Süd
+8.482603,49.525661,Mannheim-Waldhof
+8.503772,49.501558,Mannheim-Käfertal
+8.468921,49.479354,Mannheim Hbf
+8.468417,49.479237,Mannheim Hbf (Busbahnhof)
+8.516358,49.459786,Mannheim ARENA
+8.538107,49.450962,Mannheim-Seckenheim
+8.572382,49.438144,Mannheim-Friedrichsfeld Süd
+8.580125,49.44867,Mannheim-Friedrichsfeld
+8.64157,49.411929,Heidelberg Pfaffengrund/Wiebl.
+8.675442,49.403567,Heidelberg Hbf
+8.675383,49.379389,Heidelberg-Kirchheim
+8.668715,49.341268,St Ilgen-Sandhausen
+8.664146,49.291353,Wiesloch-Walldorf
+8.65221,49.243385,Rot-Malsch
+8.646821,49.219345,Bad Schönborn-Kronau
+8.641924,49.200001,Bad Schönborn Süd
+8.623335,49.167021,Ubstadt-Weiher
+8.589649,49.124622,Bruchsal
+8.54829,49.087651,Untergrombach
+8.521224,49.059101,Weingarten (Baden)
+8.462822,49.002328,Karlsruhe-Durlach
+8.494792,49.455545,Mannheim-Neckarau
+8.534944,49.424091,Mannheim-Rheinau
+8.578679,49.383434,Schwetzingen
+8.579013,49.373505,Oftersheim
+8.537385,49.317414,Hockenheim
+8.530075,49.292199,Neulussheim
+8.508313,49.248186,Waghäusel
+8.50239,49.225458,Wiesental
+8.49063,49.161797,Graben-Neudorf
+8.474278,49.101299,Friedrichstal (Baden)
+8.464729,49.066528,Blankenloch
+8.453916,49.026964,Karlsruhe Hagsfeld Stadtbahn
+8.341171,49.026695,Karlsruhe-Knielingen
+8.351126,49.014557,Karlsruhe-Mühlburg
+8.415966,49.229156,Rheinsheim
+8.454023,49.231621,Philippsburg (Baden)
+8.472636,49.197162,Huttenheim (D)
+8.547872,49.144484,Karlsdorf
+8.693448,49.0369,Bretten
+8.362951,49.002159,Karlsruhe-West
+8.914663,49.136001,Eppingen
+8.720887,49.415237,Heidelberg Altstadt
+8.760564,49.415309,Heidelberg Schlierbach/Ziegelh
+8.788425,49.393678,Neckargemünd
+8.841429,49.404909,Neckarsteinach
+8.879703,49.416954,Neckarhausen b Neckarsteinach
+8.896055,49.442668,Hirschhorn (Neckar)
+8.984152,49.465768,Eberbach
+9.00646,49.416918,Lindach
+9.04283,49.416029,Zwingenberg (Baden)
+9.074704,49.397906,Neckargerach (D)
+9.083631,49.372589,Binau
+9.113093,49.348484,Mosbach-Neckarelz
+9.137577,49.316563,Neckarzimmern
+9.154129,49.30403,Hassmersheim
+9.15787,49.282933,Gundelsheim (Neckar)
+9.165293,49.246414,Offenau
+9.143655,49.35256,Mosbach (Baden)
+9.163721,49.378383,Neckarburken
+9.18755,49.388078,Dallau
+9.223276,49.399563,Auerbach(b Mosbach)
+9.27885,49.416925,Oberschefflenz
+9.290317,49.432439,Eicholzheim
+9.338469,49.441157,Seckach
+9.317207,49.475929,Bödigheim
+9.327179,49.523529,Buchen (Odenw)
+9.326884,49.543058,Hainstadt(Baden)
+9.367542,49.578023,Walldürn
+9.291189,49.624722,Rippberg
+9.332137,49.519152,Buchen Ost
+9.392754,49.42149,Adelsheim Nord
+9.371975,49.430411,Zimmern(b Seckach)
+8.783685,49.359588,Bammental
+8.778836,49.353966,Reilsheim
+8.795545,49.335802,Mauer(b Heidelberg)
+8.812836,49.320658,Meckesheim
+8.821439,49.297394,Zuzenhausen (D)
+8.838411,49.272037,Hoffenheim
+8.8751,49.250353,Sinsheim(Elsenz) Hbf
+8.907978,49.235822,Steinsfurt
+8.920591,49.216431,Reihen
+8.93458,49.187119,Ittlingen
+8.936554,49.167846,Richen(b Eppingen)
+8.996902,49.226145,Grombach
+9.060708,49.240196,Babstadt
+9.101529,49.237765,Bad Rappenau
+9.167297,49.229744,Bad Wimpfen
+9.138753,49.242537,Bad Wimpfen-Hohenstadt
+8.402181,48.993515,Karlsruhe Hbf
+8.399587,48.994346,Karlsruhe Bahnhofsvorplatz
+8.387878,48.947182,Ettlingen West
+8.373975,48.923992,Bruchhausen (b Ettl)
+8.323585,48.889506,Malsch
+8.274293,48.876805,Muggensturm
+8.215623,48.860483,Rastatt
+8.256112,48.834128,Kuppenheim
+8.319977,48.805772,Gaggenau
+8.34519,48.781523,Hörden
+8.336714,48.768307,Gernsbach
+8.355263,48.727532,Weisenbach
+8.361491,48.680399,Forbach(Schwarzw)
+8.369354,48.605345,Schönmünzach
+8.399008,48.526627,Klosterreichenbach
+8.371868,48.504104,Baiersbronn Bf
+8.190831,48.790327,Baden-Baden
+8.129299,48.696676,Bühl (Baden)
+8.065324,48.63399,Achern
+8.007138,48.59266,Renchen (D)
+7.97319,48.541461,Appenweier
+7.946723,48.476475,Offenburg
+7.862948,48.381589,Friesenheim (Baden)
+7.834734,48.340436,Lahr (Schwarzw)
+7.790281,48.274192,Orschweier
+7.773037,48.248726,Ringsheim
+7.767638,48.223866,Herbolzheim (Breisgau)
+7.764094,48.194451,Kenzingen
+7.77085,48.151969,Riegel-Malterdingen
+7.802925,48.137458,Köndringen
+7.824408,48.128777,Teningen-Mundingen
+7.847511,48.119454,Emmendingen
+7.887074,48.098271,Kollmarsreute
+7.881434,48.068625,Denzlingen
+7.874185,48.044025,Gundelfingen (Breisgau)
+7.863734,48.024363,Freiburg (D) Zähringen
+7.850973,48.008237,Freiburg (D) Herdern
 7.84117,47.997697,Freiburg (Breisgau) Hbf
 7.854127,47.982413,Freiburg (D) Wiehre
 7.895133,47.981672,Freiburg (D) Littenweiler
@@ -217,6 +547,15 @@ Longitude,Latitude,Remark
 8.7043,47.745502,Thayngen
 8.738915,47.744017,Bietingen
 8.77543,47.737401,Gottmadingen
+8.010192,48.404659,Gengenbach
+8.032762,48.338388,Biberach (Baden)
+8.056469,48.298992,Steinach (Baden)
+8.087975,48.28004,Haslach
+8.181665,48.284924,Hausach
+8.23294,48.211895,Hornberg (Schwarzw)
+8.236806,48.140004,Triberg
+8.341955,48.123813,St Georgen (Schwarzw)
+8.465261,48.058022,Villingen (Schwarzw)
 8.498919,47.947786,Donaueschingen
 8.653951,47.921342,Geisingen
 8.729536,47.936007,Immendingen
@@ -226,6 +565,9 @@ Longitude,Latitude,Remark
 8.769216,47.83403,Welschingen-Neuhausen
 8.804391,47.813658,Mühlhausen (b Engen)
 8.840383,47.758438,Singen (Hohentwiel)
+8.453917,49.492623,Mannheim Handelshafen
+8.477775,49.517201,Mannheim-Luzenberg
+8.459566,49.503633,Mannheim-Neckarstadt
 8.926651,47.748732,Böhringen-Rickelshausen
 8.968984,47.735873,Radolfzell
 9.002772,47.739364,Markelfingen
@@ -248,53 +590,698 @@ Longitude,Latitude,Remark
 9.630216,47.565661,Wasserburg (Bodensee) Hafen
 9.664967,47.557369,Bad Schachen
 9.682267,47.543782,Lindau Hafen
+8.158313,49.354245,Neustadt-Böbig
+11.081692,49.446567,Nürnberg Hbf Bahnhofsvorplatz
+7.884263,49.968729,Bingen(Rhein) Hbf
+7.902985,49.969746,Bingen(Rhein) Stadt
+8.277565,49.993465,Mainz Römisches Theater
+8.314183,49.961233,Mainz-Laubenheim
+8.312491,49.929585,Bodenheim
+8.341885,49.919106,Nackenheim
+8.34281,49.872002,Nierstein
+8.358078,49.85756,Oppenheim
+8.351257,49.79198,Guntersblum
+8.342462,49.765528,Alsheim
+8.334166,49.739906,Mettenheim
+8.325988,49.705423,Osthofen
+8.356448,49.63494,Worms Hbf
+8.35032,49.588139,Bobenheim
+8.349702,49.535567,Frankenthal Hbf
+8.381523,49.493188,Ludwigshafen-Oggersheim
+8.43896,49.493971,Ludwigshafen(Rhein) BASF Süd
+8.433402,49.477987,Ludwigshafen(Rhein) Hbf
+8.421092,49.461572,Ludwigshafen-Mundenheim
+8.409493,49.447471,Ludwigshafen-Rheingönheim
+8.390747,49.424273,Limburgerhof
+8.364945,49.39291,Schifferstadt
+8.427949,49.324119,Speyer Hbf
+8.406173,49.295449,Berghausen (Pfalz)
+8.393726,49.28566,Heiligenstein(Pfalz)
+8.349523,49.252584,Lingenfeld
+8.365282,49.225402,Germersheim
+8.360272,49.194981,Sondernheim
+8.29456,49.188303,Bellheim
+8.290446,49.160871,Rülzheim (D)
+8.274166,49.119537,Rheinzabern
+8.272272,49.092289,Jockgrim
+8.273146,49.045678,Wörth (Rhein)
+8.253223,49.01628,Hagenbach
+7.898033,49.947388,Münster-Sarmsheim
+7.897215,49.918799,Laubenheim(Nahe)
+7.899887,49.901372,Langenlonsheim
+7.898692,49.874587,Bretzenheim(Nahe)
+7.866435,49.842399,Bad Kreuznach
+7.846989,49.813426,Bad Münster am Stein
+7.956653,49.878575,Welgesheim-Zotzenheim
+7.981795,49.858947,Sprendlingen(Rheinh)
+8.020291,49.840292,Gau Bickelheim
+8.049458,49.832648,Wallertheim
+7.938188,49.89826,Gensingen-Horrweiler
+7.59071,49.653709,Lauterecken-Grumbach
+7.830745,49.786857,Altenbamberg
+7.829096,49.763342,Hochstätten(Pfalz)
+7.817189,49.727495,Alsenz
+7.81727,49.628385,Rockenhausen
+7.807976,49.597656,Imsweiler
+7.855955,49.570548,Winnweiler
+8.074113,49.808372,Armsheim
+8.116579,49.771375,Albig
+8.109749,49.7502,Alzey
+8.219806,49.630213,Harxheim-Zell
+8.204274,49.656901,Nieder Flörsheim-Dalsheim
+8.196596,49.690167,Gundersheim(Rheinh)
+8.162882,49.700063,Eppelsheim(Rheinhess)
+8.279654,49.634634,Pfeddersheim
+8.208162,49.633666,Monsheim (D)
+8.168439,49.635362,Wachenheim-Mölsheim
+8.096752,49.644776,Albisheim(Pfrimm)
+8.039141,49.623021,Marnheim
+8.016444,49.599376,Göllheim-Dreisen
+7.899501,49.489933,Enkenbach
+8.188254,49.606872,Bockenheim-Kindenheim
+8.178998,49.580683,Albsheim(Eis)
+8.167962,49.564384,Grünstadt
+8.181452,49.537163,Kirchheim(Weinstr)
+8.205192,49.501493,Freinsheim
+8.210697,49.488326,Erpolzheim
+8.170701,49.460633,Bad Dürkheim
+8.191152,49.4393,Wachenheim (Pfalz)
+8.192634,49.408349,Deidesheim
+8.168529,49.37196,Mussbach
+8.193072,49.466416,Bad Dürkheim-Trift
+8.133923,49.569195,Mertesheim
+8.108237,49.564004,Ebertsheim
+8.070582,49.554483,Eisenberg (Pfalz)
+8.02113,49.534971,Ramsen (D)
+8.333801,49.513958,Flomersheim
+8.283476,49.511863,Lambsheim
+8.249874,49.513931,Weisenheim(Sand)
+8.303602,49.379831,Böhl-Iggelheim
+8.253396,49.371956,Hassloch (Pfalz)
+8.140757,49.349553,Neustadt (Weinstr) Hbf
+8.074391,49.373336,Lambrecht (Pfalz)
+7.994912,49.417494,Weidenthal
+7.969802,49.438867,Frankenstein(Pfalz)
+7.904244,49.443993,Hochspeyer
+8.147177,49.30558,Maikammer-Kirrweiler
+8.14062,49.282053,Edenkoben
+8.139075,49.263736,Edesheim (Pfalz)
+8.148265,49.23817,Knöringen-Essingen
+8.126204,49.197741,Landau (Pfalz) Hbf
+8.107052,49.195748,Landau (Pfalz) West
+8.152132,49.157624,Insheim
+8.14152,49.138017,Rohrbach (Pfalz)
+8.122479,49.095452,Winden (Pfalz)
+8.079776,49.061238,Schaidt (Pfalz)
+8.070307,49.104118,Barbelroth
+8.002787,49.103209,Bad Bergzabern
+8.198025,49.07914,Kandel
+8.024464,49.21847,Albersweiler(Pfalz)
+7.461841,49.548643,Altenglan
+7.966149,49.205386,Annweiler am Trifels
+7.443979,49.385343,Bruchmühlbach-Miesau
+7.806152,49.102353,Bundenthal-Rumbach
+7.799703,49.138868,Busenberg-Schindhard
+7.427916,49.24528,Contwig
+7.469169,49.227782,Dellfeld
+7.478162,49.238869,Dellfeld Ort
+7.456212,49.494721,Eisenbach-Matzenbach
+7.744124,49.43549,Galgenschanze
+7.444848,49.470176,Glan-Münchweiler
+8.076028,49.20685,Godramstein
+7.830006,49.201394,Hauenstein(Pfalz)
+7.490949,49.401974,Hauptstuhl
+7.606902,49.625703,Heinzenhausen
+7.681008,49.515588,Hirschhorn (Pfalz)
+7.699292,49.41579,Kaiserslautern-Hohenecken
+7.768716,49.436137,Kaiserslautern Hbf
+7.751248,49.434714,Kaiserslautern Pfaffwerk
+7.749812,49.447535,Kaiserslautern West
+7.747676,49.201568,Hinterweidenthal
+7.700935,49.500082,Katzweiler
+7.733013,49.440998,Kennelgarten
+7.612836,49.419371,Kindsbach
+7.706011,49.438535,Vogelweh
+7.631296,49.55149,Kreimbach-Kaulbach
+7.410329,49.538282,Kusel
+7.729408,49.483662,Lampertsmühle-Otterbach
+7.565931,49.416287,Landstuhl
+7.59967,49.635799,Lohnweiler
+7.700417,49.221355,Münchweiler(Rodalben)
+7.501412,49.456253,Obermohr
+7.471588,49.458429,Niedermohr
+8.377314,49.374089,Schifferstadt Süd
+7.652759,49.538071,Olsbrücken
+7.604401,49.259218,Pirmasens Nord
+7.556715,49.448755,Ramstein (D)
+7.444075,49.542131,Rammelsbach
+7.609151,49.607333,Reckweilerhof
+7.440581,49.48516,Rehweiler
+7.507438,49.244747,Rieschweiler
+7.927918,49.217075,Rinnthal
+7.631712,49.239238,Rodalben
+7.623254,49.572112,Rossbach(Pfalz)
+7.687317,49.358867,Schopp
+8.042565,49.20927,Siebeldingen-Birkweiler
+7.651484,49.316247,Steinalben
+7.524785,49.454175,Steinwenden
+7.578141,49.261374,Thaleischweiler-Fröschen
+7.448373,49.518978,Theisbergstegen
+7.663654,49.522537,Untersulzbach
+7.652035,49.288555,Waldfischbach
+7.883823,49.209434,Wilgartswiesen
+7.610287,49.58428,Wolfstein
+7.662227,49.431002,Einsiedlerhof
+7.598432,49.205645,Pirmasens Hbf
+7.356643,49.246805,Zweibrücken Hbf
+7.456623,49.239171,Stambach(Pfalz)
+7.526028,49.243893,Höhmühlbach
+8.022177,49.038878,Kapsweyer (D)
+11.461872,48.149852,München Pasing
+11.558335,48.140232,München Hbf
+11.556708,48.141529,München Hbf Gl. 27-36
+11.548572,48.141969,München Hackerbrücke
+11.560493,48.141172,München Hbf (Tief)
+11.082989,49.445616,Nürnberg Hbf
+11.08284,49.44557,Nürnberg Hbf (U)
+11.045403,49.434377,Nürnberg-Schweinau
+9.93578,49.801796,Würzburg Hbf
+9.143697,49.980557,Aschaffenburg Hbf
+9.152586,49.968465,Aschaffenburg Süd
+9.168168,49.87491,Kleinwallstadt
+9.154222,49.840738,Obernburg-Elsenfeld
+9.154436,49.803633,Erlenbach (D)
+9.176549,49.781419,Klingenberg (Main)
+9.179126,49.742528,Laudenbach am Main
+9.207476,49.721423,Kleinheubach
+9.225052,49.691382,Breitendiel
+9.213165,49.668683,Weilbach(Unterfr)
+9.223147,49.645609,Amorbach
+9.250801,49.641099,Schneeberg im Odenwald
+9.248467,49.706481,Miltenberg
+9.317981,49.743755,Freudenberg (Main)
+9.329719,49.771121,Collenberg
+9.38216,49.779377,Dorfprozelten
+9.410979,49.783595,Stadtprozelten
+9.437614,49.786932,Faulbach (Main)
+9.482125,49.789335,Hasloch (Main)
+9.943503,49.788193,Würzburg Süd
+10.898632,49.400694,Rosstal
+10.791053,49.34595,Heilsbronn
+10.71145,49.310689,Wicklesgreuth
+10.661498,49.29299,Sachsen (b Ansbach)
+10.578239,49.298032,Ansbach
+10.298523,49.25211,Dombühl
+10.178483,49.194325,Schnelldorf
+8.899932,49.241239,Sinsheim Museum/Arena
+8.214173,49.621788,Hohensülzen (D)
+8.030754,49.105621,Kapellen-Drusweiler
+6.652453,49.756846,Trier Hbf
+6.636883,49.744663,Trier Süd
+6.596854,49.71034,Karthaus
+7.172701,49.606066,Neubrücke (Nahe)
+7.139443,49.585688,Nohfelden
+7.114615,49.580358,Türkismühle
+7.129374,49.5588,Walhausen (Saar)
+7.146277,49.523922,Namborn
+7.159755,49.511922,Hofeld
+7.166538,49.493785,Baltersweiler
+7.165293,49.466952,St Wendel
+7.151116,49.450707,Oberlinxweiler
+7.160695,49.432201,Niederlinxweiler
+7.166133,49.402337,Ottweiler (Saar)
+7.175665,49.371135,Wiebelskirchen
+6.665362,49.361696,Siersburg
+6.614569,49.353998,Hemmersdorf(Saar)
+6.594053,49.343539,Niedaltdorf
+6.72215,49.35271,Dillingen (Saar)
+6.688021,49.386881,Beckingen (Saar)
+6.647867,49.410083,Fremersdorf
+6.634192,49.436419,Merzig(Saar)
+6.602559,49.475974,Besseringen
+6.598315,49.495476,Mettlach
+6.6075,49.516441,Saarhölzbach
+6.600316,49.552747,Taben
+6.569981,49.577132,Serrig
+6.557034,49.606455,Saarburg (Bz Trier)
+6.58097,49.636377,Schoden-Ockfen
+6.590462,49.662641,Wiltingen(Saar)
+6.573666,49.669359,Kanzem
+6.573294,49.695388,Konz
+6.750169,49.32783,Saarlouis Hbf
+6.776015,49.302874,Ensdorf(Saar)
+6.792639,49.275979,Bous (Saar)
+6.848156,49.249091,Völklingen (D)
+6.904214,49.249595,Luisenthal(Saar)
+6.957086,49.242167,Saarbrücken-Burbach
+6.991021,49.241065,Saarbrücken Hbf
+6.944314,49.214087,FORBACH (FR)
+7.057638,49.111804,HANWEILER (GR)
+7.00497,49.265758,Jägersfreude
+7.027351,49.277299,Dudweiler
+7.055062,49.299561,Sulzbach (Saar)
+7.078876,49.312078,Sulzbach (Saar) Altenwald
+7.08913,49.320061,Friedrichsthal (Saar)
+7.094341,49.337325,Bildstock
+7.119316,49.352246,Landsweiler-Reden
+7.031132,49.304744,Fischbach-Camphausen
+7.059386,49.324855,Quierschied
+7.065547,49.356029,Merchweiler
+7.085936,49.369521,Wemmetsweiler Rathaus
+7.12934,49.363371,Schiffweiler
+7.048966,49.376422,Illingen(Saar)
+7.034824,49.398897,Wustweiler
+7.012377,49.415386,Dirmingen
+6.967189,49.408657,Eppelborn
+6.94821,49.411024,Bubach
+6.907231,49.408332,Lebach
+7.176655,49.353291,Neunkirchen(Saar) Hbf
+7.226787,49.34956,Neunkirchen(Saar)-Wellesweiler
+7.254456,49.345698,Bexbach
+7.337035,49.328082,Homburg(Saar) Hbf
+7.279127,49.312148,Limbach (b Homburg Saar)
+7.226601,49.286245,Kirkel
+7.157395,49.276737,Rohrbach (Saar)
+7.110814,49.274763,St Ingbert
+7.079065,49.25977,Rentrisch
+7.057083,49.244018,Scheidt (Saar)
+7.049237,49.22794,Schafbrücke
+7.018788,49.230425,Saarbrücken Ost
+7.171309,49.263323,Hassel(Saar)
+7.193441,49.244182,Würzbach(Saar)
+7.258191,49.249192,Blieskastel-Lautzkirchen
+7.282011,49.26189,Bierbach
+7.321916,49.266663,Einöd(Saar)
+8.872671,48.754771,Weil der Stadt Bahnhof
+8.781536,48.983745,Maulbronn West
+8.802691,48.996546,Maulbronn Stadt
+8.813508,48.966571,Oetisheim
+8.846101,48.953192,Mühlacker
+8.921162,48.956588,Illingen (Württ)
+9.018508,48.958916,Sersheim
+9.063158,48.961292,Sachsenheim
+9.137557,48.947933,Bietigheim-Bissingen
+9.125828,48.921605,Tamm(Württ)
+9.147797,48.907359,Asperg
+9.18542,48.891862,Ludwigsburg Pbf
+9.179964,48.862219,Kornwestheim Pbf
+9.199539,48.836034,Stuttgart-Zazenhausen
+9.21586,48.820724,Stuttgart-Münster
+9.231701,48.803938,Stuttgart Ebitzweg
+9.169382,48.813673,Stuttgart-Feuerbach
+9.188026,48.803769,Stuttgart Nord
+9.181635,48.784084,Stuttgart Hbf
+9.166739,48.829415,Stuttgart-Zuffenhausen
+9.217531,48.801377,Stuttgart-Bad Cannstatt
+9.116774,48.737651,Stuttgart-Österfeld
+9.250569,48.779751,Stuttgart-Untertürkheim
+9.873959,48.577852,Amstetten(W) Lokalbahn
+9.267889,48.762013,Stuttgart-Obertürkheim
+9.27583,48.747083,Esslingen-Mettingen
+9.30008,48.73881,Esslingen (Neckar)
+9.327267,48.729876,Oberesslingen
+9.359389,48.724328,Esslingen-Zell
+9.382384,48.720393,Altbach
+9.41081,48.71308,Plochingen
+9.463733,48.707971,Reichenbach an der Fils
+9.526582,48.71612,Ebersbach an der Fils
+9.585528,48.708605,Uhingen
+9.616047,48.710807,Faurndau
+9.651969,48.700027,Göppingen
+8.999075,48.703891,Sindelfingen(Württ)
+9.705147,48.696494,Eislingen (Fils)
+9.737183,48.689398,Salach
+9.76028,48.683641,Süssen
+9.787826,48.661039,Gingen(Fils)
+9.8034,48.640523,Kuchen
+9.821909,48.630766,Geislingen (Steige) West
+9.841941,48.619358,Geislingen (Steige)
+9.872965,48.578328,Amstetten(Württ)
+9.894569,48.550144,Urspring
+9.917377,48.544967,Lonsee
+9.949281,48.520195,Westerstetten
+9.976835,48.480974,Beimerstetten
+9.982227,48.399437,Ulm Hbf
 9.482819,47.651208,Friedrichshafen-Hafen
 9.544837,47.599491,Langenargen
 9.598854,47.594239,Kressbronn
+9.463626,48.706563,Reichenbach a.d. Fils Bahnhof
+9.413898,48.694247,Wernau (Neckar)
+9.373011,48.672961,Wendlingen (Neckar)
+9.416291,48.657764,Kirchheim(Teck)-Ötlingen
+9.443927,48.644258,Kirchheim (Teck)
+9.451788,48.640261,Kirchheim(Teck) Süd
+9.454878,48.616409,Dettingen(Teck)
+9.44776,48.586996,Owen(Teck)
+9.453061,48.573918,Brucken
+9.460555,48.565255,Unterlenningen (D)
+9.470774,48.554385,Oberlenningen
+9.113226,48.726279,Stuttgart-Vaihingen
+9.142866,48.696506,Leinfelden
+9.156959,48.770255,Stuttgart-Schwabstrasse
+9.166273,48.772768,Stuttgart Feuersee
+9.172925,48.776229,Stuttgart Stadtmitte
+9.179808,48.782999,Stuttgart Hbf (Tief)
+9.241595,48.792173,Stuttgart-Neckarpark
+9.108328,48.717902,Stuttgart-Rohr
+8.982644,48.679267,Hulb
+9.004128,48.687758,Böblingen
+9.094328,48.82208,Weilimdorf
+8.94426,48.662682,Ehningen(b Böblingen)
+8.909113,48.641122,Gärtringen
+8.889796,48.620278,Nufringen
+8.862662,48.593991,Herrenberg
+8.850308,48.559661,Gäufelden
+8.827662,48.523552,Bondorf (b Herrenberg)
+8.809857,48.489534,Ergenzingen
+8.782236,48.479952,Eutingen im Gäu
+8.688982,48.441471,Horb
+8.636748,48.366485,Sulz (Neckar)
+8.575514,48.295669,Oberndorf (Neckar)
+8.639295,48.165304,Rottweil
+8.713033,48.095845,Aldingen(b Spaichingen)
+8.740147,48.068987,Spaichingen
 8.798542,47.980579,Tuttlingen
+9.152505,48.833824,Neuwirtshaus Porscheplatz
+9.121168,48.826416,Korntal
+9.06705,48.823611,Ditzingen
+9.025315,48.814986,Höfingen
+9.003853,48.799646,Leonberg
+8.95955,48.790017,Rutesheim
+8.93235,48.775121,Renningen
+8.904505,48.771755,Malmsheim
+8.872806,48.755483,Weil der Stadt
+8.965454,48.736106,Magstadt
+8.969921,48.722331,Maichingen
+8.551089,48.755718,Bad Wildbad Bf
+8.600857,48.849147,Neuenbürg(Enz)
+8.724052,48.482485,Hochdorf (b Horb)
+8.589439,48.444404,Bittelbronn
+8.547754,48.453711,Schopfloch (b Freudenstadt)
+8.494955,48.472106,Dornstetten
+8.428803,48.460322,Freudenstadt Hbf
+8.410694,48.467566,Freudenstadt Stadt
+8.799804,48.933883,Enzberg
+8.769755,48.920281,Niefern
+8.743772,48.909846,Eutingen (Baden)
+8.703099,48.894152,Pforzheim Hbf
+8.67222,48.914427,Ispringen
+8.63856,48.930657,Ersingen
+8.620498,48.948674,Bilfingen
+8.608931,48.962584,Königsbach (Baden)
+8.572415,48.953862,Wilferdingen-Singen
+9.234858,48.806423,Stuttgart Nürnberger Str.
+9.248327,48.81527,Stuttgart-Sommerrain
+9.269978,48.820049,Fellbach
+9.299882,48.826124,Waiblingen
+9.319344,48.81554,Rommelshausen
+9.35245,48.811924,Stetten-Beinstein
+9.370228,48.813153,Endersbach
+9.386029,48.810293,Beutelsbach
+9.420029,48.81036,Grunbach
+9.439753,48.805203,Geradstetten
+9.480994,48.798432,Winterbach(b Schorndorf)
+9.501991,48.800301,Weiler(Rems)
+9.52631,48.80715,Schorndorf
+9.573734,48.804956,Urbach (b Schorndorf)
+9.595853,48.796684,Plüderhausen
+9.637927,48.789185,Waldhausen (b Schorndorf)
+9.695761,48.797906,Lorch (Württ)
+9.787795,48.801011,Schwäbisch Gmünd
+9.912807,48.822439,Böbingen (Rems)
+9.960316,48.825289,Mögglingen (b Gmünd)
+10.096271,48.841013,Aalen
+10.103645,48.858615,Wasseralfingen
+10.114407,48.872692,Hofen (b Aalen)
+10.128254,48.894221,Goldshöfe
+10.183653,48.881409,Westhausen
+10.236563,48.868885,Lauchheim
+10.317193,48.85613,Aufhausen(Württ)
+10.351707,48.855153,Bopfingen
+10.401823,48.838365,Trochtelfingen (Bopf)
+10.436925,48.84903,Pflaumloch
+9.02043,48.69691,Goldberg(Württ)
+9.324715,48.859312,Neustadt-Hohenacker
+9.354943,48.86834,Schwaikheim
+9.39229,48.879583,Winnenden
+9.415401,48.903368,Nellmersbach
+9.41999,48.926132,Maubach
+9.425989,48.942676,Backnang
+9.462785,48.981518,Oppenweiler (Württ)
+9.500409,48.999461,Sulzbach (Murr)
+9.57777,48.982757,Murrhardt
+9.642498,48.975445,Fornsbach (D)
+9.700763,48.987346,Fichtenberg
+9.753892,49.003822,Gaildorf West
+9.180233,48.909209,Favoritepark
+9.197796,48.930107,Freiberg (Neckar)
+9.244504,48.943614,Benningen (Neckar)
+9.264452,48.943685,Marbach (Neckar)
+9.299405,48.948229,Erdmannhausen
+9.329056,48.939161,Kirchberg (Murr)
+9.369932,48.928647,Burgstall(Murr)
+9.136645,48.997723,Besigheim
+9.152118,49.010941,Walheim (Württ)
+9.150903,49.037646,Kirchheim (Neckar)
+9.146136,49.076514,Lauffen (Neckar)
+9.148811,49.109384,Nordheim (Württ)
+9.207715,49.143306,Heilbronn Hbf
+9.220598,49.151601,Heilbronn Sülmertor
+9.220068,49.188973,Neckarsulm
+9.211549,49.217753,Bad Friedrichshall-Kochendorf
+9.199771,49.231571,Bad Friedrichshall-Jagstfeld
+9.222779,49.265104,Untergriesheim
+9.259824,49.281494,Herbolzheim (Jagst)
+9.27082,49.288367,Neudenau
+9.305336,49.297435,Siglingen
+9.329117,49.291657,Züttlingen
+9.357979,49.321107,Möckmühl
+9.341831,49.360833,Roigheim
+9.380518,49.378762,Sennfeld
+9.395127,49.403123,Adelsheim Ost
+9.287024,49.147997,Weinsberg
+9.358868,49.142422,Willsbach
+9.440302,49.172741,Bretzfeld
+9.502705,49.203214,Öhringen Hbf
+9.585454,49.205945,Neuenstein
+9.658699,49.202537,Waldenburg (Württ)
+9.733359,49.10821,Schwäbisch Hall
+9.767373,49.096732,Schwäbisch Hall-Hessental
+9.936645,49.152317,Eckartshausen-Ilshofen
+10.064326,49.137872,Crailsheim
+10.078155,49.178443,Satteldorf
+10.030336,49.249393,Rot am See
+9.96768,49.296236,Blaufelden
+9.105398,48.745837,Stuttgart-Universität
+9.169164,48.692152,Echterdingen
+9.19263,48.690648,Stuttgart Flughafen
+9.974904,49.346916,Schrozberg
+9.915079,49.403573,Niederstetten
+9.9231,49.455421,Laudenbach (Württ)
+9.905718,49.478463,Weikersheim
+9.873427,49.473094,Elpersheim
+9.835418,49.478264,Markelsheim
+9.812535,49.493425,Igersheim
+9.771662,49.493647,Bad Mergentheim
+9.743113,49.513025,Edelfingen
+9.422692,49.429657,Osterburken
+9.471425,49.457583,Rosenberg(Baden)
+9.538015,49.501732,Eubigheim
+9.640048,49.485596,Boxberg-Wölchingen
+9.724669,49.546022,Königshofen (Baden)
+9.709512,49.565385,Lauda
+9.710612,49.580886,Gerlachsheim
+9.745447,49.604933,Grünsfeld
+9.79051,49.595355,Zimmern(Main-Tauber)
+9.846243,49.618406,Wittighausen
+9.854584,49.634319,Gaubüttelbrunn
+9.857713,49.656749,Kirchheim (Unterfr)
+9.903994,49.686941,Geroldshausen
+9.683508,49.598233,Distelhausen
+9.658294,49.623632,Tauberbischofsheim
+9.633235,49.663812,Hochhausen(Tauber)
+9.59558,49.698297,Gamburg (Tauber)
+9.543516,49.715144,Bronnbach (Tauber)
+9.527543,49.728514,Reicholzheim
+9.513095,49.762025,Wertheim
+9.499932,49.786182,Wertheim Glashütte
+9.613916,49.701699,Niklashausen
+9.674912,49.607964,Dittigheim
+8.957632,48.948118,Vaihingen (Enz)
+9.127335,48.705193,Oberaichen
 7.562756,47.811483,Neuenburg(Baden)
+7.887939,49.550606,Münchweiler(Alsenz)
+8.427768,49.5201,Ludwigshafen(Rhein) BASF Nord
+8.291797,49.038934,Maximiliansau West
+9.105426,48.745831,Stuttgart Universität
+8.660151,48.467796,Horb-Altheim Heiligenfeld
+8.432073,49.510038,Ludwigshafen(Rhein) BASF Mitte
+8.039369,49.044675,Steinfeld(Pfalz)
+7.999224,49.032686,Schweighofen
+8.130696,49.120844,Steinweiler
+6.891561,49.407169,Lebach-Jabach
 9.162853,47.769101,Überlingen
+8.574507,49.110346,Bruchsal-Bildungszentrum
+8.494096,49.177958,Graben-Neudorf Nord
+8.190044,49.509491,Herxheim/Berg
+8.39611,48.993707,Karlsruhe-Albtalbf
+7.808098,48.148447,Riegel-Malterdingen NE
+8.963686,49.296035,Neckarbischofsheim Stadt
+8.995621,49.278376,Neckarbischofsheim Helmhof
+9.011964,49.269021,Untergimpern
+9.044019,49.255404,Obergimpern
+9.087386,49.271227,Siegelsbach
+9.086804,49.291132,Hüffenhardt
+8.890152,49.320237,Neidenstein
+8.919354,49.300941,Waibstadt
+8.867796,49.323982,Eschelbronn
+8.97513,49.320089,Helmstadt(Baden)
+8.990838,49.350097,Aglasterhausen
+8.468689,49.479055,Mannheim Hbf Bahnhofsvorplatz
+9.300733,48.82611,Waiblingen Bahnhof
 9.272623,47.692162,Meersburg(Bodensee)
+8.170632,49.460577,Bad Dürkheim Bahnhof
+8.433231,49.477737,Ludwigshafen(Rhein) Hbf (Tram)
 7.636695,47.586825,Weil am Rhein Gartenstadt
 7.646001,47.586809,Weil am Rhein Pfädlistrasse
+8.195538,48.975292,LAUTERBOURG (FR)
+8.665506,49.551599,Weinheim(Bgstr) Luisenstrasse
+9.319383,48.815531,Rommelshausen Bahnhof
+7.777208,49.148557,Dahn (D) Süd
+7.801957,49.114704,Bruchweiler (D)
+7.750568,49.197498,Hinterweidenthal-Ort
+7.771283,49.154556,Dahn (D)
 8.827046,47.760737,Singen (Htw)-Landesgartenschau
+9.697115,49.137249,Wackershofen
+6.635226,49.443478,Merzig(Saar)-Stadtmitte
+7.955192,48.459784,Offenburg Kreisschulzentrum
 9.183919,47.701376,Mainau Haupteingang (Bus)
+8.279421,49.03488,Maximiliansau-Im Rüsten
+8.238217,48.992129,Neuburg(Rhein)
+8.212761,48.980676,Berg (Pfalz)
+9.217709,48.676493,Filderstadt (D)
+7.983562,49.516578,Eiswoog
+8.351408,48.644846,Raumünzbach
+8.421419,48.467406,Freudenstadt Schulzentrum/Bad
+8.434941,48.464967,Freudenstadt Industrie
+8.860143,48.95634,Mühlacker Rösslesweg
 7.655224,47.597713,Lörrach Dammstrasse
 7.661196,47.607961,Lörrach Museum/Burghof
+8.419263,49.333592,Speyer Nord/West
+8.452152,49.479005,Ludwigshafen(Rhein) Mitte
+8.688749,49.398324,Heidelberg Weststadt/Südstadt
+8.774913,49.409995,Heidelberg-Orthopädie
+8.802954,49.392391,Neckargemünd Altstadt
+9.134042,49.34677,Mosbach(Baden) West
+11.555371,48.140094,München Hbf Gl. 5-10
+9.115471,49.237445,Bad Rappenau Busbahnhof
+8.349558,49.522649,Frankenthal Süd
+8.35714,49.841354,Dienheim
+8.215649,48.86049,Rastatt Bahnhof Ost
 9.483197,47.650344,Friedrichshafen Hafen (Schiff)
+7.093916,49.32716,Friedrichsthal(Saar) Mitte
+11.045359,49.434293,Nürnberg Schweinau (U)
+8.251944,49.055109,Wörth(Rhein) Mozartstrasse
+9.123744,48.955288,Ellental (D)
 8.435303,47.665327,Trasadingen Abzw. Bahnhof
+9.208356,49.142594,Heilbronn Bahnhofsvorplatz
 8.363654,47.662088,Wutöschingen
 9.162847,47.677479,Konstanz-Fürstenberg
+10.971202,48.274282,Mering-St. Afra
+10.061505,49.209274,Wallhausen(Württ)
+7.049984,49.369979,Gennweiler (D)
+6.651914,49.757636,Trier-Nord Nells Park
+8.428815,48.460326,Freudenstadt Stadtbhf./ZOB
+8.181674,48.284928,Hausach Bahnhof
 7.801715,47.645541,Schopfheim-West
 7.672569,47.624683,Lörrach Schwarzwaldstrasse
 8.308102,47.632775,Lauchringen West
+9.526919,49.201961,Öhringen-Cappel
+7.548373,49.456368,Miesenbach
 7.633441,47.569473,Riehen Niederholz
 8.396653,47.693731,Eggingen
+10.186253,47.98459,Memmingen Bahnhof
+9.267889,48.762013,Stuttgart-Obertürkheim (Bus)
+9.91289,49.731129,Reichenberg(Unterfranken)
 7.841291,47.996683,Freiburg (D) Hauptbhf/ZOB (1)
+8.932027,48.762674,Renningen-Süd
+6.944932,49.243611,Burbach Mitte
+8.942274,49.307098,Neckarbischofsheim Nord
+7.849564,49.199169,Hauenstein(Pfalz)-Mitte
+8.379305,49.219876,Germersheim Mitte
+8.157061,49.341553,Neustadt (Weinstr) Süd
+7.937192,49.208725,Annweiler-Sarnstall
+8.460747,48.475399,Grüntal-Wittlensweiler
+8.56327,49.141181,Bruchsal Am Mantel
+8.589941,49.135443,Bruchsal Sportzentrum
+8.979257,48.72736,Maichingen Nord
+11.592709,48.087034,München Hbf Nord
+11.549859,48.142362,München ZOB (Hackerbrücke)
+7.754959,49.165954,Moosbachtal
+8.676127,49.403792,Heidelberg Hbf Vorplatz
+8.462298,49.00173,Karlsruhe-Durlach Albtalbf.
+8.476413,49.108629,Friedrichstal(Baden) Nord (1)
+8.476667,49.109268,Friedrichstal(Baden) Nord (2)
 7.8232,47.641219,Schopfheim West
 8.840001,47.762779,Singen (Htw) Landesgartenschau
 9.146843,47.692563,Konstanz-Wollmatingen
 8.83334,47.766663,Singen (Htw) Industriegebiet
 9.200712,47.705845,Mainau (Bodensee)
 9.160763,47.765812,Überlingen Hafen
+9.526681,48.715854,Ebersbach an der Fils Bahnhof
+10.578392,47.148243,Landeck-Zams
 9.604102,47.240978,Feldkirch
 9.520708,47.180908,Forst (FL) Hilti
 9.54163,47.200203,Nendeln
 9.5078,47.168293,Schaan-Vaduz
+10.507812,46.87558,Nauders Bergkastelbahn
+10.661594,47.07693,Prutz Postamt
+10.510876,46.952804,Pfunds Kajetansbrücke
+10.489534,46.930201,Nauders Hochfinstermünz
+10.498912,46.894307,Nauders Unterdorf
+10.501688,46.891564,Nauders Dorf
+10.501467,46.888164,Nauders Mühle
 9.681001,47.364709,Hohenems
 9.738808,47.417691,Dornbirn
 9.739627,47.503003,Bregenz
 9.726722,47.413216,Dornbirn Schoren
 9.748294,47.506117,Bregenz Hafen
+10.65282,47.053783,Ried i Oberinntal Gemeindeamt
+10.578132,47.148618,Landeck-Zams Busbahnhof
 9.739631,47.503003,Bregenz Busbahnhof
 8.264762,46.064161,Villadossola
 8.260674,46.043537,Pallanzeno
 8.261284,46.024318,Piedimulera
 8.277321,46.00972,Pieve Vergonte
+8.387894,45.955777,Ornavasso
+8.428334,45.934107,Gravellona Toce
+8.41397,45.898115,Omegna-Crusinaldo
+8.413183,45.871971,Omegna
+7.322431,45.734207,Aosta
 8.296239,46.115293,Domodossola (I)
 8.294864,46.005791,Vogogna Ossola
 8.327129,46.002285,Premosello-Chiovenda
+8.372185,45.993757,Cuzzago
+8.531633,45.884528,Stresa
+8.559132,45.755494,Arona
+8.735784,45.995479,Luino (I)
+8.711088,45.627236,Malpensa Aeroporto/Airport
+8.901126,45.902591,Porto Ceresio
+8.834581,45.819768,Varese
+9.072714,45.808971,Como S. Giovanni
+9.273683,45.574824,Monza
 9.405806,46.31871,Chiavenna
+10.148182,46.176455,Tirano FS
+9.127337,45.423475,Milano Porta Genova
+9.187297,45.484437,Milano Porta Garibaldi
+9.187906,45.483638,Milano Porta Garibali Passante
+9.204714,45.486385,Milano Centrale
+9.237222,45.485071,Milano Lambrate
+10.54954,46.683977,Mals/Malles
+8.833523,45.818354,Varese Nord
+9.085173,45.810819,Como Nord Lago
+8.71112,45.627214,Malpensa Aeroporto T1
+9.073138,45.809204,Como S. Giovanni (Busbahnhof)
 7.589551,47.547405,Basel SBB
 7.572512,47.570296,Basel St. Johann
 7.662306,47.531503,Schweizerhalle
@@ -782,6 +1769,7 @@ Longitude,Latitude,Remark
 7.892686,47.488127,Hemmiken Dorf
 7.881433,47.451376,Tecknau Dorf
 6.06574,46.221261,Zimeysa
+5.999996,46.17866,La Plaine
 6.017554,46.187772,Russin
 6.037509,46.214221,Satigny
 6.076912,46.222332,Meyrin
@@ -1164,6 +2152,7 @@ Longitude,Latitude,Remark
 7.655073,46.295718,Feithieren Unter
 7.658349,46.297142,Briannen
 7.65547,46.304146,Gampinen
+7.111331,45.96287,Praz-de-Fort Branche en-Haut
 7.134114,46.033828,Orsières Chez-les-Reuses
 7.165536,46.023762,Commeire
 7.125428,46.003507,Issert
@@ -1277,6 +2266,9 @@ Longitude,Latitude,Remark
 7.748296,46.024473,Zermatt
 7.74868,46.02395,Zermatt GGB
 7.754356,46.004899,Riffelalp
+7.7551,45.992951,Riffelberg
+7.765374,45.984466,Rotenboden
+7.782206,45.983319,Gornergrat
 7.895806,46.084755,Längfluh
 7.89968,46.091989,Spielboden
 8.033213,46.377991,Riederalp Mitte
@@ -1392,7 +2384,18 @@ Longitude,Latitude,Remark
 6.366131,46.498845,Montherod village
 6.318821,46.509211,Gimel Le Prunier
 6.338215,46.484633,Mont-sur-Rolle Les Granges
+7.32505,45.735423,Aosta Autostazione
+7.183315,45.82344,Bosses
+7.195786,45.900594,Bourg-St-Bernard
+7.295171,45.779492,Gignod
+7.207937,45.952073,Bourg-St-Pierre Commune
 7.116428,46.030288,Champex Lac
+7.105122,45.915203,Ferret
+7.09856,45.934074,La Fouly VS
+7.170779,45.868909,Le Grand-St-Bernard Hospice
+7.184016,45.993221,Liddes
+7.125317,45.989249,Praz-de-Fort
+7.212414,45.824376,St-Oyen
 6.855272,46.237128,Morgins poste
 6.83512,46.183947,Les Crosets télécabine
 6.336668,46.55803,Berolle église
@@ -2921,10 +3924,13 @@ Longitude,Latitude,Remark
 7.09295,46.04641,Champex d'en-Bas
 7.102834,46.035736,Champex d'en-Haut
 7.168885,46.009971,Liddes Fontaine
+7.106811,45.955328,Prayon
 7.403744,46.08391,Dixence Le Chargeur
 7.404457,46.181197,Hérémence
 7.396999,46.112603,Pralong (Val d'Hérémence)
 7.386141,46.185561,Les Collons Office Tourisme
+7.262931,45.80304,La Clusaz (I)
+7.229902,45.8202,Etroubles
 7.169803,46.007085,Liddes Rive-Haute
 7.391788,46.15551,Mâche
 7.372598,46.181947,Thyon 2000
@@ -3277,8 +4283,21 @@ Longitude,Latitude,Remark
 8.971664,46.407864,Semione Municipio
 8.952159,46.48687,Torre Paese
 8.946874,46.005506,Lugano
+8.946275,45.988951,Lugano-Paradiso
+8.948352,45.955723,Melide
+8.973936,45.932443,Maroggia-Melano
+8.978893,45.902847,Capolago-Riva S. Vitale
+8.978602,45.869121,Mendrisio
+9.005034,45.846757,Balerna
+9.03144,45.832179,Chiasso
 8.792817,46.175779,Madonna del Sasso
+8.979757,45.903339,Capolago Lago
+8.945359,45.990348,Lugano-Paradiso MS
+8.946172,45.97677,Monte San Salvatore
 8.970191,46.006424,Cassarate
+8.988878,45.88638,S. Nicolao
+9.00114,45.911114,Bellavista
+9.019005,45.928103,Generoso Vetta
 8.972324,46.006962,Suvigliana
 8.975118,46.008534,Albonago
 8.980481,46.01098,Aldesago
@@ -3289,7 +4308,13 @@ Longitude,Latitude,Remark
 8.966512,46.066008,Tesserete Stazione
 8.904568,46.008521,Serocca
 8.947595,46.004489,Lugano FLP
+8.890576,45.983412,Magliaso Paese
+8.92445,45.993263,Cappella-Agnuzzo
 8.908886,46.012109,Bioggio
+8.900913,45.995937,Agno
+8.884115,45.981642,Magliaso
+8.876282,45.977739,Caslano
+8.860479,45.969995,Ponte Tresa
 8.93483,46.000395,Sorengo
 8.801358,46.172428,Locarno
 8.850221,46.177469,Tenero
@@ -3300,6 +4325,7 @@ Longitude,Latitude,Remark
 8.807053,46.135166,S. Nazzaro
 8.776532,46.116998,Ranzo-S. Abbondio
 8.784962,46.122044,Gerra (Gambarogno)
+8.737434,45.996836,Luino FFS
 8.88532,46.175513,Riazzino
 8.973924,46.160442,S. Antonino
 8.718887,46.133105,Porto Ronco Crodolo Verbano
@@ -3336,18 +4362,36 @@ Longitude,Latitude,Remark
 8.630936,46.161194,Palagnedra
 8.622501,46.15853,Borgnone-Cadanza
 8.611004,46.154871,Camedo
+8.562627,45.759309,Arona NLM
+8.508471,45.908545,Baveno NLM
 8.686193,46.021949,Cannero NLM
+8.575491,45.933706,Intra NLM
+8.537612,45.909343,Isola Madre NLM
+8.549503,45.920606,Pallanza NLM
 8.804303,46.133355,S. Nazzaro NLM
 8.843587,46.173836,Tenero NLM
+8.54126,45.885737,Stresa NLM
+8.519855,45.899008,Isola Pescatori NLM
 8.741942,46.003441,Luino NLM
 8.710918,46.118216,Brissago NLM
+8.954708,45.952795,Melide Swissminiatur
+8.934507,45.924446,Brusino Arsizio Funivia
+8.858836,45.965356,Ponte Tresa (Italia) SNL
 9.019724,46.015033,Gandria Confine
 8.993297,46.003948,Grotto Elvezia
+8.979986,45.985165,S. Rocco
+8.993405,45.990037,Grotto Pescatori
+9.01697,45.998364,Cantine di Gandria
 8.432244,46.587744,Sidelenbach (Furka)
 8.951555,46.002969,Lugano Centrale
 9.003956,46.005546,Gandria SNL
+8.970393,45.968939,Campione
+8.946756,45.993263,Lugano-Paradiso SNL
 8.952793,46.003393,Lugano Giardino
 9.118798,46.033897,Porlezza
+8.937984,45.929933,Brusino Arsizio
+8.917147,45.922741,Morcote SNL
+8.900672,45.903937,Porto Ceresio SNL
 8.971489,46.015871,Viganello San Siro
 8.974121,46.019461,Pregassona Paese
 8.97822,46.032019,Soragno
@@ -3360,6 +4404,7 @@ Longitude,Latitude,Remark
 8.767369,46.154569,Ascona NLM
 8.788589,46.124817,Gerra (Gambarogno) NLM
 8.770044,46.113044,Ranzo
+8.524558,45.894446,Isola Bella
 8.734715,46.132601,Isole di Brissago
 8.490812,46.12975,Zornasco
 8.700619,46.063371,Cannobio NLM
@@ -3395,6 +4440,10 @@ Longitude,Latitude,Remark
 8.836922,46.138677,Scesana
 8.810432,46.132129,Vairano Paese
 8.843546,46.144101,Vira (Gambarogno) Paese
+8.987074,45.933316,Rovio Paese
+8.983765,45.936213,Rovio Ala Materna
+8.985829,45.943095,Rovio Selvone
+8.989631,45.954838,Arogno S. Michele
 8.851588,46.184712,Scalate
 8.846956,46.190429,Gordemo
 8.850718,46.195133,Diga Verzasca
@@ -3422,8 +4471,12 @@ Longitude,Latitude,Remark
 8.839524,46.188578,Contra Paese
 8.850846,46.180079,Tenero Posta
 8.858518,46.181728,Gordola Posta
+8.964286,45.949822,Bissone SNL
+8.942572,45.950511,Melide SNL
 9.032676,46.021221,Oria
 9.083397,46.007139,Osteno
+8.984739,45.987592,Caprino
+9.021093,45.999422,Museo doganale svizzero
 8.642356,46.881341,Altdorf UR Post
 8.68181,46.876781,Brügg (Bürglen UR)
 8.677422,46.877098,Bürglen UR Loreto
@@ -3440,6 +4493,10 @@ Longitude,Latitude,Remark
 8.433346,47.031655,Weggis Schiffstation
 8.526461,46.990877,Gersau Schiffstation
 8.451469,47.091174,Immensee Hohle Gasse
+8.980868,45.906167,Capolago SNL
+8.883932,45.96984,Caslano SNL
+8.904189,45.948192,Figino SNL
+8.859818,45.967394,Ponte Tresa SNL
 9.053596,46.024198,S. Mamete SNL
 7.574852,46.251539,Vissoie Les Barmes
 7.571201,46.173677,Grimentz Le Boccard
@@ -3511,19 +4568,24 @@ Longitude,Latitude,Remark
 8.13613,46.393175,Ernen Niederernen
 8.17785,46.422633,Steinhaus Dorfplatz
 8.153383,46.371459,Steinmatten
+8.912446,45.96741,Agra Paese
 8.817579,46.011987,Astano Paese
 8.837123,46.872271,Balm (Klausen)
 8.38835,46.576739,Belvedere Furka
 8.890026,46.021522,Cademario Kurhaus
 8.895499,46.021442,Cademario Posta
+8.936054,45.957417,Carona Paese
+8.908422,45.951628,Figino Posta
 8.421609,46.576231,Furkapass Hotel Furkablick
 8.479596,46.58966,Galenstock (Furka)
 8.550338,46.726816,Meien Aderbogen
 8.529534,46.410279,S. Carlo (Bavona) Funivia
+8.879677,45.987079,Neggio Paese
 8.857567,46.009951,Novaggio Posta
 8.781569,46.493496,Osco Paese
 9.125699,46.372826,Rossa
 8.566744,46.555389,Gotthard Passhöhe
+8.928819,45.912034,Serpiano Albergo
 8.787765,46.34993,Sonogno
 8.728742,46.872528,Spiringen Post
 8.769019,46.863619,Unterschächen Post
@@ -3533,6 +4595,7 @@ Longitude,Latitude,Remark
 8.690058,46.768877,Bristen Dorf
 8.499186,46.649026,Göscheneralp Dammagletscher
 8.561566,46.910545,Isenthal Post
+8.869244,45.985944,Pura Paese
 8.493123,46.31626,Bosco/Gurin Paese
 8.663084,46.443644,Fusio Paese
 8.843854,46.009934,Banco Paese
@@ -3541,7 +4604,12 @@ Longitude,Latitude,Remark
 8.890363,46.002147,Cimo Paese
 8.861069,46.002125,Curio Paese
 8.881771,46.005298,Iseo Paese
+8.833757,45.987163,Monteggio Madonna del Piano
 8.856793,46.023906,Miglieglia Paese
+8.820327,45.989443,Molinazzo di Monteggio Posta
+8.809464,45.990628,Ponte Cremenaga Paese
+8.792062,45.999377,Termine Paese
+8.888022,45.995168,Vernate Paese
 8.954731,46.036936,Comano Paese
 8.499826,46.500004,Ronco (Bedretto)
 8.985204,46.129049,Isone Paese
@@ -3554,8 +4622,10 @@ Longitude,Latitude,Remark
 8.680066,46.273016,Giumaglio
 8.789383,46.173633,Monti della Trinità
 8.796648,46.177766,Orselina Posta
+8.735776,45.995478,Luino
 8.734393,46.044985,Maccagno
 8.734531,46.105262,Pino-Tronzano
+8.916061,45.922629,Morcote Piazza Grande
 8.618271,46.518296,Nante
 8.561141,46.518496,Fontana Paese
 8.537988,46.512371,Ossasco (Bedretto)
@@ -3583,6 +4653,7 @@ Longitude,Latitude,Remark
 8.931251,46.017294,Breganzona Crespera
 8.399174,47.088052,Udligenswil Frohsinn
 8.711041,46.766423,Golzern Talstation Seilbahn
+8.984962,45.924267,Melano Cappelletta per Rovio
 8.924856,46.124057,Rivera-Bironico Posta/FFS
 8.41514,46.572742,Furka Passhöhe
 8.866792,46.180634,Gordola Motto
@@ -3616,7 +4687,9 @@ Longitude,Latitude,Remark
 9.222588,46.367806,Soazza
 9.233675,46.38982,Mesocco Stazione
 8.969157,46.115179,Medeglia Paese
+8.987711,45.958526,Arogno Paese
 8.930854,46.065182,Taverne Paese
+8.937734,45.849251,Stabio Posta
 8.674932,46.517531,Piotta Funicolare
 8.801742,46.477727,Faido Posta
 8.844351,46.42336,Chironico Paese
@@ -3631,6 +4704,7 @@ Longitude,Latitude,Remark
 9.157791,46.268437,Verdabbio Piazza
 9.225257,46.421266,Pian S. Giacomo Paese
 8.711123,46.510861,Quinto Paese
+8.949541,45.861913,Ligornetto Posta
 8.674511,46.513334,Piotta Posta
 8.92182,46.897025,Urnerboden Sonne
 8.9282,46.900838,Urnerboden Argseeli
@@ -5211,6 +6285,16 @@ Longitude,Latitude,Remark
 9.938357,46.58708,Madulain
 9.961463,46.599954,Zuoz
 9.981823,46.611939,S-chanf
+10.021923,46.638532,Cinuos-chel-Brail
+10.059874,46.670372,Carolina
+10.089941,46.697668,Zernez
+10.079326,46.75208,Susch
+10.110967,46.76957,Lavin
+10.150534,46.771517,Guarda
+10.201048,46.773546,Ardez
+10.25799,46.787653,Ftan Baraigla
+10.286214,46.793776,Scuol-Tarasp
+10.096581,46.763399,Sagliains
 9.837631,46.498819,St. Moritz SMBB
 9.835244,46.501425,Chantarella
 9.818434,46.508007,Corviglia (Talstat. Piz Nair)
@@ -5218,6 +6302,8 @@ Longitude,Latitude,Remark
 9.882872,46.509023,Punt Muragl BEST-mmb
 9.90188,46.521681,Muottas Muragl
 9.825115,46.516731,Marguns (Val Saluver)
+10.289166,46.795304,Scuol PSFS
+10.272526,46.810868,Motta Naluns
 9.663151,46.786402,Arosa (Mittelstation)Weisshorn
 9.5644,46.650062,Mon Dorf
 9.572063,46.609856,Parsonz
@@ -5231,10 +6317,24 @@ Longitude,Latitude,Remark
 9.905687,46.485634,Surovas
 9.940414,46.450718,Morteratsch
 9.9694,46.444846,Bernina Suot
+10.019711,46.408763,Ospizio Bernina
+10.031149,46.37475,Alp Grüm
+10.044146,46.364317,Cavaglia
+10.051381,46.345267,Cadera
+10.055093,46.337873,Privilasco
+10.054334,46.324803,Poschiavo
+10.063212,46.311187,Li Curt
+10.077861,46.29216,Le Prese
+10.099561,46.273119,Miralago
+10.125279,46.259307,Brusio
+10.131705,46.244671,Campascio
+10.142072,46.233217,Campocologno
+10.166771,46.215161,Tirano
 9.983528,46.440984,Bernina Diavolezza (Talstat.)
 9.965466,46.412406,Diavolezza
 9.99194,46.436609,Bernina Lagalb
 9.994784,46.436716,Curtinatsch
+10.021954,46.429908,Piz Lagalb
 9.814015,46.454812,Surlej LSC
 9.823787,46.432458,Murtèl
 9.821408,46.418018,Corvatsch
@@ -5276,6 +6376,7 @@ Longitude,Latitude,Remark
 9.484681,46.958252,Vadura Dorf
 9.377809,47.162767,Voralp Kurhaus
 9.29786,47.090111,Flumserberg Tannenheim M.wald
+10.363454,46.816263,Sent Sur En
 9.663622,46.925004,Furna Hinterberg
 9.12302,46.577654,Vals Zervreila
 9.400966,46.692129,Urmein Dorf
@@ -5349,6 +6450,22 @@ Longitude,Latitude,Remark
 9.500377,47.002845,Bad Ragaz Post
 9.543154,47.118261,Triesenberg Post
 9.607514,47.10309,Malbun Jöraboda
+10.418356,46.845153,Strada i. E. spv. Seraplana
+10.30555,46.73057,Scuol Val Mingèr
+10.347551,46.838128,Sent Chavriz Pitschen
+10.360064,46.820238,Crusch
+10.298136,46.767761,Scuol Plan da Funtanas
+10.420116,46.960716,Samnaun-CompatschSpissermühle
+10.303997,46.784356,Scuol San Jon
+10.445258,46.870383,Strada i. E. Sclamischot
+10.334727,46.715403,S-charl
+10.270171,46.782041,Tarasp Sgné
+10.360914,46.829614,Sent Tschern
+10.025358,46.754721,Susch Röven
+10.27801,46.785321,Tarasp Villa Maria
+10.397453,46.959351,Samnaun-Compatsch Abzw. Laret
+10.383414,46.95604,Samnaun-Plan Dorf
+10.37243,46.952307,Samnaun-Ravaisch Dorf
 9.534838,46.928082,Untervaz Dorf
 9.326665,46.854053,Fidaz Bargis
 9.327953,46.834326,Felsbach-Crestasee
@@ -5375,6 +6492,8 @@ Longitude,Latitude,Remark
 8.832264,46.626419,Platta Sogn Gions
 9.410554,46.719751,Sarn Dorf
 9.827785,46.972766,St. Antönien Rüti
+10.30174,46.798356,Scuol Bogn Engiadina
+10.423111,46.86819,Tschlin cumün
 9.119428,46.756408,Obersaxen Affeier Dorf
 9.647928,46.678773,Alvaneu Dorf Dorfplatz
 9.42663,46.602132,Andeer posta
@@ -5384,10 +6503,12 @@ Longitude,Latitude,Remark
 9.604073,46.347937,Borgonovo Villaggio
 9.062593,46.767577,Breil/Brigels posta
 9.716249,46.940986,Buchen im Prättigau Baschär
+10.266806,46.64832,Buffalora P10
 9.665518,46.390158,Casaccia Villaggio
 9.514061,46.333415,Castasegna Vecchia Dogana
 9.813086,46.478195,Champfèr Schulhaus
 9.54372,46.780307,Churwalden Post
+10.401635,46.960089,Samnaun-Compatsch Erlebnisbad
 9.511892,46.473008,Avers Cresta
 9.191861,46.725698,Cumbel vitg
 9.591602,46.607319,Cunter vischnanca
@@ -5397,6 +6518,9 @@ Longitude,Latitude,Remark
 9.287575,46.836777,Flims Dorf Post
 9.289238,46.826421,Flims Waldhaus Caumasee
 9.947105,46.750573,Flüela Ospiz
+10.247046,46.792901,Ftan cumün
+10.372649,46.608229,Fuldera cumün
+10.210298,46.664057,Il Fuorn P6
 9.676172,46.935234,Furna Post
 9.442402,47.203705,Gams Post
 9.444412,47.182346,Grabs Post
@@ -5406,36 +6530,45 @@ Longitude,Latitude,Remark
 9.555765,47.001151,Jenins Rathaus
 9.258113,46.806531,Laax GR posta
 9.202666,46.790036,Ladir vitg
+10.575301,47.148488,Landeck-Zams Busbahnhof
 9.562969,46.685769,Lantsch/Lenz Vischnanca
 9.557672,46.728045,Lenzerheide/Lai Post
 9.136814,46.68327,Lumbrein vitg
 9.531569,47.00704,Maienfeld Post
 9.532638,46.81098,Malix Dorf
 9.695238,46.403645,Maloja Posta
+10.463747,46.884289,Martina cunfin
 9.413575,46.636095,Mathon Dorf
 9.620708,46.523586,Mulegns
+10.445959,46.626156,Müstair posta
 9.100054,46.748828,Obersaxen Meierhof Post
 9.474583,47.098163,Oberschan Museum
 9.371822,46.686419,Obertschappina
 9.149467,47.117582,Obstalden Post
 9.772039,46.928605,Pany Dorf
 9.557651,46.760153,Parpan Post
+10.292949,46.63944,Süsom Givè (Passhöhe)
 9.546996,46.830207,Passugg alte Post
 9.200038,46.716466,Peiden Bogn
 9.498819,46.988656,Pfäfers Postplatz
 9.581153,46.824325,Praden alte Post
 9.556392,46.338211,Promontogno Posta
+10.190024,46.654134,Punt la Drossa P4
 9.745725,46.925484,Putz alte Post
+10.382311,46.834511,Ramosch Plaz
 9.192352,46.784661,Ruschein vitg
 9.813536,46.96958,St. Antönien Platz
 9.17055,46.495987,S. Bernardino Ospizio
 9.192552,46.462078,S. Bernardino Posta
+10.425018,46.602141,Sta. Maria Val Müstair posta
 9.83616,46.48589,St. Moritz Bad Post
 9.64914,46.833208,St. Peter Caflies
 9.315846,46.682297,Safien Platz
+10.362028,46.945003,Samnaun-Dorf Post
 9.600883,46.595517,Savognin posta
 9.672654,46.687947,Schmitten (Albula) Dorf
 9.63924,46.990338,Seewis Dorf Bühelstrasse
+10.336611,46.81719,Sent posta
 9.848096,46.725807,Sertig Dörfli
 9.163199,46.790962,Siat vitg
 9.75735,46.432711,Sils/Segl Baselgia Dotturas
@@ -5444,24 +6577,32 @@ Longitude,Latitude,Remark
 9.537632,46.341287,Soglio Villaggio
 9.320596,46.552655,Splügen Dorf
 9.594148,46.344085,Stampa ufficio turistico
+10.451919,46.527577,Stilfserjoch/Stelvio
+10.432071,46.862222,Strada i. E. Cuncalada
 9.368178,46.569134,Sufers
 9.629334,46.51992,Sur Postautoplatz
 9.30276,47.090076,Flumserberg Tannenheim Post
+10.260363,46.777405,Tarasp Fontana
 9.338478,46.746556,Tenna Post
 9.279439,46.637226,Thalkirch alte Post
 9.616643,46.583265,Tinizong Tga Communala
 9.361551,46.828268,Trin Dorf
 9.342105,46.8341,Trin Mulin
 9.60678,46.81838,Tschiertschen
+10.340507,46.624591,Tschierv plaz
 9.919584,46.787049,Davos Dorf Tschuggen
 9.556066,46.749483,Valbella Dorf
+10.406609,46.600354,Valchava cumün
 9.180535,46.618915,Vals Post
+10.336304,46.851187,Val Sinestra
 9.440133,46.908991,Vättis Post
 9.618482,46.349802,Vicosoprano Helvetia
 9.156117,46.69825,Vignogn
 9.17341,46.717522,Vella posta
 9.45158,47.024614,Vilters Zentrum
+10.485441,46.924897,Vinadi
 9.09882,46.655191,Vrin posta
+10.284076,46.786799,Tarasp Vulpera
 9.408483,47.037447,Mels Waldheim
 9.431197,47.031341,Wangs Post
 9.343161,46.989197,Weisstannen Oberdorf
@@ -5471,6 +6612,7 @@ Longitude,Latitude,Remark
 9.595461,46.669033,Brienz/Brinzauls Dorf
 9.40512,46.319846,Chiavenna Stazione
 9.624671,46.560703,Rona
+10.365332,46.842607,Vnà Jalmèr
 9.482133,46.970382,Valens Post
 9.767656,46.919902,Luzein alte Post
 9.712711,46.94866,Lunden Dorf
@@ -5485,9 +6627,11 @@ Longitude,Latitude,Remark
 9.52171,47.138322,Vaduz Post
 9.337162,46.792468,Versam Post
 9.232227,46.800462,Falera posta
+10.293457,46.794675,Scuol Stradun/Buorcha
 9.14128,47.149013,Amden Post
 9.508627,47.16826,Schaan
 9.173824,47.147267,Arvenbüel Arven
+10.090052,46.698071,Zernez staziun
 7.986386,46.319007,Brig Bahnhofplatz
 7.413727,46.949218,Bern Weyermannshaus (Spw)
 8.517758,47.188488,Baar Neufeld
@@ -5534,18 +6678,23 @@ Longitude,Latitude,Remark
 9.996991,46.619762,S-chanf Marathon
 6.986231,46.3153,Aigle-Parc Aventure
 7.100643,46.353303,Sur-le-Buis
+8.943939,45.849726,Stabio
 8.515186,47.162317,Zug Casino
 6.142724,46.215127,Genève Montbrillant
 9.393429,47.425941,St. Gallen Birnbäumen
 8.592641,47.695305,Beringerfeld
 6.602629,46.52669,Prilly-Malley
 8.479691,47.187894,Steinhausen Rigiblick
+8.983028,45.877652,Mendrisio S. Martino
+10.164383,46.214607,Tirano Stazione bus
 7.926012,46.603153,Sengg (Verzw)
 7.932455,46.598376,In Gassen (Verzw)
 7.703161,47.278644,Niederbipp Industrie
 7.296621,47.073039,Lyss Grien
 7.294587,47.158389,Biel/Bienne Bözingenfeld/Champ
 7.709312,47.284953,Oensingen [Gleis 7-8]
+8.18166,48.284928,Hausach
+7.946718,48.476476,Offenburg
 8.617458,47.679649,Neuhausen Rheinfall
 7.521428,47.208876,Solothurn Allmend
 6.147291,46.446866,St-Cergue Les Cheseaux
@@ -5666,6 +6815,9 @@ Longitude,Latitude,Remark
 7.841506,46.196652,Grächen LGH
 7.74287,46.014772,Zermatt ZBAG-lz
 7.732278,46.001739,Furi
+7.70951,45.991757,Schwarzsee VS
+7.729621,45.939047,Klein Matterhorn
+7.72222,45.971396,Trockener Steg
 7.752262,46.022429,Zermatt ZBAG-zsb
 7.770023,46.017133,Sunnegga ZBAG-zsb
 7.770474,46.016826,Sunnegga ZBAG-lsu
@@ -5811,6 +6963,8 @@ Longitude,Latitude,Remark
 6.887026,46.197014,En Charnet
 8.856234,46.023769,Miglieglia (Funivia)
 8.834854,46.040735,Monte Lema
+8.934437,45.923763,Brusino Arsizio FBS
+8.936302,45.916523,Serpiano FBS
 8.546402,47.376858,Hochschulen
 8.54892,47.385883,Zürich Seilbahn Rigiblick
 8.553414,47.387333,Zürich Rigiblick
@@ -5898,6 +7052,10 @@ Longitude,Latitude,Remark
 9.85297,46.512831,Celerina BEST-lcs
 9.906905,46.490917,Pontresina SPL
 9.921891,46.487801,Alp Languard
+10.24584,46.794893,Ftan Fionas
+10.251323,46.805523,Prui
+10.375224,46.951236,Samnaun-Ravaisch (Bergbahn)
+10.367265,46.970172,Alp Trider Sattel
 8.501272,46.595667,Realp DFB
 8.464628,46.587547,Tiefenbach DFB
 8.428457,46.576208,Furka DFB
@@ -6015,6 +7173,7 @@ Longitude,Latitude,Remark
 7.64632,47.549395,Muttenz Schifflände
 9.263307,46.820197,Laax GR BFL
 8.914007,46.012366,Bioggio Molinazzo
+8.933338,45.996816,Sorengo Laghetto
 6.935917,46.996499,Neuchâtel-Gare
 6.937689,46.994015,Neuchâtel-Université
 6.854085,46.938854,Cortaillod LNM
@@ -6093,6 +7252,7 @@ Longitude,Latitude,Remark
 8.490012,47.459266,Oberhasli Industrie
 8.471448,47.465613,Niederhasli Nassenwil
 9.513066,46.332543,Villa di Chiavenna Dogana
+8.737956,45.997073,Luino Stazione FS (I)
 7.37328,47.280581,Moutier Château
 7.079475,47.425163,Porrentruy Collège Thurmann
 7.071629,47.413679,Porrentruy St-Michel
@@ -10015,6 +11175,7 @@ Longitude,Latitude,Remark
 9.684681,46.463196,Bivio Suracqua
 9.785172,46.46263,Silvaplana Lej Tscheppa
 9.845283,46.497676,St. Moritz
+10.38212,46.831725,Ramosch Fermada
 9.448325,46.777626,Scheid Resgia
 9.444058,46.778421,Oberscheid
 7.564424,46.866468,Münsingen Industrie/USM
@@ -10033,6 +11194,8 @@ Longitude,Latitude,Remark
 9.327131,46.511937,Splügenpass Berghaus
 9.330175,46.505813,Splügenpass ital. Zoll
 9.336771,46.489506,Monte Spluga
+10.150697,46.771621,Guarda staziun
+10.15248,46.775557,Guarda cumün
 9.446031,46.731873,Pratval Dorf
 9.449624,46.734879,Pratval Rietberg
 9.454372,46.738295,Almens
@@ -10111,9 +11274,25 @@ Longitude,Latitude,Remark
 9.575117,46.6283,Salouf Kirche
 9.573297,46.631169,Salouf Pulens
 9.570921,46.639484,Salouf Hof Del
+10.034877,46.656022,Brail
+10.049924,46.669026,Prazet
+10.13484,46.692196,Laschadura
+10.160441,46.678752,Ova Spin
+10.16659,46.679829,Champlönch P1
+10.17059,46.662748,Vallun Chafuol P3
+10.229603,46.660912,Stabelchod P8
+10.308084,46.635522,Tschierv spv. Minschuns
+10.335088,46.626835,Tschierv Biosfera
+10.369792,46.610707,Fuldera d'Aint
+10.380038,46.606247,Fuldera Furom
+10.41858,46.600509,Sta. Maria Val Müstair scoula
+10.432055,46.606565,Sta. Maria Val Müstair Sielva
+10.445615,46.620458,Müstair Somvih
 9.746258,46.628389,Bergün/Bravuogn posta
 9.747025,46.631073,Bergün/Bravuogn staziun
 9.751393,46.633909,Latsch
+10.380263,46.612291,Lü Lüsai
+10.368752,46.623318,Lü cumün
 8.451404,47.372117,Uitikon Roracher
 9.555116,46.719949,Lenzerheide/Lai Gravas
 9.555575,46.715972,Lenzerheide/Lai Resgia
@@ -10187,6 +11366,7 @@ Longitude,Latitude,Remark
 9.558012,46.448669,Avers Podestats Haus
 9.801763,46.642999,Bergün/Bravuogn Tuors Davant
 9.827696,46.645833,Bergün/Bravuogn Tuors Chants
+10.423472,46.858378,Strada i. E. San Niclà
 9.647212,46.981456,Grüsch Oberdorf
 8.462348,47.364933,Waldegg Katholische Kirche
 9.622934,46.970664,Valzeina Geissgaden
@@ -10226,7 +11406,33 @@ Longitude,Latitude,Remark
 9.334456,47.091555,Flums Platten
 9.322306,47.094463,Flumserberg Bergheim Alpenhof
 8.469503,47.358366,Ringlikon Dorf
+10.435903,46.954759,Acla da Fans
+10.26058,46.781054,Tarasp Florins
+10.299936,46.7903,Scuol Gurlaina
+10.334448,46.816723,Sent Sala
+10.320224,46.808432,Scuol Chauennas
 9.841512,46.499628,St. Moritz Kulm
+10.36582,46.818542,Sent Sur En Camping
+10.078201,46.291144,Le Prese Stazione
+10.082016,46.295889,Le Prese Cantone
+10.075983,46.30296,Le Prese Pagnoncini
+10.072341,46.309012,Prada
+10.063475,46.310992,Li Curt Stazione
+10.060968,46.313948,Poschiavo S. Antonio
+10.054516,46.324268,Poschiavo Stazione
+10.060999,46.337727,S. Carlo (Poschiavo) Austrini
+10.060652,46.342379,S. Carlo (Poschiavo) Fermata
+10.063777,46.345466,Raviscé
+10.068922,46.357516,Angeli Custodi
+10.078279,46.359044,Percosta Val dal Teo
+10.076211,46.384457,Pozzulasc Fermata
+10.079927,46.389456,Sfazù Fermata
+10.066745,46.401418,La Rösa
+10.057028,46.409014,Li Mason Fermata
+10.050614,46.411449,La Motta Dogana
+10.022328,46.410711,Ospizio Bernina Albergo
+10.019581,46.408757,Ospizio Bernina Stazione
+10.118709,46.401416,Alp Camp
 9.430405,46.629125,Donat vischnànca
 9.430241,46.637082,Pazen
 9.424511,46.633664,Farden
@@ -10259,7 +11465,14 @@ Longitude,Latitude,Remark
 9.613721,46.669928,Brienz/Brinzauls Belfort
 9.841759,46.809754,Davos Dorf
 9.853322,46.81095,Davos Dorf Stilli
+10.078929,46.749317,Susch Plaz
+10.079552,46.751877,Susch staziun
+10.325804,46.629394,Tschierv Süsom Tschierv
+10.345814,46.622682,Tschierv Orasom
+10.431733,46.589442,Plattatschas
+10.433312,46.54276,Umbrail Schweizer Zoll
 9.123174,47.350129,Oberhelfenschwil Metzwil
+10.287504,46.794113,Scuol-Tarasp staziun
 9.561734,46.673338,Alvaschein Gipsmühle
 9.550901,46.674799,Alvaschein Dorf
 9.563051,46.651311,Mon Abzw.
@@ -10310,6 +11523,8 @@ Longitude,Latitude,Remark
 9.565804,46.898374,Trimmis Platz
 9.575501,46.903547,Says Büel
 9.582292,46.906912,Obersays
+10.124892,46.259091,Brusio Posta
+10.138246,46.253354,Viano Posta
 8.98894,46.743013,Trun casa da scola
 8.990737,46.742719,Trun staziun
 9.000133,46.744489,Darvella
@@ -10485,6 +11700,7 @@ Longitude,Latitude,Remark
 9.504867,47.010133,Bad Ragaz
 8.403032,47.500815,Oberweningen Hüeblistrasse
 9.820599,46.791875,Davos Platz
+10.071788,46.363525,Permunt Fermata
 9.688579,46.967972,Schiers
 9.207678,46.775112,Ilanz/Post
 8.50486,47.606561,Wil ZH Breitenmatt
@@ -10599,11 +11815,65 @@ Longitude,Latitude,Remark
 9.230932,46.396135,Mesocco Nord
 9.230672,46.398892,Mesocco Ponte Anzone
 8.950631,46.002712,Lugano Piazza Rezzonico
+8.943971,45.951688,Melide Piazza Moretti
+8.940483,45.94819,Melide Cantine
+8.93689,45.940852,Melide Villa Magnolia
+8.934739,45.938586,Vico Morcote Colombaio
+8.929807,45.933172,Olivella Lago
+8.922461,45.927107,Morcote Casa per Anziani
+8.909899,45.924528,Morcote Parco Scherrer
+8.907034,45.9273,Morcote Arbostora
+8.903483,45.929047,Morcote Vedo
+8.898327,45.932956,Morcote Burò
+8.899093,45.936509,Morcote La Canva
+8.900767,45.940284,Morcote Cantine
+8.905116,45.948603,Figino Dogana
+8.908371,45.952636,Casoro Paese
+8.911727,45.954131,Barbengo Tassera
+8.916452,45.953826,Barbengo La Cava
+8.91976,45.955924,Cernesio Paese
+8.922774,45.959096,Garaverio Paese
+8.925103,45.967918,Grancia Paese
+8.915232,45.958304,Barbengo Scuole
+8.92204,45.966294,Grancia Molini di Grancia
+8.928705,45.976985,Scairolo Bivio
+8.932705,45.98547,Pambio-Noranco Posta
 8.945475,46.005795,Lugano Stazione Via Sorengo
+8.93961,45.999098,Sorengo Clinica S. Anna
+8.936619,45.996889,Sorengo S. Grato
+8.934023,45.993568,Gentilino Rubiana
+8.93116,45.990799,Gentilino Posta
+8.926402,45.98863,Gentilino S. Abbondio
+8.923595,45.987453,Certenago Paese
+8.920257,45.986201,Montagnola Poporino
+8.918821,45.984178,Montagnola Bellevue
+8.917703,45.98197,Montagnola Paese
+8.916804,45.97877,Montagnola Il Maggio
+8.91619,45.976097,Bigogno Cappella di Bigogno
+8.915319,45.972546,Bigogno Paese
 8.944835,46.006028,Lugano Stazione Piazza Besso
 8.935049,46.002731,Cortivallo Paese
 8.933917,46.002422,Cortivallo Casa Anziani
 8.931626,46.001733,Cremignone Paese
+8.926165,45.99889,Prevagno Paese
+8.923741,45.998517,Muzzano Paese
+8.914661,45.9969,Piodella di Muzzano
+8.91141,45.987397,Cantonetto di Gentilino
+8.907513,45.981177,Montagnola Pianroncate
+8.902522,45.976024,Montagnola Ghiera
+8.898943,45.968585,Carabietta Paese
+8.899996,45.965044,Barbengo Casaccia
+8.901758,45.96001,Barbengo Campagnore
+8.905579,45.954319,Barbengo Cà Rosa
+8.945455,45.987306,Paradiso Calprino
+8.943393,45.985525,Pazzallo Morchino
+8.942454,45.983756,Pazzallo Paese
+8.941839,45.982055,Pazzallo Ai Ronchi
+8.937104,45.975514,Carabbia Al Canvetto
+8.93812,45.972568,Carabbia Paese
+8.939263,45.965787,Carona Ciona
+8.940789,45.963094,Carona Nodivra
+8.938789,45.960251,Carona Bellavista
 8.946747,46.008864,Lugano Genzana
 8.943813,46.013456,Massagno Praccio
 8.941541,46.014404,Massagno Cappella due Mani
@@ -10683,6 +11953,17 @@ Longitude,Latitude,Remark
 8.87355,46.015759,Aranno Flora
 8.877175,46.015119,Aranno Maestà
 8.88091,46.015719,Aranno Prumé
+8.901233,45.996347,Agno Posta/FLP
+8.897449,45.998195,Agno Chiesa
+8.891561,45.99183,Cassina d'Agno Posta
+8.885494,45.987931,Neggio Bivio per Neggio
+8.883883,45.988519,Vernate Guasti di Vernate
+8.887903,45.993586,Vernate Pianca
+8.889466,45.998002,Vernate Bivio per Cimo
+8.886216,45.995695,Vernate Bacino Acqua Potabile
+8.88227,45.994387,Vernate Villa Bischoff
+8.883717,45.981737,Magliaso Stazione
+8.87821,45.98188,Magliasina
 8.858873,46.006021,Novaggio Riveri
 8.855956,46.015523,Novaggio Alla Colombina
 8.878559,46.032366,Breno Ponte di Vello
@@ -10808,6 +12089,7 @@ Longitude,Latitude,Remark
 8.840274,46.136179,Vira (Gambarogno) Edifors
 8.83876,46.130611,Monti di Fosano Oratorio
 8.844453,46.104485,Indemini Monti In Cima Al Pra
+8.93905,45.987185,Paradiso La Sguancia
 8.832788,46.098971,Indemini Pezze
 8.891588,46.179373,Riazzino Al Bosco
 8.89544,46.178604,Riazzino Bugaro
@@ -10839,13 +12121,111 @@ Longitude,Latitude,Remark
 8.76551,46.106899,Caviano Paese
 8.763325,46.104828,Scaiano Casa Lulita
 8.761864,46.103253,Scaiano Paese
+8.978026,45.868355,Mendrisio Stazione
+8.982287,45.868279,Mendrisio Via Motta
+8.987441,45.870169,Mendrisio Borgo
+8.989968,45.869351,Mendrisio Filanda
+8.993247,45.866472,Castel S.Pietro Al Mulino
+8.996439,45.863675,Castel S.Pietro Bv. Corteglia
+9.003006,45.863214,Castel S.PietroPte Loverciano
+9.00893,45.861872,Castel S.Pietro Posta
+9.012266,45.863238,Castel S.Pietro Al Roccolo
+9.012839,45.864355,Castel S.Pietro Obino
+9.023435,45.874948,Campora Chiesa
+9.027491,45.88154,Monte Paese
+9.028548,45.884665,Monte Grotto del Lauro
+9.034855,45.890243,Casima Paese
+8.961947,45.851444,Genestrerio Canova
+8.963761,45.847686,Brusata (Novazzano) Costa
+8.963744,45.84478,Brusata (Novazzano) Nord
+8.962054,45.841411,Brusata (Novazzano) Dogana
+8.964953,45.842883,Brusata (Novazzano) Paese
+8.96915,45.842916,Brusata (Novazzano) Al Gaggio
+8.972475,45.843482,Novazzano Bivio Boscherina
+8.976556,45.841672,Novazzano Casate
+8.980988,45.841341,Novazzano Chiesa
+8.988496,45.842381,Novazzano Moronaccio
+8.991083,45.841886,Novazzano Fercasa
+8.997381,45.840215,Novazzano Ponte Pobbia
+9.005936,45.837775,Balerna Passeggiata
+9.013028,45.835975,Balerna Via Ciseri
+9.017006,45.835091,Chiasso Centro Sportivo
+8.968696,45.857551,Genestrerio Croce Grande
+8.96072,45.855006,Genestrerio Piazza
+8.95641,45.860255,Ligornetto Crocevia Bullani
+8.953626,45.862488,Ligornetto Paese
+8.946059,45.860314,Ligornetto alla Passeggiata
+8.942427,45.85796,S.Pietro Bivio per S.Pietro
+8.938622,45.858659,S. Pietro di Stabio Posta
+8.93945,45.852692,Stabio Municipio
+8.942495,45.851536,Stabio Bagni
+8.934686,45.847016,Stabio Dazio Vecchio
+8.926971,45.845004,Stabio Case Rapelli
+8.920686,45.843459,Stabio Madonnina
+8.915772,45.841697,Gaggiolo Confine (I)
+8.997787,45.868514,Salorino Bivio per Salorino
+8.993291,45.872553,Salorino Municipio
+8.992107,45.873955,Salorino Chiesa
+8.991625,45.87559,Salorino Gruppello
+8.991401,45.876754,Somazzo Ciappelloso
+8.992129,45.877437,Somazzo Paese
+9.007674,45.849033,Balerna Piazza
+8.875166,45.982935,Pura Ai Ronchetti
+8.969521,45.86911,Rancate Cimitero
+8.967234,45.870221,Rancate Posta
+8.961923,45.870518,Rancate Vallechiara
+8.959132,45.872031,Besazio Via Rive
+8.953182,45.872535,Besazio Posta
+8.948606,45.873316,Besazio Farmacia
+8.943637,45.875281,Arzo Posta
+8.946021,45.876266,Arzo San Grato
+8.949181,45.878743,Arzo Bagno Spiaggia
+8.96454,45.95061,Bissone Paese
+8.957459,45.872567,Besazio Fornasella
+8.951372,45.885803,Meride Alla Guana
+8.956307,45.881175,Tremona Gurnaga
+8.950828,45.887546,Meride Campeggio
+8.951417,45.890679,Meride Paese
+8.946465,45.894731,Meride Fontana di Meride
+8.927401,45.908247,Serpiano Casa Doganale
+9.027821,45.861417,Morbio Superiore Lattecaldo
+9.032698,45.857308,Sagno alla Madonnina
+9.037981,45.857422,Sagno Paese
 8.647505,46.406879,Peccia Paese
 8.65103,46.41735,Peccia Corgello
 8.655809,46.423947,Peccia Cambleo
 8.659336,46.430378,Mogno Colonia Pazzalino
 8.662482,46.433115,Mogno Paese
+8.860605,45.969895,Ponte Tresa Stazione
+8.858738,45.967552,Ponte Tresa Dogana
+8.850248,45.973039,Croglio Ronco Regina
+8.847927,45.976073,Croglio Madonnone
+8.843819,45.981433,Barico Bivio per Barico
+8.838342,45.984767,Croglio Peschiera
+8.826503,45.988647,Molinazzo di Monteggio Lisora
+8.817613,45.990826,Molinazzo di MonteggioRessega
+8.796348,45.993136,Ponte Cremenaga Roncaccio
+8.791719,45.994388,Fornasette Villaggio vacanze
+8.789766,45.992135,Fornasette Dogana Svizzera
+8.821699,45.991603,Molinazzo di MonteggioRamello
+8.822908,45.993496,Monteggio Bruciata
+8.823565,45.994972,Sessa Tortura
+8.819075,45.999652,Sessa Piazza
+8.816511,45.999854,Sessa S. Maria di Corte
 8.809643,46.00189,Sessa Bonzaglio
 8.803507,46.003287,Sessa Suino
+8.803858,45.996176,Monteggio Tiradelza
+8.806639,45.99535,Monteggio Bivio Fornasette
+8.808852,45.995557,Monteggio Paese
+8.812495,45.996187,Monteggio Castello
+8.858256,45.969843,Ponte Tresa Chiesa
+8.855208,45.971735,Ponte Tresa Fabbrica Tappeti
+8.852085,45.976192,Purasca Inferiore
+8.850847,45.978214,Purasca Paese
+8.850245,45.98039,Purasca Posta Vecchia
+8.844264,45.985692,Barico Paese
+8.841468,45.988372,Croglio Paese
+8.838142,45.990563,Croglio Bivio di Luzzo
 8.608204,46.527675,Airolo Stazione
 8.600779,46.524854,Airolo Funivia
 8.589247,46.523802,Airolo Cioss di fuori
@@ -10855,6 +12235,8 @@ Longitude,Latitude,Remark
 8.423638,46.475572,Cruina
 8.605033,46.524514,Airolo Bivio per Nante
 8.619201,46.523288,Airolo Centro Sportivo
+8.981562,45.906562,Capolago Piazza
+8.973881,45.9323,Maroggia-Melano Stazione
 8.689761,46.510657,Ambrì-Piotta Stazione
 8.695203,46.509329,Ambrì Chiesa
 8.703625,46.507832,Ambrì sotto
@@ -10909,11 +12291,62 @@ Longitude,Latitude,Remark
 8.91951,46.080141,Sigirino Bivio
 8.914625,46.080673,Sigirino Piazza
 8.934062,46.071419,Taverne Dosso
+8.934237,45.90229,Meride Crocefisso
+8.927985,45.910281,Serpiano Ostello Alpino
+9.033272,45.834996,Chiasso Via Volta
 6.648408,46.813422,Grandson Borné Nau
+9.021819,45.838182,Chiasso Boffalora
+9.023393,45.841416,Morbio Inferiore Villette
+9.016272,45.848966,Morbio Inferiore Sta. Lucia
+9.016503,45.852049,Morbio Inferiore Posta
+9.016041,45.853909,Morbio Inferiore Basilica
+9.018869,45.856865,Morbio Inferiore Piano
+9.021561,45.85779,Morbio Inferiore Pianelle
+9.019364,45.858847,Morbio Superiore Campagna
+9.019712,45.859319,Morbio Superiore Croce
+9.021303,45.86043,Morbio Superiore Posta
+9.023673,45.859569,Morbio Superiore Buée
+9.022758,45.861759,Morbio Superiore Chiesa
+9.024918,45.860775,Morbio Superiore Chiavarino
+9.025516,45.861405,Morbio Superiore Verana
+9.028386,45.863551,Morbio Superiore Ponte Sagno
+9.032497,45.868099,Caneggio Sotto Ronco
+9.032117,45.870066,Caneggio S. Antonio
+9.031991,45.871948,Caneggio Paese
+9.029551,45.87308,Caneggio La Costa
+9.035162,45.881305,Bruzella Paese
+9.042757,45.888619,Cabbio Dossello
+9.04491,45.894383,Cabbio S. Rocco
+9.04533,45.898147,Cabbio Posta
+9.043206,45.901308,Muggio Paese
+9.042417,45.904261,Muggio Fontane
+9.041124,45.910281,Muggio Cassino
+9.040605,45.912835,Muggio Casarno
+9.041073,45.915167,Muggio Butigia
+9.042101,45.920326,Muggio Meri
+9.041752,45.921177,Muggio Casa Leone
+9.039222,45.92151,Scudellate Paese
+9.034279,45.919565,Muggio Bivio Casiroli
+9.032515,45.91474,Roncapiano Paese
+9.031105,45.837492,Chiasso Via Bossi
+9.029436,45.843409,Vacallo S. Simone
+9.03733,45.842604,Pizzamiglio Dogana
+9.032486,45.842925,Vacallo Casa Materna
+9.031569,45.845016,Vacallo Scuole
+9.032322,45.849252,Vacallo Vignola
+9.034167,45.847607,Vacallo Piazza
+9.033055,45.829736,Chiasso al Sasso
+9.030115,45.829085,Chiasso Polo Nord
+9.027956,45.829215,Pedrinate Gasparina
+9.022994,45.827611,Pedrinate Bellavista
+9.01756,45.826608,Pedrinate Grotto Paradiso
+9.014249,45.82562,Pedrinate Paese
 7.286162,46.932477,Brünnemoos b. Rosshäusern
 6.963203,46.738392,Villarimboud village
 6.636846,46.782117,Yverdon Quai de la Thièle
 6.757401,46.878444,Vaumarcus bas du village
+8.868536,45.987986,Pura Loco
+8.865535,45.993161,Pura Moriscio
 8.859537,46.001289,Curio Molino di Curio
 8.858488,46.004641,Curio Bivio
 8.851352,46.008752,Novaggio Clinica
@@ -10922,7 +12355,10 @@ Longitude,Latitude,Remark
 8.863982,46.033622,Miglieglia Cassinelle
 7.619019,46.947524,Walkringen
 8.848181,46.002458,Bedigliora Feredino
+8.841721,45.997248,Biogno Paese
 8.834217,46.000617,Beride Paese
+8.839579,45.99526,Castelrotto Valleggiolo
+8.839114,45.992719,Castelrotto Ospedale
 8.607605,46.339319,Bignasco Posta
 8.627079,46.353106,Brontallo Bivio
 8.626407,46.355047,Brontallo Paese
@@ -10968,6 +12404,13 @@ Longitude,Latitude,Remark
 8.93425,46.067908,Taverne Superiore
 8.683329,47.434635,Effretikon Vogelbuckstrasse
 7.612963,46.947245,Walkringen Dorni
+8.979336,45.931416,Rovio Basso
+8.98424,45.930197,Rovio Costa
+8.987361,45.946646,Arogno La Cassina
+8.9873,45.950389,Arogno Cà Nova
+8.98854,45.952747,Arogno Nebbia
+8.993012,45.957598,Arogno Sasso Grosso
+8.991679,45.960172,Arogno Cà del Ferée
 8.686156,47.425142,Effretikon
 8.686383,47.428063,Effretikon Zentrum
 8.6966,47.429049,Effretikon Müselacher
@@ -11940,6 +13383,9 @@ Longitude,Latitude,Remark
 7.86627,46.685218,Interlaken Zentrum Artos
 7.929597,46.717788,Niederried b.I'laken Dorf
 8.912197,46.152637,Quartino Centro Luserte
+8.922982,45.962008,Barbengo Baldoria
+8.919987,45.96005,Barbengo Sidema
+8.916647,45.960067,Barbengo Via Balconi
 7.268941,46.409301,Feutersoey Bühl
 8.331815,46.57161,Grimsel Hospiz
 8.773821,47.12534,Gross Rombüel
@@ -12075,6 +13521,7 @@ Longitude,Latitude,Remark
 8.523327,46.992625,Gersau Wehri
 9.560244,46.961413,Landquart Ringstrasse
 9.505098,47.478161,Rorschach Hauptbahnhof
+8.981699,45.926057,Melano Al Ponte
 8.991737,46.744253,Trun Via Casa S. Martin
 8.917884,46.041142,Gravesano Posta
 8.281103,47.068999,Emmenbrücke Seetalplatz
@@ -12097,6 +13544,7 @@ Longitude,Latitude,Remark
 8.205815,47.191826,Beromünster Flugplatz
 8.200478,47.20441,Beromünster Mooskapelle
 8.192377,47.206523,Beromünster Flecken
+8.826343,45.817603,Varese Pzza. Monte Grappa (I)
 8.251833,47.126969,Rain Rüti
 8.25763,47.130274,Rain Dorf
 8.251982,47.155906,Römerswil LU Williswil
@@ -12163,12 +13611,15 @@ Longitude,Latitude,Remark
 8.241591,47.254386,Aesch LU Vorderdorf
 8.903141,47.279094,Wald ZH Tänler
 8.90401,47.277059,Wald ZH Etzelstrasse
+9.038725,45.892618,Casima Al Fosso
 8.277155,47.272843,Schongau Oberschongau
 8.265191,47.268341,Schongau Mettmen
 8.240882,47.257323,Aesch LU Kreuz
 8.250959,47.238849,Altwis Dorf
 8.261793,47.226179,Hitzkirch Schulhaus
+9.045725,45.900201,Muggio Marenca
 8.234989,47.41427,Mägenwil
+9.020653,45.874052,Campora Valle
 8.244332,47.260933,Aesch LU Berg
 8.256279,47.268855,Schongau Gmeinwärch
 8.222222,47.548958,Böttstein Schmidberg
@@ -13250,6 +14701,7 @@ Longitude,Latitude,Remark
 8.942907,47.438683,Itaslen
 8.957513,47.431079,Dussnang Tannegg
 7.97102,46.310363,Glis Heilpädagogische Schule
+10.166105,46.215853,Tirano Stazione
 8.04624,47.390789,Aarau Kunsthaus
 8.045527,47.392124,Aarau Holzmarkt
 8.043018,47.394026,Aarau Rathaus
@@ -13446,7 +14898,14 @@ Longitude,Latitude,Remark
 8.927387,46.47184,Castro Paese
 8.925725,46.476288,Traversa (Marolta)
 8.931609,46.481402,Ponto Valentino Fontana
+8.983437,45.866571,Mendrisio Ospedale B. Vergine
+8.982066,45.864548,Mendrisio Banchette
 7.995556,46.311712,Brig Hallenschwimmbad
+8.98584,45.922509,Melano Piazza
+8.978896,45.903423,Capolago Stazione
+8.971301,45.90601,Riva S. Vitale Piazza
+8.934974,45.92453,Brusino Arsizio Funivia
+8.917093,45.913592,Brusino Arsizio Confine
 8.801379,46.172743,Locarno Stazione
 8.794612,46.167759,Locarno Piazza Castello
 7.994711,46.312876,Brig Bachji
@@ -13567,6 +15026,9 @@ Longitude,Latitude,Remark
 7.562805,46.875349,Münsingen Ochsen
 8.949699,46.000268,Lugano Piazza Luini
 7.562008,46.876771,Münsingen Chäsi
+8.964364,45.952133,Bissone autostrada
+8.972461,45.97134,Campione via Totone (I)
+8.970587,45.969413,Campione Casino
 6.94731,46.253624,Monthey-Ville gare
 6.964134,46.241237,Choëx Bercla
 6.960276,46.237622,Choëx anc. poste
@@ -13855,6 +15317,13 @@ Longitude,Latitude,Remark
 8.47785,47.337683,Wettswil a.A. Oberhusen
 8.474715,47.33978,Wettswil a.A. Eggächer
 7.135745,46.028471,Orsières Biolley
+7.125886,45.993559,Issert Les Arlaches
+7.125148,45.984921,Praz-de-Fort Le Revers
+7.116237,45.970944,Praz-de-Fort Chalet Bérard
+7.112881,45.966878,Praz-de-Fort Branche d'en-Bas
+7.104658,45.948934,La Seiloz
+7.100407,45.943965,La Seiloz L'Amônaz
+7.097064,45.925973,Le Clou/Les Granges
 7.14395,46.027665,Orsières gare
 8.47409,47.341675,Wettswil a.A. Heissächerstr.
 7.536073,46.298922,Sierre Riondaz
@@ -14045,6 +15514,7 @@ Longitude,Latitude,Remark
 9.536924,46.33438,Castasegna Farzett
 6.998706,46.213023,St-Maurice VS Clinique St-Amé
 9.078307,47.344784,Dietfurt
+10.304397,46.798524,Scuol Clozza
 6.336246,46.481519,Mont-sur-Rolle Sans Souci
 6.323509,46.49354,Essertines-sur-RolleLe Pontet
 8.312533,47.41979,Oberrohrdorf Friedhof
@@ -14095,6 +15565,7 @@ Longitude,Latitude,Remark
 7.43636,46.949967,Bern Obergericht
 8.944209,47.18988,Tuggen Rüteli
 7.359913,47.363501,Delémont Von Roll
+10.58341,46.998461,Pfunds Stein
 8.982336,47.659362,Steckborn im Rank
 6.645701,46.760688,Yverdon Zone industrielle sud
 7.351022,47.368343,Delémont Giratoire Vorbourg
@@ -14116,9 +15587,12 @@ Longitude,Latitude,Remark
 8.900768,46.151742,Quartino Gerrascia
 9.31778,46.836266,Flims Dorf Auas sparsas
 9.254758,46.7937,Sagogn Storta pintga
+10.404708,46.960504,Samnaun-Compatsch Dorf
 8.292927,47.443386,Fislisbach Alterszentrum
 9.71703,46.981997,Schiers Salginatobelbrücke
 9.567494,46.950003,Igis Im Lux/Neuhof
+10.3076,46.798623,Scuol Runà
+10.308523,46.79725,Scuol Serras
 9.573023,46.978371,Malans
 9.130386,47.347955,Necker Grütli
 9.38626,47.343425,Appenzell Rapisau
@@ -14146,6 +15620,10 @@ Longitude,Latitude,Remark
 9.415718,47.34072,Appenzell Lehn
 9.661803,46.672158,Alvaneu Bad Solas
 6.651969,46.815435,Grandson croisée de Fiez
+10.394463,46.602984,Valchava spv. Plazzaraun
+10.438058,46.56623,Sta. Maria Val M. Val Gronda
+10.437989,46.581932,Sta. Maria Val M. Blockhütte
+10.389724,46.582222,Sta. Maria Val M. Pra da Vau
 9.443445,46.673582,Rongellen Dorf
 9.44094,46.632485,Zillis Schulhaus
 8.242287,47.493083,Gebenstorf Vogelsang
@@ -14232,6 +15710,7 @@ Longitude,Latitude,Remark
 8.226922,46.883292,Oberwilen Bodenmattli
 8.090579,46.745769,Brienzwiler
 8.289373,47.433401,Fislisbach Steinäcker
+8.97834,45.868531,Mendrisio Staz. Transito Bus
 8.331276,46.952558,Ennetmoos Riedmatthof
 8.580149,47.466157,Kloten Weinbergstrasse
 8.584666,47.469557,Kloten Egetswil
@@ -14246,32 +15725,72 @@ Longitude,Latitude,Remark
 9.344038,47.488321,Häggenschwil Täschlihus
 9.313467,47.476154,Waldkirch Bernhardsrüti
 9.288286,47.469821,Waldkirch Gemeindehaus
+10.133228,46.241899,Campascio Zalende
+10.126412,46.258074,Brusio Municipio
+10.13107,46.244686,Campascio Strada
+10.142282,46.233797,Campocologno Stazione
+10.079016,46.293213,Le Prese Scuole
+10.127081,46.252963,Brusio Pergola
+10.099794,46.273105,Miralago Stazione
 8.473391,47.312447,Bonstetten Sunnenberg
 8.474755,47.335012,Wettswil a.A. Moosstrasse
 9.434316,47.183394,Grabs Säntisstrasse
 9.746972,46.915983,Fideris Madinis
+8.909362,45.834503,Gaggiolo Via Lugano (I)
 8.394908,46.907983,Wolfenschiessen
 7.387775,46.999447,Ortschwaben Weissenstein Abzw
+10.075101,46.360009,Percosta Fermata
 8.180312,47.143644,Sempach Stadt Seemätteli
 8.254952,46.874954,Flüeli-Ranft Allmend
 8.243136,46.892733,Sarnen Kantonsschule
 8.162268,46.850264,Grossteil Rüti
 7.95621,47.083191,Hergiswil LU Vordere Säge
 7.86127,47.201233,Altbüron Ludligen
+9.024913,45.836581,Chiasso Rampa
+9.031201,45.833253,Chiasso Piazza Indipendenza
+10.123604,46.264792,Brusio Ginetto Deviazione
+9.027093,45.83808,Chiasso Scuole
 8.906082,46.178421,Agarone Paese
 8.837456,46.186229,Contra Costa
 9.083226,47.031369,Ennenda Seilbahn
 9.404628,47.057938,Plons (Mels) Kaserne
+8.946659,45.993039,Paradiso Debarcadero
 8.935902,46.018321,Savosa Liceo
 8.956463,46.032342,Comano Rotonda
+8.928016,45.973008,Grancia Centro Lugano Sud
 8.876968,46.027861,Aranno Lusciè
 7.312578,46.745604,Riedacker BE Schulhaus
 8.396479,46.570904,Oberwald VS Muttbach
 8.331139,46.500563,Ulrichen Kittbrücke
 7.362932,46.976747,Wohlen b. Bern Schaufelacker
+8.844049,45.818165,Varese Bivio Macello (I)
+8.854324,45.810973,Varese Viale Belforte (I)
+8.862559,45.80557,Varese Ipermercato (I)
+8.872002,45.80168,Folla di Malnate (I)
+8.901874,45.824479,Cantello Madonnina (I)
+8.905786,45.826416,Ligurno (I)
 7.306208,46.469703,Gstaad Bissenegg
+8.913054,45.841139,Gaggiolo Italia (I)
+8.98234,45.871544,Mendrisio Macello
 7.299764,46.469443,Gstaad Staldenmatte
+8.984683,45.86785,Mendrisio Casa Anziani
+8.832761,45.817514,Varese Via Morosini (I)
+8.83302,45.818573,Varese Staz. Autolinee (I)
+9.034007,45.91686,Muggio Camasciora
+9.035635,45.878545,Bruzella Cimitero
+9.013951,45.845688,Morbio Inferiore Serfontana
+9.013955,45.845841,Morbio Inferiore Breggia
+9.006395,45.84663,Balerna Bellavista (FFS)
+9.006323,45.850851,Balerna Croce Bianca
+8.998706,45.853278,Balerna Mezzana
+8.993834,45.85537,Coldrerio Mercole
+8.991908,45.856018,Coldrerio Ideal
+8.982551,45.859377,Coldrerio Colle degli Ulivi
+10.060138,46.32124,Poschiavo Scuole
+9.003098,45.851976,Balerna Mercole
 7.374537,47.279818,Moutier Banque cantonale
+8.946184,45.873781,Arzo Coop
+9.031454,45.839296,Vacallo Ponte Picio
 7.37449,47.274763,Moutier Crèche
 9.143517,46.262175,Sta. Maria in Calanca Pozzo B
 9.138098,46.259368,Castaneda Al Ronc
@@ -14286,7 +15805,12 @@ Longitude,Latitude,Remark
 7.015403,46.197191,St-Maurice VS cantine
 8.286721,46.829807,Melchtal Plätzli
 9.141626,46.246106,Grono Bivio Calanca
+8.924697,45.931099,Vico Morcote Pradon
+8.97879,45.863468,Mendrisio Centro Studi 2
+8.908979,45.832232,Rodero Bivio per Rodero (I)
 8.936398,46.004872,Sorengo Moncucchetto
+8.981013,45.862826,Mendrisio Centro Studi 1
+8.922436,45.928582,Vico Morcote Via Piana
 8.824583,46.493429,Carì Ticc di Dentro
 8.826635,46.49165,Molare Campi
 8.828346,46.489317,Molare Stella Alpina
@@ -14309,16 +15833,43 @@ Longitude,Latitude,Remark
 8.753032,46.482971,Prato (Leventina)Biv.Mascengo
 8.742931,46.48808,Rodi Casa Gendotti
 8.734816,46.493535,Fiesso Paese
+10.386676,46.60964,Lü Valpaschun
+10.489905,46.930144,Nauders Hochfinstermünz
+10.498784,46.894555,Nauders Unterdorf
+10.501712,46.891542,Nauders Dorf
+10.483397,46.894858,Nauders Norbertshöhe
+10.265755,46.790765,Ftan Baraigla
+10.273356,46.792007,Scuol Putschigls
 9.498625,47.00141,Bad Ragaz Alpweg
+10.6617,47.077031,Prutz Postamt
+10.666999,47.093887,Prutz Untergufer
+10.634715,47.114407,Fliess Neuer Zoll
+10.615623,47.117349,Fliess Nesselgarten
+10.606142,47.118475,Fliess Urgen
+10.584818,47.126344,Fliess Abzw. Eichholz
+10.576107,47.138384,Fliess Jagglshütte
+10.566164,47.140707,Landeck Zentrum
+10.57295,47.146878,Landeck Perjener Brücke
 9.543031,47.183544,Planken Abzw. Egerta
 8.252975,47.532449,Würenlingen Sonne
 8.106986,47.573901,Etzgen Schulhaus
+10.663128,47.063757,Prutz Mittelschule
+10.65075,47.053967,Ried im OberinntalGemeindeamt
+10.64773,47.049946,Ried im Oberinntal Trujen
+10.63641,47.040369,Ried im Oberinntal St.Christi
+10.605525,47.021124,Tösens Gemeindeamt
+10.597804,47.010282,Tösens Tschupbach
+10.567147,46.98832,Pfunds Lafairs
+10.557983,46.982088,Pfunds Birkach
+10.536288,46.970848,Pfunds Stuben Kirche
+10.510747,46.952676,Pfunds Kajetansbrücke
 9.440284,46.697987,Thusis
 9.432586,46.794054,Feldis/Veulden Dorfplatz
 8.109922,47.571689,Etzgen Dorf
 9.320105,46.544159,Tamboalp Abzw.
 9.187314,46.466397,S. Bernardino Campeggio
 8.175289,47.590342,Leibstadt Milchhüsli
+10.069622,46.306501,Li Curt Annunziata
 9.129895,46.683616,Surin spv.
 9.200286,46.705224,Camuns Sutscheins
 8.973186,46.739043,Trun Campliun
@@ -14335,6 +15886,7 @@ Longitude,Latitude,Remark
 9.438773,47.437653,Eggersriet Oestran
 8.307086,46.506822,Ulrichen Abzw. Nufenen
 9.465362,47.475994,Goldach Rathaus
+10.094784,46.387371,Salva Daint
 9.83388,46.493264,St. Moritz Segantini Museum
 7.354826,47.365504,Delémont centre l'Avenir
 7.357943,46.973443,Oberwohlen BE
@@ -14350,6 +15902,7 @@ Longitude,Latitude,Remark
 7.458297,46.272173,Flanthey rte de Valençon
 8.439909,47.133051,Rotkreuz Ibikon
 7.377307,46.967932,Hinterkappelen Bernstrasse
+8.922706,45.93045,Vico Morcote Chiesa
 7.340143,46.480128,Turbach Pfündli
 8.884606,47.578675,Frauenfeld Rorerbrücke
 9.363756,47.414492,St. Gallen Hochwacht
@@ -14536,6 +16089,7 @@ Longitude,Latitude,Remark
 9.068741,47.409827,Bazenheid
 9.068528,47.412853,Bazenheid Hochhaus
 6.62554,46.850045,Villars-Burquin Douvaz
+8.988833,45.856573,Coldrerio Paese
 6.648483,46.638956,Echallens collège/parc
 9.076686,47.035673,Ennenda Villastrasse
 9.081008,47.032444,Ennenda Wiese/Salem
@@ -14553,7 +16107,13 @@ Longitude,Latitude,Remark
 9.052927,47.058241,Netstal Altersheim
 9.054373,47.062512,Netstal Gemeinde
 9.057605,47.067514,Netstal Wiggis Park
+10.066903,46.309634,Li Curt Capitell
+10.116767,46.394765,Rügiul
+8.835268,45.821478,Varese Biumo (I)
+8.839991,45.819979,Varese Via Ledro (I)
 7.896619,46.263604,Visperterminen Chrizji
+10.117775,46.396992,Lungacqua
+9.029489,45.831037,Chiasso Via Favre
 9.048728,46.219719,Arbedo Polveriera
 7.336211,46.479783,Turbach Relli
 8.730706,47.500554,Winterthur Stadthaus
@@ -14694,11 +16254,13 @@ Longitude,Latitude,Remark
 6.871227,46.546433,Maracon La Crosettaz
 9.477099,47.470966,Goldach Appenzeller Strasse
 9.484003,47.469009,Rorschacherberg Rosenacker
+8.94806,45.95543,Melide Stazione
 8.965833,46.068537,Tesserete Scuole
 8.917254,46.022625,Manno Centro di Calcolo
 8.921787,46.031175,Manno Suglio
 8.917954,46.016983,Bioggio Via Industria
 8.914113,46.014866,Bioggio Cavezzolo
+8.982405,45.842285,Novazzano Paese
 8.921507,46.033698,Manno Michelino
 9.404568,46.697682,Flerden Pro Peua
 7.06941,46.721119,Farvagny-le-Grand CO Gibloux
@@ -14726,6 +16288,7 @@ Longitude,Latitude,Remark
 7.911973,46.590259,Lauterbrunnen Schützenbach
 8.169619,46.752325,Hasliberg Hohfluh Bären
 8.912804,46.015638,Bioggio Centro Commerciale
+8.902636,45.943642,Morcote Preda dei Buchi
 8.567486,46.233278,Vergeletto Funivia Salei
 9.419492,46.76897,Rothenbrunnen Abzw. Bahnhof
 7.741756,46.315166,Gampel Schulhaus
@@ -14757,6 +16320,7 @@ Longitude,Latitude,Remark
 8.925576,46.150464,Contone Posta
 8.941656,46.15241,Cadenazzo Stazione
 8.962188,46.155158,S. AntoninoCentri Commerciali
+8.895554,45.82153,Cantello Municipio (I)
 8.523553,46.65244,Göschenen Jäntelboden
 8.797647,47.445006,Rikon im Tösstal
 8.845172,47.423469,Wila Espistrasse
@@ -14823,6 +16387,7 @@ Longitude,Latitude,Remark
 9.064939,47.03844,Glarus Schützenhaus
 9.052048,47.052648,Riedern GL Lerchen
 9.055759,47.0644,Netstal Post
+8.91025,45.839286,Gaggiolo Bivio (I)
 8.501841,47.368903,Zürich Schaufelbergerstrasse
 9.524102,47.477155,Rorschacherberg Wilenrain
 9.522251,47.475982,Rorschacherberg Seehalde
@@ -14965,6 +16530,7 @@ Longitude,Latitude,Remark
 8.118454,47.173836,Sursee Mariazell
 8.127103,47.17759,Schenkon Zellburg
 9.541661,47.127566,Triesenberg Balischguad
+10.436564,46.863247,Strada i. E. spv. Chaflur
 9.427525,46.604825,Andeer Tgavugl
 9.588707,46.3422,Stampa Val d'Arca
 7.301841,46.512535,Saanenmöser Mösching
@@ -15053,6 +16619,7 @@ Longitude,Latitude,Remark
 9.810809,46.909944,Saas i.P. Old-Inn
 9.824867,46.903595,Saas i.P. Waldhof
 9.485395,47.410701,Trogen Morgenlicht
+10.326478,46.717781,Scuol Schmelzra
 7.340715,47.365043,Delémont Home de la Promenade
 7.35599,47.366719,Delémont rue des Primevères
 7.347468,47.364428,Delémont Pré-Guillaume
@@ -15210,10 +16777,12 @@ Longitude,Latitude,Remark
 7.518654,47.47502,Hofstetten SO Ettingerstrasse
 9.846949,46.891478,Serneus Gruoba
 7.086097,46.125172,Branson Pont du Rhône
+8.997966,45.829986,Seseglio Centro sportivo
 8.252275,46.896581,Sarnen Kernserstrasse
 8.251266,46.907104,Sarnen Schatzli
 8.211891,46.872662,Oberwilen Mätteli
 8.113692,47.169663,Sursee Frieslirain
+9.000265,45.82712,Seseglio Paese
 8.144297,46.733584,Unterbach BE Garage Egger
 8.139985,46.735059,Unterbach BE Unterheid
 8.128312,46.737946,Unterbach BE Stägmad
@@ -15290,6 +16859,7 @@ Longitude,Latitude,Remark
 8.741991,47.3918,Fehraltorf Undermüli
 7.470901,46.151045,Eison La Crettaz
 9.5011,47.423683,Rehetobel Nasen
+10.44984,46.629447,Müstair Clostra Son Jon
 9.20133,46.760814,Luven Sut vitg
 8.231659,47.514545,Stilli Aarebrücke
 8.093571,46.752912,Brienzwiler Bifing
@@ -15299,6 +16869,7 @@ Longitude,Latitude,Remark
 7.064885,47.103144,Nods La Ruine
 9.621766,46.351008,Vicosoprano Plazza
 9.93485,46.463351,Morteratsch Abzweigung
+10.096667,46.698511,Zernez Center dal Parc Naziun
 9.38085,46.172422,Sorico Biffi
 9.371353,46.170164,Gera Lario Chiesa
 9.325355,46.150525,Domaso Porto
@@ -15315,6 +16886,7 @@ Longitude,Latitude,Remark
 9.138195,47.435941,Uzwil Coop
 7.846844,47.218402,St. Urban Sonnhaldenhof
 8.978453,46.154847,S. Antonino Paese
+9.024754,45.856863,Morbio Superiore zona Ronco
 8.94163,46.007322,Lugano Studio Radio
 9.224819,46.773459,Castrisch Schleps
 9.278192,46.787053,Valendas Carstulien
@@ -15352,12 +16924,17 @@ Longitude,Latitude,Remark
 6.989158,46.807853,Montagny-les-Monts collège
 8.357921,47.522552,Schneisingen Oberdorf
 8.272183,47.35735,Wohlen AG Schützenmatt
+8.94716,45.990144,Paradiso Stazione/Scuole
 7.805908,46.702978,Beatenberg Schorren
+8.926368,45.970286,Grancia Centro Commerciale 2
+8.923542,45.993113,Cappella-Agnuzzo Stazione
 9.718638,46.929483,Jenaz
 9.433517,46.713412,Summaprada Dorf
 9.423373,46.752732,Cazis Bündner Arena
 9.428204,46.722576,Cazis Dorf
 9.426507,46.729444,Cazis Abzw. Klinik Beverin
+8.946849,45.992434,Paradiso Riva Paradiso
+8.954234,45.988781,Paradiso Piscina
 9.710432,46.934847,JenazRosengarten/Schulanlagen
 8.323275,47.249416,Geltwil Dorf
 6.372881,46.479566,Féchy Auberge
@@ -15435,6 +17012,9 @@ Longitude,Latitude,Remark
 8.21047,47.481616,Brugg AG/Campus
 7.054299,46.974236,Cudrefin La Sauge
 8.545575,46.310361,Cerentino Bivio Corsopra
+10.663329,47.068396,Prutz Schwimmbad
+10.638307,47.049201,Ried im Oberinntal Seilbahn
+10.618247,47.024543,Tösens Steinbrücke
 8.776221,47.505254,Winterthur Hegi im Gern
 8.969436,46.0804,Odogno Piana
 9.233885,47.631653,Münsterlingen Nonnenpförtli
@@ -15489,6 +17069,9 @@ Longitude,Latitude,Remark
 7.921287,46.900271,Wiggen Unterbach
 7.931197,46.907632,Escholzmatt Riedgasse
 7.336884,47.360848,Delémont Sainte-Catherine
+10.346889,46.817388,Sent Tuffera
+10.203807,46.775216,Ardez Bröl
+10.42608,46.866357,Tschlin Terza Storta
 9.519904,47.140703,Vaduz Lettstrasse
 9.510522,47.139541,Vaduz Rheinparkstadion
 9.512643,47.133006,Vaduz Alte Rheinbrücke
@@ -15523,6 +17106,13 @@ Longitude,Latitude,Remark
 9.445635,46.732843,Pratval Gemeindehaus
 9.427215,46.733013,Cazis Siedlung Realta
 7.532317,46.607475,Zwischenflüh Allmiried
+10.457722,46.634622,Müstair cunfin
+10.459111,46.635863,Taufers i.M./Tubre Grenze
+10.464001,46.645474,Taufers i.M./TubreSt.Nikolaus
+10.477364,46.654363,Taufers Rifair/Tubre Rivaira
+10.511893,46.668156,Laatsch/Laudes Calvenbrücke
+10.548305,46.683885,Mals Bahnhof/Malles stazione
+10.553003,46.67055,Glurns/Glorenza Tauferer Tor
 8.251814,47.353214,Wohlen AG Durisolstrasse
 8.251743,47.354608,Wohlen AG Allmendstrasse
 8.249005,47.356471,Wohlen AG Planzer
@@ -15577,6 +17167,7 @@ Longitude,Latitude,Remark
 7.285156,46.469532,Gstaad Rütti Schulhaus
 6.526022,46.730141,Orbe Suchet
 9.081814,46.642967,Vrin S. Giusep
+10.399512,46.959504,Samnaun-Compatsch beim Kreuz
 9.085419,46.644228,Vrin Ligiazun
 9.070252,46.639507,Vrin Puzzatsch
 9.091431,46.649432,Vrin Cons
@@ -15603,8 +17194,10 @@ Longitude,Latitude,Remark
 8.990748,46.13196,Isone Piazzale
 8.987504,46.129819,Isone Gròssa
 9.102209,46.74867,Obersaxen Meierhof Talstation
+10.501467,46.888164,Nauders Mühle
 9.472889,47.165263,Buchs SG EW
 9.487428,47.122895,Sevelen Veltur
+10.056792,46.327285,Poschiavo Curtinell
 8.181281,46.729499,Meiringen Spitalstrasse
 8.179499,46.730258,Meiringen Isenbolgen
 8.187033,46.72733,Meiringen Casinoplatz
@@ -15753,6 +17346,9 @@ Longitude,Latitude,Remark
 6.814183,46.553348,Les Tavernes collège
 6.823856,46.550153,Palézieux En Plan
 9.684998,46.971929,Schiers Schulhaus Feld
+10.094608,46.699468,Zernez scoula
+10.537327,46.970388,Pfunds Dorf
+10.567031,47.136822,Landeck Stadtplatz
 7.399304,46.949403,Bern Untermattweg
 7.583142,46.768973,Uetendorf Thunstrasse
 7.081322,47.060398,Le Landeron Bellevue
@@ -15815,6 +17411,8 @@ Longitude,Latitude,Remark
 9.572003,47.253717,Nofels GH Bad Nofels
 9.564929,47.251958,Nofels Oberer Hasenbach
 9.529895,47.24281,Ruggell Noflerstrasse
+8.818679,45.996742,Sessa Cimitero
+8.817282,45.998171,Sessa Sotto Chiesa
 8.914425,46.039828,Gravesano Vallone
 9.503194,47.017596,Bad Ragaz Sportplatz
 8.811845,46.496112,Prodör
@@ -15842,6 +17440,9 @@ Longitude,Latitude,Remark
 7.987914,46.315986,Brig Briggustutz
 8.010076,46.337089,Bitsch Baletscha
 8.015778,46.33589,Bitsch
+10.136407,46.537262,Livigno Centro Bus Station
+10.055755,46.441419,Forcola di Livigno dogana Ita
+10.189857,46.624174,Punt dal Gall dogana Italiana
 7.376015,46.227835,Sion Casernes
 8.859387,47.558793,Niederwil TG Egelsee
 8.838941,47.588231,Iselisberg Abzweigung
@@ -16054,6 +17655,7 @@ Longitude,Latitude,Remark
 7.363725,46.22924,Sion Tourbillon
 7.019591,46.250479,Bex route de Gryon
 8.288001,47.398916,Tägerig Weidhof
+10.069187,46.461441,Livigno Val dal Fain
 7.719803,46.667582,Faulensee Möve
 9.453205,46.712328,Scharans Altersheim
 8.400136,46.90963,Wolfenschiessen Zälgli
@@ -16133,6 +17735,7 @@ Longitude,Latitude,Remark
 7.585308,47.472752,Aesch BL Sportanl Löhrenacker
 7.737178,47.536363,Kaiseraugst Sagerweg
 7.546523,47.480619,Ettingen Lebernweg
+10.31602,46.72243,Scuol Ravitschana
 9.103304,47.573915,Weinfelden Bachtobelstrasse
 9.085716,47.532318,Weingarten Brunnenwies
 9.069574,47.580664,Märstetten Muggenwinggel
@@ -16160,6 +17763,10 @@ Longitude,Latitude,Remark
 9.556139,46.734337,Lenzerheide/Lai Sportzentrum
 9.547413,46.734768,Lenzerheide/Lai Fadail/Lido
 9.555736,46.740733,Lenzerheide/Lai Rothornbahn
+10.304933,46.798501,Scuol Pütvia
+10.473506,46.946675,Spiss Noggels
+10.438575,46.957876,Spiss Abzw. Dorf
+10.460917,46.952589,Spiss Gstalden
 9.899385,46.864308,Klosters Au
 9.915091,46.862601,Klosters Bir Legi
 9.890528,46.863445,Klosters Brachweg
@@ -16237,6 +17844,16 @@ Longitude,Latitude,Remark
 9.291165,46.832112,Flims Waldhaus Surpunt
 9.288441,46.831436,Flims Waldhaus Sumandedas
 9.291237,46.828881,Flims Waldhaus Kath. Kirche
+10.293165,46.793368,Scuol Tulai
+10.296247,46.794641,Scuol Chantröven
+10.298603,46.795563,Scuol Bügl Grond
+10.300106,46.794995,Scuol Plaz
+10.303446,46.794947,Scuol Porta
+10.306841,46.795942,Scuol Manaröl
+10.298664,46.7972,Scuol Belvédère
+10.297703,46.799096,Scuol Pratuor
+10.300092,46.799163,Scuol Chasa Puntota
+10.304776,46.800224,Scuol Ospidal/Spital
 8.838824,46.699196,Disentis/Mustér Via Plauns
 7.160931,47.366781,St-Ursanne l'écluse
 7.33797,47.415965,Ederswiler Pré Strayat
@@ -16256,6 +17873,7 @@ Longitude,Latitude,Remark
 7.417846,46.282347,Ayent Les Râches
 8.916977,46.372322,Personico Binenca
 8.918223,46.370362,Personico Piazza
+8.941086,45.856026,Stabio Scuola Media
 7.494007,46.114712,Evolène Village
 6.672455,46.837128,Bonvillars bas du village
 7.360795,46.238836,Sion Vieux-Moulin
@@ -16352,6 +17970,14 @@ Longitude,Latitude,Remark
 7.345731,47.366063,Delémont Salle St-Georges
 7.34586,47.36019,Delémont Pont La Blancherie
 7.179162,47.195981,Sonceboz-Sombeval Couronne
+10.119789,46.269023,Brusio La Presa Sur
+10.114639,46.274347,Brusio Selvaplana
+10.120398,46.267676,Brusio La Presa Sot
+10.120202,46.261074,Brusio Piazzo Fermata
+10.114392,46.271959,Brusio Garbella
+10.122175,46.260298,Brusio Büi
+10.120378,46.266219,Brusio Müreda
+10.120962,46.270696,Brusio Cotongi
 7.967649,47.351185,Däniken Hogenweid
 7.986279,47.35198,Däniken Talhubel
 7.57644,47.253689,Günsberg Grüngli
@@ -16369,6 +17995,7 @@ Longitude,Latitude,Remark
 6.978699,46.820495,Cousset centre sportif
 9.416375,47.333466,Appenzell Spital
 8.825294,47.084175,Euthal Ängi
+10.125235,46.257876,Brusio Scuole
 8.75068,47.187373,Feusisberg Alterszentrum
 7.391867,46.95199,Bern Melchiorstrasse
 8.435325,47.321633,Islisberg Räbacher
@@ -16397,7 +18024,9 @@ Longitude,Latitude,Remark
 7.986193,47.116595,Willisau Geissburg
 7.988334,47.119742,Willisau Zehntenplatz
 8.03744,46.819383,Sörenberg Höchistrasse
+8.937649,45.874866,Arzo Scuole
 8.98073,46.155266,S. Antonino Monda
+8.965487,45.856974,Genestrerio Cimitero
 8.805412,46.334064,Frasco Campagne
 8.106859,47.171772,Sursee Post
 8.054743,47.520343,Ittenthal Rüttiweg
@@ -16406,6 +18035,7 @@ Longitude,Latitude,Remark
 6.983666,46.212495,Vérossaz Rosaire
 7.986888,46.322468,Naters Aletsch Campus
 6.827901,47.125262,La Chaux-de-Fonds Swin Golf
+10.467544,46.648737,Taufers i.M./Tubre St. Johann
 9.507552,47.216211,Gamprin Stelzagass
 6.857252,46.568105,Bussigny-sur-Oron La Resse
 7.697221,46.620571,Scharnachtal Halten
@@ -16546,6 +18176,7 @@ Longitude,Latitude,Remark
 6.525146,46.630592,Lussery-Villarspl. de Lussery
 6.956202,46.341587,Corbeyrier place Champillon
 9.198012,46.316596,Lostallo nord
+8.969154,45.847199,Novazzano Boscherina 1
 9.641849,46.977977,Grüsch Usserfeld
 7.691486,46.645051,Mülenen Chappelegand
 8.894279,47.556219,Frauenfeld Lindenplatz
@@ -16572,10 +18203,12 @@ Longitude,Latitude,Remark
 7.514901,47.475823,Hofstetten SO Milchhüsli
 7.042697,47.409212,Courtedoux Place St. Martin
 7.237031,46.972294,Wileroltigen Kindergarten
+10.5376,46.690415,Mals/Malles Abzw. Schleis
 7.215207,46.965183,Gurbrü Schulhaus
 8.294791,47.591482,Bad Zurzach Uf Raine
 8.289922,47.587138,Bad Zurzach Schlüsselstrasse
 9.437366,46.611779,Andeer Pignia
+10.117839,46.249204,Cavaione
 7.837494,47.558231,Möhlin Unter der Halde
 7.841017,47.563795,Möhlin Efeuweg
 7.772461,47.548408,Rheinfelden Pappelnweg
@@ -16596,6 +18229,9 @@ Longitude,Latitude,Remark
 6.334292,46.459252,Rolle La Prairie
 6.331522,46.45783,Rolle Martinet
 8.9483,46.150648,Cadenazzo ex Segheria
+8.914948,45.969761,Agra Bivio
+8.910207,45.963337,Agra Roncone
+8.914221,45.967684,Agra Rondelli
 8.414869,47.262035,Obfelden Gessnerstrasse
 8.426124,47.263297,Obfelden Bachstrasse
 6.793114,46.727614,Prévondavaux village
@@ -16688,13 +18324,18 @@ Longitude,Latitude,Remark
 7.716872,47.29241,Oensingen Schule Oberdorf
 7.718614,47.289329,Oensingen Sternenplatz
 7.705586,47.287885,Oensingen Lehnfeld
+10.362374,46.491488,Bormio Bagni Vecchi
+10.368829,46.469617,Bormio Terme
+10.36927,46.466212,Bormio Stazione Autolinee
 8.545273,47.612695,Rafz Usserdorf
 8.553359,47.615792,Rafz Pflegeheim Peteracker
 8.731966,47.539785,Seuzach Im Räbhag
+8.913398,45.992211,Muzzano Mondino
 7.03634,46.139093,Vernayaz gare
 7.039726,46.134526,Vernayaz village
 7.372028,47.277801,Moutier Place du Marché
 9.136035,47.460109,Sonnental Schulhaus
+10.120306,46.264231,Brusio Ginetto Paese
 9.174709,46.609089,Vals Parkplatz Bergbahnen
 9.146199,46.59228,Vals Ronastäg
 7.087805,46.104947,Martigny Avouillons
@@ -16718,10 +18359,22 @@ Longitude,Latitude,Remark
 7.689709,46.684411,Spiez Grueb
 7.685389,46.68595,Spiez Rütti
 7.688983,46.685744,Spiez Schachen
+10.358289,46.943199,Samnaun-Dorf Musella
+10.35975,46.942271,Samnaun-Dorf Pra Grond
+10.362492,46.945792,Samnaun-Dorf Riva
+10.361713,46.942842,Samnaun-Dorf Votlas
+10.402717,46.95826,Samnaun-Compatsch Abzweigung
+10.403124,46.960149,Samnaun-Compatsch Kirche
+10.37178,46.95101,Samnaun-Ravaisch Abzweigung
+10.374692,46.951124,Samnaun-Ravaisch Bergbahnen
+10.369019,46.949064,Samnaun-Ravaisch Sportanlagen
 8.800416,47.101323,Euthal Alte Festung
 9.543497,47.017349,Maienfeld Heididorf
 9.526312,47.017627,Maienfeld Heidibrunnen
 6.583316,46.607205,Boussens Chevrine
+10.39588,46.959679,Samnaun-Laret Dorf
+10.392259,46.959575,Samnaun-Laret West
+10.397453,46.959351,Samnaun-Laret Abzweigung
 9.603553,46.594692,Savognin Bursa
 9.602655,46.597049,Savognin Sur Ual
 9.605061,46.5991,Savognin Sot Spondas
@@ -16769,6 +18422,7 @@ Longitude,Latitude,Remark
 8.345927,47.268643,Muri AG Dorf
 7.29682,46.217985,Conthey salle polyvalente
 7.33722,47.275527,Perrefitte Les Rouges-Champs
+10.295232,46.795522,Scuol posta
 6.907602,46.452486,Chamby Sous Chaulin
 8.830833,47.580188,Uesslingen Zentrum
 9.046903,46.218486,Arbedo Via Orbello
@@ -16783,6 +18437,7 @@ Longitude,Latitude,Remark
 6.669779,47.001245,Le Cachot Cachot de Vent
 6.813748,47.122874,Les Joux-Derrière 44
 9.028775,46.188079,Bellinzona Cast.Sasso Corbaro
+10.380236,46.955383,Samnaun-Plan West
 9.51888,46.334407,Castasegna Sura
 8.098098,47.160831,Oberkirch LU Terra Alta
 6.92822,46.827486,Payerne Champ Aubert
@@ -16790,6 +18445,7 @@ Longitude,Latitude,Remark
 6.390201,46.509137,St-Livres grande salle
 8.200731,47.020175,Schwarzenberg LU Ried
 8.441609,47.55386,Weiach Oberdorfstrasse
+10.122138,46.262712,Brusio I Prai
 9.311751,47.089894,Flumserberg Davadell
 9.293947,47.091622,Flumserberg Oberberg
 9.306976,47.089333,Flumserberg Plattewise
@@ -16849,6 +18505,7 @@ Longitude,Latitude,Remark
 7.271484,46.872863,Wünnewil Schule
 9.447088,47.50163,Steinach Hafen
 7.427904,46.207073,Vernamiège Les Prixes
+8.944618,45.850059,Stabio Stazione
 6.747002,46.80074,Yvonand gare
 9.274323,47.547313,Amriswil Schrofen
 8.886232,47.201527,Nuolen Ochsenboden
@@ -16862,6 +18519,8 @@ Longitude,Latitude,Remark
 6.277956,46.420031,Gland Perron/Fleurs
 6.283022,46.420397,Gland Perron/Riant-Coteau
 8.462366,47.316872,Bonstetten Dorfstrasse
+10.168698,46.777087,Guarda Bos-cha
+10.33758,46.816931,Sent Plaz
 7.334764,46.19113,Clèbes (Nendaz) Le Fio
 7.854337,47.552614,Möhlin Zeiningerstrasse
 7.961627,47.53895,Münchwilen AG Dorfplatz
@@ -16884,6 +18543,9 @@ Longitude,Latitude,Remark
 7.020439,46.951422,Cudrefin Le Moulin
 8.670312,47.57622,Humlikon Dorfplatz
 8.506348,47.508633,Höri Schulhaus
+8.95352,45.87729,Tremona Teia
+9.003673,45.839651,Balerna Industrie
+8.939683,45.874353,Arzo Via Rossi
 7.668378,47.449134,Büren SO Gemeindehaus
 7.164645,46.144408,Saxon Route du Léman
 7.177001,46.150411,Saxon Rue de Gottefrey
@@ -16903,6 +18565,7 @@ Longitude,Latitude,Remark
 7.271574,47.238419,Malleray place du village
 8.491689,47.248388,Rifferswil Hausmatte
 9.569154,46.968347,Landquart Sonnmatt
+10.530874,46.678985,Laatsch/Laudes Dorf
 6.296865,46.454869,Gilly Condémines
 6.268223,46.533342,Saint-George Le Fort
 6.25461,46.541828,Gimel Sapin Siméon
@@ -16922,6 +18585,9 @@ Longitude,Latitude,Remark
 9.224025,46.802049,Falera Manduns
 9.22741,46.801798,Falera Giaus sura
 6.627252,46.844318,Villars-Burquin Les Oches
+10.128294,46.524412,LivignoS.Rocco-Po. Municipale
+10.104122,46.482129,Livigno Campaggi zona Forcola
+10.145256,46.554334,Livigno Acquagranda
 8.856254,46.024012,Miglieglia Funivia
 8.439858,47.272741,Affoltern a.A. Moosbach
 6.5251,46.565459,Vufflens-Aclens zone industr.
@@ -16949,10 +18615,12 @@ Longitude,Latitude,Remark
 8.05018,46.729521,Brienzerberg Teiffental
 8.037114,46.723914,Axalp Bellevue
 8.049162,46.949559,Heiligkreuz LU
+8.919861,45.929651,Vico Morcote
 6.043665,46.189951,Aire-la-Ville
 6.223251,46.276913,Anières village
 6.007002,46.154574,Athenaz village
 6.001104,46.169569,Avully village
+5.993494,46.151828,Avusy village
 6.104286,46.149002,Bardonnex village
 6.076055,46.176878,Bernex place
 6.114442,46.279082,Bossy
@@ -16960,6 +18628,7 @@ Longitude,Latitude,Remark
 6.135317,46.183508,Carouge GE Tours-de-Carouge
 6.020025,46.172976,Cartigny village
 6.141156,46.242837,Chambésy fontaine
+5.969913,46.150156,Chancy village
 6.1984,46.218596,Vandoeuvres Chougny
 6.222954,46.222947,Choulex village
 6.122343,46.270033,Collex centre
@@ -16972,6 +18641,7 @@ Longitude,Latitude,Remark
 6.084598,46.173437,Confignon mairie
 6.223796,46.263001,Corsier GE village
 6.244713,46.240246,Meinier Corsinge-village
+5.99506,46.19481,Dardagny village
 6.176642,46.193308,Chêne-Bougeries Malagnou
 6.142438,46.209735,Genève Cornavin
 6.139144,46.222301,Genève Nations
@@ -16987,6 +18657,7 @@ Longitude,Latitude,Remark
 6.137628,46.144263,Croix-de-Rozon douane
 6.216469,46.247942,Vésenaz Pallanterie
 6.04151,46.173478,Cartigny Petite-Grave
+5.999767,46.178495,La Plaine gare
 6.036562,46.155935,Laconnex village
 6.129432,46.173975,Grand-Lancy Bachet-de-Pesay
 6.070812,46.162861,Lully GE
@@ -17027,6 +18698,16 @@ Longitude,Latitude,Remark
 8.705917,46.126279,Brissago Gadero
 8.726307,46.140443,Porto Ronco Posta
 9.246136,47.354702,Schwellbrunn Sommertal
+9.032136,45.832205,Chiasso Stazione
+9.033641,45.832607,Chiasso Confine
+9.027937,45.835225,Chiasso Municipio
+9.023962,45.83395,Chiasso Via Soldini
+8.975401,45.862912,Mendrisio OSC
+8.985219,45.918298,Melano Tre Pini
+8.984869,45.920993,Melano Posta
+8.973989,45.903526,Riva S. Vitale Scuola Media
+8.98024,45.887516,Mendrisio Tre Antenne
+8.970939,45.899069,Riva S. Vitale Cimitero
 9.32776,47.538591,Amriswil Almensberg
 9.40346,47.528874,Frasnacht Post
 9.371701,47.554806,Salmsach Seestrasse
@@ -17139,6 +18820,7 @@ Longitude,Latitude,Remark
 8.507417,47.175496,Zug Stadion
 8.520137,47.158645,Zug Liebfrauenhof
 8.520779,47.151263,Zug Schönegg
+9.004171,45.846293,Balerna Stazione
 8.272903,47.635263,Tiengen
 8.218128,47.620354,Waldshut
 7.267385,47.153386,Biel/Bienne Taubenloch
@@ -17263,6 +18945,7 @@ Longitude,Latitude,Remark
 8.912431,46.377267,Bodio TI Biv. per Personico
 8.858687,46.421832,Giornico Biaschina
 7.106733,46.031699,Champex télé
+5.965732,46.144415,Chancy douane
 6.931814,47.066014,Chézard-St-Martin St-Martin
 7.466085,46.947581,Bern Schosshalde
 7.471469,46.945124,Bern Ostring
@@ -17541,6 +19224,7 @@ Longitude,Latitude,Remark
 7.585749,47.218274,Luterbach Nordseite
 9.930619,46.575253,Chamues-ch Müsella
 9.935966,46.585054,Madulain vih
+10.009657,46.618018,S-chanf Parc Naziunal
 6.634149,46.553546,Le Mont-s.-Laus. Petit-Mont
 6.920634,47.037809,Engollon village
 8.686104,47.119128,Rothenthurm Distel
@@ -17550,9 +19234,11 @@ Longitude,Latitude,Remark
 8.711617,47.358028,Uster Loren
 8.712758,47.356451,Uster Strick
 6.913575,47.042535,Engollon piscine
+10.007731,46.632463,Chapella La Resgia
 8.243822,47.297277,Fahrwangen Spitzacker
 9.060563,47.473733,Rossrüti Altersheim
 7.621019,47.053627,Burgdorf Jungfraustrasse
+8.937588,45.926771,Brusino Arsizio Rondello
 7.580932,47.089277,Kirchberg BE Nyco
 7.627629,47.058186,Burgdorf Kornhaus
 6.852112,47.013533,Les Geneveys-s.C. Prélet
@@ -17572,8 +19258,10 @@ Longitude,Latitude,Remark
 9.954289,46.596755,Zuoz Chaunt da Crusch
 9.960774,46.599744,Zuoz staziun
 9.983391,46.611688,S-chanf Chesa cumünela
+10.021599,46.638026,Cinuos-chel-Brail staziun
 9.962445,46.603919,Zuoz Aguêl
 9.977963,46.610414,S-chanf Somvih
+10.022025,46.640392,Cinuos-chel Suot il Chaunt
 7.292889,47.161787,Biel/Bienne Centre Boujean
 7.273222,47.14628,Biel/BienneBf Mett/gare Mâche
 6.174141,46.1844,Chêne-Bougeries Conches
@@ -17592,9 +19280,13 @@ Longitude,Latitude,Remark
 6.123364,46.233788,Grand-Saconnex place
 6.075725,46.296075,Ségny
 6.057231,46.325082,Tougin hôpital
+5.960536,46.143645,Pougny gare
 6.055631,46.233446,Meyrin CERN
+5.999267,46.252715,Sergy bourg
 6.022922,46.244836,St-Genis Jean Monnet
 6.034791,46.24269,St-Genis Schumann
+5.980232,46.236141,Thoiry mairie
+5.992531,46.227068,Thoiry Val-Thoiry
 6.097271,46.222,Vernier Blandonnet
 6.21715,46.236101,Meinier Le Carre-d'Amont
 9.85991,46.511774,Celerina Punt Schlattain
@@ -17872,6 +19564,8 @@ Longitude,Latitude,Remark
 8.562299,47.203804,Neuheim Baarburgrank
 8.443641,47.193522,Cham Heiligkreuz
 8.440389,47.160807,Hünenberg Seeblick
+8.972636,45.962871,Campione via Posero (I)
+8.970328,45.969372,Campione Debarcadero (I)
 8.952945,46.005596,Lugano Al Forte
 7.621315,46.880857,Konolfingen
 7.615693,46.878662,Konolfingen Haldenweg
@@ -18944,6 +20638,22 @@ Longitude,Latitude,Remark
 8.533649,47.19378,Baar Chriesimatt
 7.650263,47.113538,Alchenstorf Wil
 8.203067,47.394841,Othmarsingen Militärbetriebe
+9.005534,45.84846,Balerna Prada
+9.001233,45.84574,Balerna S. Antonio
+9.005529,45.8429,Balerna Via Motta
+9.006859,45.844825,Balerna Via Sottobisio
+9.023222,45.831945,Chiasso Via Chiesa
+9.017793,45.83428,Chiasso Crocione
+9.03328,45.836589,Chiasso Viale Stoppa
+9.022371,45.850158,Morbio Inferiore Campo Sport.
+9.027831,45.847535,Morbio Inferiore Fontanella
+9.014416,45.849343,Morbio Inferiore Ghitello
+9.021168,45.844156,Morbio Inferiore Pascuritt
+9.013443,45.847719,Morbio Inferiore Polenta
+9.03015,45.84536,Vacallo Cimitero
+9.027761,45.842443,Vacallo Letra
+9.027284,45.840642,Vacallo Sovernigo
+9.02523,45.840869,Vacallo Via Spinee
 8.245533,47.32908,Hilfikon Sandbüel
 8.823384,47.230953,Rapperswil SG Attenhoferstr.
 8.929981,47.264626,Laupen ZH Mürtschenstrasse
@@ -20766,6 +22476,30 @@ Longitude,Latitude,Remark
 8.977183,46.421303,Malvaglia Filovia
 8.929786,46.52778,Olivone Scona
 8.874479,46.517579,Piansecco
+9.012819,45.8426,Balerna Bisio
+9.016923,45.841157,Balerna Pontegana
+9.018748,45.84015,Balerna Rimessa AMSA
+8.925394,45.916892,Brusino Arsizio Casa Diana
+8.949942,45.935306,Brusino Arsizio Punta Poiana
+8.930044,45.921977,Brusino Arsizio S. Giorgio
+8.977833,45.904562,Capolago Posta
+9.026773,45.834567,Chiasso Chiesa
+9.021696,45.833037,Chiasso Via Guisan
+8.985535,45.871113,Mendrisio Autosilo
+8.987061,45.875869,Mendrisio Cantine Delizie
+8.984876,45.879696,Mendrisio Cantine di Sotto
+8.985219,45.8745,Mendrisio Cimitero
+8.986608,45.87763,Mendrisio Morgana
+8.987588,45.872641,Mendrisio S. Giovanni
+8.983722,45.879874,Mendrisio Vignalunga
+8.982627,45.882633,Mendrisio Vignöö
+9.011386,45.826731,Pedrinate Chiesa
+9.005854,45.828158,Pedrinate Cimitero
+8.970502,45.904185,Riva S. Vitale Battistero
+8.970868,45.912197,Riva S. Vitale Battuta
+8.971286,45.909627,Riva S. Vitale Roncaccio
+8.971615,45.894228,Riva S. Vitale Valserrata
+8.998603,45.828403,Seseglio Villette
 8.990633,46.059246,Sonvico al Nido
 8.988509,46.056387,Sonvico Scuole
 8.781558,46.153538,Ascona Aeroporto
@@ -20828,6 +22562,9 @@ Longitude,Latitude,Remark
 8.7262,46.143009,Ronco s. Ascona F.na Martina
 8.781041,46.168821,Solduno Passetto
 8.78363,46.16879,Solduno Selva
+8.968567,45.961766,Bissone Arco di Campione
+8.972098,45.968988,Campione Corso Italia
+8.971679,45.966924,Campione Via Tagliaferri
 8.973229,46.014804,Albonago ai Ronchi
 8.974042,46.014325,Albonago al Bosco
 8.975125,46.007373,Albonago Roccolo
@@ -20853,14 +22590,19 @@ Longitude,Latitude,Remark
 8.949598,46.008754,Lugano ai Frati
 8.947669,46.003435,Lugano Bellavista
 8.960629,46.014021,Lugano Casa Serena
+8.944258,45.994916,Lugano Cassarina
 8.952452,46.00598,Lugano Centro
+8.943672,45.997074,Lugano Loreto
+8.94667,45.995765,Lugano Malpensata
 8.955862,46.005583,Lugano Palazzo Congressi
 8.963179,46.024891,Lugano Resega
 8.955688,46.019783,Lugano Ronchetto
 8.951763,46.005809,Lugano S. Antonio
 8.942104,46.006695,Lugano S. Nicolao
+8.942742,45.993298,Lugano Santa Birgitta
 8.955255,46.014859,Lugano Scuole Molino Nuovo 2
 8.960402,46.024416,Lugano Stadio
+8.944686,45.998734,Lugano Tassino
 8.962257,46.018678,Lugano Via Brentani
 8.950936,46.009545,Lugano Via F. Pelli
 8.966531,46.009434,Lugano Via Molinazzo
@@ -20868,6 +22610,19 @@ Longitude,Latitude,Remark
 8.954623,46.01116,Lugano Via Zurigo
 8.947053,46.012459,Massagno al Sole
 8.946505,46.01037,Massagno Santa Lucia
+8.930544,45.987622,Noranco Asilo Bagion
+8.928358,45.982729,Noranco Furnas
+8.937167,45.986751,Pambio S. Pietro Chiesa
+8.94156,45.990678,Paradiso Brentino
+8.941094,45.9883,Paradiso Carzo
+8.947586,45.991092,Paradiso Fontana
+8.945249,45.991978,Paradiso Via S. Salvatore
+8.943801,45.99144,Paradiso Geretta
+8.94427,45.992549,Paradiso Via Cattori
+8.932831,45.984883,Pazzallo P&R Fornaci
+8.938558,45.982891,Pazzallo Scuole Fano
+8.936376,45.983307,Pazzallo Senago
+8.933856,45.982728,Pazzallo Senago Bassa
 8.965596,46.020801,Pregassona Boschina
 8.96774,46.023111,Pregassona Bozzoreda
 8.96646,46.023983,Pregassona Croce Verde
@@ -20919,6 +22674,9 @@ Longitude,Latitude,Remark
 8.307141,47.471901,Baden Weite Gasse
 8.302504,47.481236,Baden Pavillon
 8.337834,47.461466,Wettingen Bushof
+8.90058,45.903839,Porto Ceresio Stazione
+8.908628,45.908431,Porto CeresioPiazzale Appiani
+8.906201,45.904414,Porto Ceresio Piazza Bossi
 8.991143,46.050376,Cadro Grescia
 8.987677,46.046645,Cadro Municipio
 8.992222,46.051981,Villa Luganese Vigna
@@ -20998,6 +22756,9 @@ Longitude,Latitude,Remark
 8.952482,46.016875,Lugano Osp. Civico/Torricelli
 8.954874,46.012785,Lugano Piazza Molino Nuovo 2
 8.956414,46.014744,Lugano Scuole Molino Nuovo
+8.926425,45.983772,Noranco Paese
+8.933416,45.98833,Pambio Paese
+8.946003,45.988891,Paradiso Stazione
 8.978076,46.003509,Ruvigliana Paese
 8.974121,46.019461,Pregassona Piazza di Giro
 8.946462,46.006483,Lugano Stazione Nord
@@ -21727,11 +23488,15 @@ Longitude,Latitude,Remark
 6.237026,46.288864,Anières Gravière
 6.220618,46.272845,Anières Marguerite
 6.005142,46.167182,Avully école
+5.986476,46.158666,Avully Martinet
 6.005516,46.173647,Avully Printanière
+5.995945,46.168262,Avully Gennecy
+5.998069,46.1751,Avully Touvière
 6.004252,46.155268,Avusy Athenaz-Ecole
 6.019139,46.163275,Avusy Eaumorte
 6.006458,46.149169,Avusy La Tuiliere
 6.009511,46.144313,Avusy Le Renfort
+5.995385,46.152779,Avusy Les Quoattes
 6.003,46.156089,Avusy Passeiry
 6.019313,46.143681,Avusy Sur-le-Moulin
 6.13646,46.145501,Croix-de-Rozon Place
@@ -21776,6 +23541,9 @@ Longitude,Latitude,Remark
 6.024954,46.166209,Cartigny Croisée d'Eaumorte
 6.021594,46.169909,Cartigny La Passe
 6.022226,46.174983,Cartigny Moulin-de-Vert
+5.975408,46.151397,Chancy Les Bouveries
+5.972517,46.149596,Chancy Raclerets
+5.981287,46.156638,Chancy usine
 6.170166,46.187108,Chêne-Bougeries C.-Florissant
 6.178307,46.182944,Chêne-Bougeries Calandrini
 6.196427,46.206231,Chêne-Bougeries Castan
@@ -21848,9 +23616,12 @@ Longitude,Latitude,Remark
 6.230066,46.261638,Corsier GE Maisons-Neuves
 6.219056,46.270768,Anières Nant-d'Aisy
 6.216541,46.266638,Corsier GE Prés-Palais
+5.98732,46.205201,Dardagny Essertines
 6.00821,46.184487,Dardagny La Donzelle
 6.003124,46.177899,La Plaine école
 6.007304,46.181479,Dardagny Le Moulin
+5.997371,46.191204,Dardagny Les Tilleuls
+5.989265,46.210984,Dardagny Malval-Hameau
 6.141809,46.208405,Genève 22-Cantons
 6.162117,46.2017,Genève 31 Décembre
 6.138298,46.192638,Genève Acacias
@@ -22139,6 +23910,7 @@ Longitude,Latitude,Remark
 6.227146,46.20643,Puplinge Les Petoux
 6.234432,46.213273,Puplinge Marquis
 6.002276,46.204646,Russin La Chaumaz
+5.997311,46.207147,Russin Les Baillets
 6.016455,46.193138,Russin Noirettes
 6.046481,46.198371,Satigny Bois-de-Bay
 6.038631,46.22953,Satigny Bourdigny-Douane
@@ -22260,6 +24032,7 @@ Longitude,Latitude,Remark
 6.169063,46.17387,Vessy village
 6.159445,46.176452,Veyrier Vessy
 6.067347,46.323055,Cessy Les Hauts-de-Cessy
+5.99044,46.111392,Chênex La Boutique
 6.2464,46.27626,Veigy douane (F)
 6.116795,46.253342,Ferney Brunette
 6.09622,46.272443,Ferney Fruitière
@@ -22272,6 +24045,9 @@ Longitude,Latitude,Remark
 6.025486,46.241989,St-Genis Lion
 6.028793,46.240959,St-Genis Malivert
 6.086269,46.148418,St-Julien-en-Genevois Hutins
+5.97949,46.231912,Thoiry gare
+5.98369,46.244499,Thoiry Pl. d'Allemogne
+5.989449,46.247389,Thoiry Place en Poulet
 6.055136,46.326235,Tougin Vertes Campagnes
 6.257934,46.269103,Veigy village
 6.117941,46.250989,Ferney douane
@@ -22491,6 +24267,7 @@ Longitude,Latitude,Remark
 7.01195,46.11243,Les Marécottes gare
 7.020567,46.118759,Salvan Le Carre
 6.992707,46.140422,Van-d'en-Haut camping
+8.957893,45.931402,Riva S. Vitale Poiana (bus)
 8.08214,47.067533,Wolhusen Tropenhaus
 7.930311,47.280599,Strengelbach Kath. Kirche
 7.577404,47.069204,Lyssach Dorfstrasse
@@ -22515,6 +24292,11 @@ Longitude,Latitude,Remark
 7.553841,47.502539,Therwil Birsmatt
 8.62752,46.863054,Attinghausen Galliried
 8.627699,46.866434,Attinghausen Plätzli
+10.535415,46.765169,St. Valentin/S. Valentino
+10.536432,46.805652,Graun/Curon
+10.528397,46.711344,Burgeis/Burgusio
+10.522036,46.828998,Reschen/Resia
+10.50736,46.836144,Reschenpass/Passo Resia
 7.215398,46.963367,Gurbrü Hauptstrasse
 8.549053,47.445627,Zürich Flughafen Im Rohr
 8.81445,47.376891,Hittnau Isikon
@@ -22528,6 +24310,8 @@ Longitude,Latitude,Remark
 6.328366,46.662452,Le Pont Les Fougères
 7.866871,47.115976,Huttwil Schwende
 7.880035,47.114487,Ufhusen Zollhus
+7.180825,45.873943,Le Tronchet
+7.189375,45.986855,Liddes Chapelle
 7.120384,46.027385,Champex Le Signal
 7.138435,46.023171,Orsières La Proz
 7.146414,46.030532,Orsières La Place
@@ -23044,6 +24828,8 @@ Longitude,Latitude,Remark
 7.926355,47.34821,Starrkirch-WilGemeindezentrum
 6.561821,46.554729,Bussigny VD Cocagne-Sullens
 6.562422,46.55709,Bussigny VD Rente
+10.507812,46.87558,Nauders Bergkastelbahn
+9.030104,45.836247,Chiasso Via Franscini
 9.631871,46.523335,Sur Kirche
 8.590976,47.262946,Horgen Wannerstrasse
 8.136358,47.244925,Rickenbach LU Bohler
@@ -23074,6 +24860,7 @@ Longitude,Latitude,Remark
 8.933361,46.012317,Breganzona Vergiò
 8.928804,46.000502,Breganzona Via Casale
 8.975185,46.001722,Castagnola Capolinea
+8.945788,45.995642,Lugano Bressanella
 8.937926,46.005491,Lugano Conservatorio
 8.939592,46.004569,Lugano Moncucco Clinica
 8.942523,46.005501,Lugano Moncucco Scuole
@@ -23260,6 +25047,9 @@ Longitude,Latitude,Remark
 9.539348,46.866387,Chur Waldhaus
 6.418381,46.474155,Etoy Grosses-Terres
 6.419966,46.475744,Etoy Noyer-Girod
+8.982608,45.877397,Mendrisio S. Martino
+8.978201,45.86587,Mendrisio Asilo Sud
+8.981221,45.875698,Mendrisio Via Morée
 9.546525,46.860361,Chur Kleinwaldegg
 9.543737,46.862878,Chur Fondeiweg
 9.544668,46.862186,Chur Böschenstrasse
@@ -23630,12 +25420,22 @@ Longitude,Latitude,Remark
 6.079774,46.247334,Prévessin-Moëns Anc. Douane
 6.094046,46.244949,Ferney Bois Candide
 6.088116,46.24092,Meyrin Mategnin
+5.991335,46.177541,La Plaine douane
+5.984708,46.178806,Challex Gaillardin
+5.985739,46.176606,Challex Les Baraques
+5.982291,46.181042,Challex Fontanettes
+5.974776,46.181161,Challex Poizat
+5.976298,46.183313,Challex église (F)
+5.972822,46.182035,Challex La Halle (F)
+5.968603,46.179038,Challex école
+5.976485,46.179257,Challex Corbière
 6.085106,46.143123,St-Julien-en-Genevois gare
 6.080287,46.140168,St-Julien-en-Genevois Arande
 6.086475,46.132793,St-Julien-en-GenevoisCervonne
 6.090198,46.128771,Neydens Casino
 6.094856,46.120415,Neydens Vitam
 6.081719,46.236435,Meyrin Gravière
+5.971848,46.109082,Valleiry Espace FOL
 8.913634,47.644972,Mammernstrasse
 8.874131,47.648013,Eschenz Brüelweg
 9.021833,47.674274,Berlingen Seestrasse/Werft
@@ -23669,6 +25469,8 @@ Longitude,Latitude,Remark
 6.230091,46.278579,Anières Bassy
 6.23605,46.282511,Anières Courson
 6.22762,46.274738,Anières mairie
+5.995798,46.15184,Avusy Creux-du-Loup
+5.993766,46.150356,Avusy Moulin de la Grave
 6.130632,46.143994,Bardonnex Landecy
 6.076352,46.166041,Bernex Maison du Terroir
 6.139299,46.178929,Carouge GE Battelle
@@ -23776,6 +25578,7 @@ Longitude,Latitude,Remark
 7.468985,46.966101,Bern Wankdorfbrücke
 7.403495,46.949008,Bern Weyermannshaus Bad
 7.475029,46.966189,Bern Wölflistrasse
+7.16664,45.857277,Le Grand-St-Bernard Albergo I
 7.84869,47.112948,Huttwil Feuerwehrmagazin
 7.43334,46.935611,Bern Weissenbühl (Tram)
 8.386723,47.459322,Otelfingen Landstrasse
@@ -24181,6 +25984,7 @@ Longitude,Latitude,Remark
 7.816546,47.461733,Sissach Güterstrasse
 9.05914,47.136579,Ziegelbrücke Süd
 8.162046,47.387199,Lenzburg Fünflinden
+9.020812,45.845223,Morbio Inferiore Via Vela
 7.555834,47.151909,Wiler
 9.484115,47.100378,Gretschins Magletsch
 6.453549,46.485055,St-Prex Epondaz
@@ -24440,7 +26244,10 @@ Longitude,Latitude,Remark
 9.477934,47.169214,Buchs SG Nord
 9.47901,47.166972,Buchs SG Süd
 9.562994,47.3734,Altstätten SG Widen
+5.993339,46.209849,Dardagny Malval-Chapelle
+5.996152,46.216174,Dardagny Malval-Centre Nature
 6.052359,46.220927,Satigny ZIMEYSA-Ouest
+5.992159,46.164569,Avully Bachères
 6.266428,46.316756,Chens-sur-Léman (F)
 6.843117,46.633944,Ursy Derrière la Grange
 6.854081,46.457332,La Tour-de-Peilz Oyonne
@@ -24459,6 +26266,7 @@ Longitude,Latitude,Remark
 6.899837,46.451972,Chailly-Montreux Rottaz
 7.150002,46.68868,La Roche FR Montsoflo
 7.154862,46.686696,La Roche FR La Berra
+8.924977,45.977511,Scairolo Posteggio Nucleo
 9.923861,46.578722,La Punt-Chamues-ch
 9.484207,47.149343,Räfis Stationsstrasse
 9.482263,47.154749,Buchs SG Distelweg
@@ -24474,6 +26282,7 @@ Longitude,Latitude,Remark
 6.257045,46.196644,Annemasse Mont-Rond
 7.286885,47.158415,Biel/Bienne Grenchenstrasse
 6.102996,46.093926,Beaumont Route de Viry
+5.967832,46.109318,Valleiry gare
 6.280238,46.183749,Cranves-SalesRoute des Tattes
 6.150258,46.191417,Genève Clinique La Colline
 7.26689,47.12265,Brügg BE Industriestrasse
@@ -24526,9 +26335,35 @@ Longitude,Latitude,Remark
 7.555376,47.590176,Saint-Louis (Haut-Rhin)
 7.537418,47.817178,Bantzenheim
 7.54639,47.814342,Neuenburg (Baden)-Frontière
+6.177669,49.109381,Metz Ville
+6.39514,49.014351,Rémilly
+6.900258,49.189217,Forbach
+6.529723,49.289733,Bouzonville
+6.828917,49.138191,Béning
+6.775001,49.126362,Hombourg-Haut
+6.721033,49.086052,Saint-Avold
+6.604009,49.045715,Faulquemont
+6.476802,49.00381,Herny
+7.067878,49.107257,Sarreguemines
+7.124786,49.035217,Kalhausen
+7.734067,48.585339,Strasbourg Ville
+7.641459,48.755848,Mommenheim
+8.182904,48.967664,Lauterbourg
+7.54688,48.842342,Obermodern
+7.950014,49.031645,Wissembourg
+7.381868,48.92036,Wingen-sur-Moder
+7.476667,48.872642,Ingwiller
+7.131803,49.00031,Oermingen
+7.184837,48.940615,Diemeringen
+7.255394,48.90636,Tieffenbach-Struth
+5.71542,45.191029,Grenoble gare Routière
 6.067336,47.225883,Morre
+6.866718,45.919955,Chamonix-Aiguille du Midi
 7.343098,47.742844,Mulhouse Gare Centrale
+5.980354,46.230754,Thoiry Mairie
 6.020275,46.243662,St-Genis Pouilly
+5.213453,46.199698,Bourg-en-Bresse Gare Routière
+5.026128,47.322913,Dijon Ville
 6.353315,46.900598,Pontarlier (F)
 6.157892,46.857749,Frasne
 6.280405,46.776391,Labergement-Ste-Marie
@@ -24543,12 +26378,32 @@ Longitude,Latitude,Remark
 6.492565,47.050059,Gilley
 6.295364,47.154071,Le Valdahon Camp Militaire
 6.604876,47.053732,Morteau
+5.919756,45.571498,Chambéry-Challes-les-Eaux
+5.908984,45.688197,Aix-les-Bains-le-Revard
+5.992482,46.227,Val-Thoiry (F)
+5.214771,46.199927,Bourg-en-Bresse
+5.825962,46.110918,Bellegarde (Ain)
 6.057149,46.33247,Gex Centre
 6.136816,46.3534,Divonne-les-Bains
+5.961156,46.146085,Pougny-Chancy
 6.08559,46.141928,Saint-Julien-en-Genevois
 6.236404,46.199341,Annemasse
 6.481974,46.368955,Thonon-les-Bains
 6.57776,46.397771,Evian-les-Bains
 6.195714,46.19668,Chêne Bourg
+6.70186,45.906665,St-Gervais-les-Bains-le-Fayet
+6.76382,45.9243,Servoz
+6.797592,45.89393,Les Houches
+6.825895,45.899209,Taconnaz
+6.839377,45.906997,Les Bossons
+6.847411,45.912591,Les Pélerins
+6.873836,45.92262,Chamonix-Mont-Blanc
+6.858858,45.916584,Les Moussoux
+6.888649,45.939702,Les Praz-de-Chamonix
+6.89914,45.950959,Les Tines
+6.927846,45.982178,Argentière (Haute-Savoie)
 6.93399,46.033404,Vallorcine (F)
 6.920802,46.018324,Le Buet
+5.714167,45.191187,Grenoble
+7.978882,49.027103,Wissembourg Kapsweyer
+7.733261,48.583014,Strasbourg gare (Bvd de Metz)
