@@ -53,7 +53,7 @@ class Application {
             Reader reader = new Reader(GeoLocationFile, this);
             ArrayList<GeoItem> geolocation = reader.readGeoLocationFile();
 
-            // todo verbessern: Bei gleichem Namen werden Daten einfach überschrieben
+            // TODO verbessern: Bei gleichem Namen werden Daten einfach überschrieben
             for (TrainStation ts: trainStations ) {
                 for (int i = 1; i < geolocation.size(); i++) {
                     if(ts.getTrainStationName().equals(geolocation.get(i).getBahnhofsname())) {

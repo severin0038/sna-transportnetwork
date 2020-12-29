@@ -54,30 +54,35 @@ public class Reader {
             String[] it = st.split(";");
             if(/*it[3].equals("SBB") &&*/ it[5].equals("Zug")) {
 
+                //- Delete Commas
+                System.out.println("ReadFile: ##############");
+                it[13] = deleteCommas(it[13]);
+
                 int trainStationId = returnTrainstationIdAndCreateTrainstationIfDoesntExists(it[13]);
 
+
                 Item item = new Item(
-                        it[0],
-                        it[1],
-                        it[2],
-                        it[3],
-                        it[4],
-                        it[5],
-                        it[6],
-                        it[7],
-                        it[8],
-                        it[9],
-                        Boolean.parseBoolean(it[10]),
-                        Boolean.parseBoolean(it[11]),
-                        it[12],
-                        trainStationId,
-                        parseStringToDate(it[14], DATE_FORMAT, dateAn),
-                        parseStringToDate(it[15], DATE_FORMAT_WITH_SECONDS, dateAn),
-                        it[16],
-                        parseStringToDate(it[17], DATE_FORMAT, dateAb),
-                        parseStringToDate(it[18], DATE_FORMAT_WITH_SECONDS, dateAb),
-                        it[19],
-                        it[20]);
+                        it[0], //- BETRIEBSTAG
+                        it[1], //- FAHRT_BEZEICHNER
+                        it[2], //- BETREIBER_ID
+                        it[3], //- BETREIBER_ABK
+                        it[4], //- BETREIBER_NAME
+                        it[5], //- PRODUKT_ID
+                        it[6], //- LINIEN_ID
+                        it[7], //- LINIEN_TEXT
+                        it[8], //- UMLAUF_ID
+                        it[9], //- VERKEHRSMITTEL_TEXT
+                        Boolean.parseBoolean(it[10]), //- ZUSATZFAHRT_TF
+                        Boolean.parseBoolean(it[11]), //- FAELLT_AUS_TF
+                        it[12], //- BPUIC
+                        trainStationId, //- HALTESTELLEN_NAME it[13]
+                        parseStringToDate(it[14], DATE_FORMAT, dateAn), //- ANKUNFTSZEIT
+                        parseStringToDate(it[15], DATE_FORMAT_WITH_SECONDS, dateAn), //- AN_PROGNOSE
+                        it[16], //- AN_PROGNOSE_STATUS
+                        parseStringToDate(it[17], DATE_FORMAT, dateAb), //- ABFAHRTSZEIT
+                        parseStringToDate(it[18], DATE_FORMAT_WITH_SECONDS, dateAb), //- AB_PROGNOSE
+                        it[19], //- AB_PROGNOSE_STATUS
+                        it[20]); //- AB_PROGNOSE_STATUS
                 items.add(item);
             }
         }
@@ -93,8 +98,18 @@ public class Reader {
         while ((st = br.readLine()) != null) {
             String[] it = st.split(",");
 
-            // todo: input file bereinigen
-            // todo verbessern: Ortbezeichnungen nach Komma werden nicht eingelesen
+            // TODO: input file bereinigen
+            // TODO verbessern: Ortbezeichnungen nach Komma werden nicht eingelesen
+            if(it.length > 3)
+            {
+                System.out.println("More than 3 parts: " + it[2] + it[3]);
+                it[2] = it[2] + it[3];
+            }
+
+            //- Delete Commas
+            System.out.println("ReadGeoLocation: --------------");
+            it[2] = deleteCommas(it[2]);
+
                 GeoItem geoItem = new GeoItem(
                         it[0],
                         it[1],
@@ -128,6 +143,11 @@ public class Reader {
         } else {
             return dateIfEmpty;
         }
+    }
+
+    private String deleteCommas(String input)
+    {
+        return input.replaceAll(",", "");
     }
 
 }

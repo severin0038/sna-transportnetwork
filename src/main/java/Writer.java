@@ -23,6 +23,7 @@ class Writer {
     void writeTrainstationCSV(ArrayList<TrainStation> trainStations, String filename, String header) throws IOException {
 
         FileWriter csvWriter = new FileWriter(filename);
+
         csvWriter.append(header).append("\n");
 
         for (TrainStation trainstation : trainStations) {
