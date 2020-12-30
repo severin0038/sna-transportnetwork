@@ -10,9 +10,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException {
         Application application = new Application();
-        application.sbbDataSetToSnaGraph("2020-04-04_istdaten.csv", "2020-04-04_network.csv");
+        application.sbbDataSetToSnaGraph("2019-12-13istdaten.csv", "2020-04-04_network.csv");
 //        application.sbbDataSetToSnaGraph("2019-04-06istdaten.csv", "2019-04-06_network.csv");
-        application.addGeolocationToTrainstations("stations_geolocation_v07.csv");
+        application.addGeolocationToTrainstations("stations_geolocation_v07_02.csv");
         application.trainStationsToNodesList("trainStations.csv");
     }
 }
