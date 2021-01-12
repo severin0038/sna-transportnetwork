@@ -23,6 +23,10 @@ class Application {
 
     private ArrayList<TrainStation> trainStations = new ArrayList<>();
 
+    //- Collect Datat
+    Map<String, List<Item>> itemsGroupedByLinienId;
+    ArrayList<SingleConnection> connections;
+
     private Writer writer = new Writer();
 
     Application() {
@@ -34,10 +38,23 @@ class Application {
         ArrayList<Item> items = reader.readFile();
 
         //schleife durch liste aller csv
-        Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
-        ArrayList<SingleConnection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
+        itemsGroupedByLinienId = groupItemsByLinienId(items);
+        connections = groupedItemsToConnections(itemsGroupedByLinienId);
         //ende der schleife
+    }
 
+    void sbbDataSetToSnaGraph(String inputFile) throws URISyntaxException, IOException {
+
+        Reader reader = new Reader(inputFile, this);
+        ArrayList<Item> items = reader.readFile();
+
+        //schleife durch liste aller csv
+        itemsGroupedByLinienId = groupItemsByLinienId(items);
+        connections = groupedItemsToConnections(itemsGroupedByLinienId);
+        //ende der schleife
+    }
+
+    void groupAllData(String outputFileNameConnections) throws IOException {
         //erst nach der schleife
         ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
         ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
@@ -46,8 +63,6 @@ class Application {
 
         writer.writeConnectionCSV(connectionWithoutDuplicates, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
     }
-
-
 
     void addGeolocationToTrainstations(String GeoLocationFile) throws URISyntaxException, IOException {
             Reader reader = new Reader(GeoLocationFile, this);
