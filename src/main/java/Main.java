@@ -1,18 +1,30 @@
+import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class Main {
 
+    public static String inputFolder = "src/main/resources/data";
 
     public static void main(String[] args) throws IOException, URISyntaxException, ParseException {
+
         Application application = new Application();
-        application.sbbDataSetToSnaGraph("2019-12-13istdaten.csv", "2020-04-04_network.csv");
-//        application.sbbDataSetToSnaGraph("2019-04-06istdaten.csv", "2019-04-06_network.csv");
+
+        //- Read all Files from Folder
+        File folder = new File(inputFolder+"/");
+        File[] listOfFiles = folder.listFiles();
+        String filePath;
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                filePath = file.getPath().replace("\\", "/").replace("src/main/resources/", "");
+                application.sbbDataSetToConnectionsList(filePath);
+            }
+        }
+
+        application.exportConnectionsToCSV("2020-04-04___2019-04-06.csv");
         application.addGeolocationToTrainstations("stations_geolocation_v07_02.csv");
         application.trainStationsToNodesList("trainStations.csv");
+
     }
 }

@@ -27,18 +27,6 @@ public class Reader {
         return Paths.get(filePath.toURI()).toFile();
     }
 
-//    public ArrayList<data.Trainstation> readTrainstationFile() throws IOException {
-//        BufferedReader br = new BufferedReader(new FileReader(file));
-//
-//        ArrayList<data.Trainstation> trainStations = new ArrayList<>();
-//        String st;
-//        while ((st = br.readLine()) != null) {
-//            String[] ts = st.split(";");
-//            data.Trainstation trainStation = new data.Trainstation(Integer.valueOf(ts[0]), ts[1]);
-//            trainStations.add(trainStation);
-//        }
-//        return trainStations;
-//    }
 
     ArrayList<Item> readFile() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
@@ -55,11 +43,9 @@ public class Reader {
             if(/*it[3].equals("SBB") &&*/ it[5].equals("Zug")) {
 
                 //- Delete Commas
-                System.out.println("ReadFile: ##############");
                 it[13] = deleteCommas(it[13]);
 
                 int trainStationId = returnTrainstationIdAndCreateTrainstationIfDoesntExists(it[13]);
-
 
                 Item item = new Item(
                         it[0], //- BETRIEBSTAG

@@ -22,27 +22,27 @@ class Application {
     private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label;Longitude;Latitude";
 
     private ArrayList<TrainStation> trainStations = new ArrayList<>();
+    ArrayList<SingleConnection> connections = new ArrayList<>();
 
     private Writer writer = new Writer();
+
 
     Application() {
     }
 
-    void sbbDataSetToSnaGraph(String inputFile, String outputFileNameConnections) throws URISyntaxException, IOException {
+    void sbbDataSetToConnectionsList(String inputFile) throws URISyntaxException, IOException {
 
         Reader reader = new Reader(inputFile, this);
         ArrayList<Item> items = reader.readFile();
 
-        //schleife durch liste aller csv
         Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
-        ArrayList<SingleConnection> connections = groupedItemsToConnections(itemsGroupedByLinienId);
-        //ende der schleife
+        groupedItemsToConnections(itemsGroupedByLinienId, connections);
 
-        //erst nach der schleife
+    }
+
+    void exportConnectionsToCSV(String outputFileNameConnections) throws IOException {
         ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
         ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
-
-        System.out.println(connectionWithoutDuplicates);
 
         writer.writeConnectionCSV(connectionWithoutDuplicates, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
     }
@@ -72,9 +72,7 @@ class Application {
         return items.stream().collect(groupingBy(it -> it.getLinien_id()+it.getBetreiber_abk()));
     }
 
-    private ArrayList<SingleConnection> groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection) {
-
-        ArrayList<SingleConnection> connections = new ArrayList<>();
+    private void groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection, ArrayList<SingleConnection> connections) {
 
         itemsGroupedByConnection.forEach((linienId, listOfItems) -> {
             listOfItems.sort(Comparator.comparing(Item::getAnkunftszeit));
@@ -94,7 +92,6 @@ class Application {
             }
         });
 
-        return connections;
     }
 
     private ArrayList<SingleConnection> sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(ArrayList<SingleConnection> connections) {
