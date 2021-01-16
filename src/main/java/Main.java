@@ -22,7 +22,7 @@ public class Main {
             }
         }
 
-        application.exportConnectionsToCSV("2020-04-Friday.csv");
+        application.exportConnectionsToCSV("2019-04-Friday.csv");
         application.addGeolocationToTrainstations("stations_geolocation_v07_03.csv");
         application.trainStationsToNodesList("trainStations.csv");
 
