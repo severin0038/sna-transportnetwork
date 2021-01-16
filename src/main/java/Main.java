@@ -22,8 +22,8 @@ public class Main {
             }
         }
 
-        application.exportConnectionsToCSV("2020-04-04___2019-04-06.csv");
-        application.addGeolocationToTrainstations("stations_geolocation_v07_02.csv");
+        application.exportConnectionsToCSV("2020-04-Friday.csv");
+        application.addGeolocationToTrainstations("stations_geolocation_v07_03.csv");
         application.trainStationsToNodesList("trainStations.csv");
 
     }
