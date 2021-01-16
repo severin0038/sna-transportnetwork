@@ -17,7 +17,7 @@ class Application {
 
     private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
     private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
-    private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
+    private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete;totAbfahrtAnzahlVerspaetungen;totAnkunftAnzahlVerspaetungen;totAbfahrtSekundenVerspaetungen;totAnkunftSekundenVerspaetungen";
     private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
     private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label;Longitude;Latitude";
 
@@ -116,6 +116,13 @@ class Application {
         int durchschnittlicheAbfahrtsverspaetungNurVerspaetete;
         int durchschnittlicheAnkunftsverspaetungNurVerspaetete;
 
+        //- Total
+        double totAbfahrtAnzahlVerspaetungen;
+        double totAnkunftAnzahlVerspaetungen;
+        int totAbfahrtSekundenVerspaetungen;
+        int totAnkunftSekundenVerspaetungen;
+
+
         for(int i = 0; i < connections.size()-1; i++) {
             if((abfahrtsBahnhof == connections.get(i).getAbfahrtsBahnhofId()) && (ankunftsBahnhof == connections.get(i).getAnkunftsBahnhofId())) {
                 counter++;
@@ -136,10 +143,17 @@ class Application {
                     relativeAnzahlVerspaeteteAnkunft = (double) countDelayedConnectionsAnkunft/(double) counter;
                     durchschnittlicheAbfahrtsverspaetung = countDelayInSecondsAbfahrt/counter;
                     durchschnittlicheAnkunftsverspaetung = countDelayInSecondsAnkunft/counter;
+
+                    //- Total
+                    totAbfahrtAnzahlVerspaetungen = countDelayedConnectionsAbfahrt;
+                    totAnkunftAnzahlVerspaetungen = countDelayedConnectionsAnkunft;
+                    totAbfahrtSekundenVerspaetungen = countDelayInSecondsAbfahrt;
+                    totAnkunftSekundenVerspaetungen = countDelayInSecondsAnkunft;
+
                     if(countDelayedConnectionsAbfahrt != 0) { durchschnittlicheAbfahrtsverspaetungNurVerspaetete = countDelayInSecondsAbfahrt/countDelayedConnectionsAbfahrt; } else { durchschnittlicheAbfahrtsverspaetungNurVerspaetete = 0; }
                     if(countDelayInSecondsAnkunft != 0) { durchschnittlicheAnkunftsverspaetungNurVerspaetete = countDelayInSecondsAnkunft/countDelayedConnectionsAnkunft; } else { durchschnittlicheAnkunftsverspaetungNurVerspaetete = 0; }
 
-                    connectionsWithoutDuplicates.add(new GroupConnection(connections.get(i-1).getAbfahrtsBahnhofId(), connections.get(i-1).getAnkunftsBahnhofId(), counter, relativeAnzahlVerspaeteteAbfahrt, relativeAnzahlVerspaeteteAnkunft, durchschnittlicheAbfahrtsverspaetung, durchschnittlicheAnkunftsverspaetung, durchschnittlicheAbfahrtsverspaetungNurVerspaetete, durchschnittlicheAnkunftsverspaetungNurVerspaetete));
+                    connectionsWithoutDuplicates.add(new GroupConnection(connections.get(i-1).getAbfahrtsBahnhofId(), connections.get(i-1).getAnkunftsBahnhofId(), counter, relativeAnzahlVerspaeteteAbfahrt, relativeAnzahlVerspaeteteAnkunft, durchschnittlicheAbfahrtsverspaetung, durchschnittlicheAnkunftsverspaetung, durchschnittlicheAbfahrtsverspaetungNurVerspaetete, durchschnittlicheAnkunftsverspaetungNurVerspaetete, totAbfahrtAnzahlVerspaetungen, totAnkunftAnzahlVerspaetungen, totAbfahrtSekundenVerspaetungen, totAnkunftSekundenVerspaetungen));
                 }
                 counter = 1;
                 countDelayedConnectionsAnkunft = 0;

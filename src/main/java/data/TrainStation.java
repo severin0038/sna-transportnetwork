@@ -14,7 +14,7 @@ public class TrainStation {
         this.trainStationId = trainStationIdCounter++;
         this.trainStationName = deleteCommas(trainStationName);
         // todo default values löschen wenn nicht mehr benötigt
-        System.out.println("Set Default for: ########### " + trainStationName);
+        // System.out.println("Set Default for: ########### " + trainStationName);
         this.longitude = "8"; // default value (oberhalb der Schweiz)
         this.latitude = "48"; // default value, damit in Gephi ersichtlich
     }
