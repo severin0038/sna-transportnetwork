@@ -11,18 +11,9 @@ public class Main {
 
         Application application = new Application();
 
-        //- Read all Files from Folder
-        File folder = new File(inputFolder+"/");
-        File[] listOfFiles = folder.listFiles();
-        String filePath;
-        for (File file : listOfFiles) {
-            if (file.isFile()) {
-                filePath = file.getPath().replace("\\", "/").replace("src/main/resources/", "");
-                application.sbbDataSetToConnectionsList(filePath);
-            }
-        }
+        application.readAllFilesfromFolderAndGenerateApplicationPerFile(inputFolder);
 
-        application.exportConnectionsToCSV("2020-04-Friday.csv");
+        application.exportConnectionsToCSV("2020_04_01-30.csv");
         application.addGeolocationToTrainstations("stations_geolocation_v07_03.csv");
         application.trainStationsToNodesList("trainStations.csv");
 

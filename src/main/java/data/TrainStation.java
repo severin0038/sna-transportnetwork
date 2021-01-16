@@ -9,12 +9,12 @@ public class TrainStation {
     private String trainStationName;
     private String longitude;
     private String latitude;
+    private int numberOfKnockOnDelays = 0;
 
     public TrainStation(String trainStationName) {
         this.trainStationId = trainStationIdCounter++;
         this.trainStationName = deleteCommas(trainStationName);
         // todo default values löschen wenn nicht mehr benötigt
-        // System.out.println("Set Default for: ########### " + trainStationName);
         this.longitude = "8"; // default value (oberhalb der Schweiz)
         this.latitude = "48"; // default value, damit in Gephi ersichtlich
     }
@@ -25,7 +25,8 @@ public class TrainStation {
                 valueOf(getTrainStationId()),
                 getTrainStationName(),
                 valueOf(getLongitude()),
-                valueOf(getLatitude())
+                valueOf(getLatitude()),
+                valueOf(getNumberOfKnockOnDelays())
         );
     }
 
@@ -68,4 +69,11 @@ public class TrainStation {
         return input.replaceAll(",", "");
     }
 
+    public int getNumberOfKnockOnDelays() {
+        return numberOfKnockOnDelays;
+    }
+
+    public void setNumberOfKnockOnDelays(int numberOfKnockOnDelays) {
+        this.numberOfKnockOnDelays = numberOfKnockOnDelays;
+    }
 }

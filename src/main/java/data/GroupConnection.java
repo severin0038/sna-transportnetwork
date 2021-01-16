@@ -2,7 +2,7 @@ package data;
 
 import static java.lang.String.valueOf;
 
-public class GroupConnection extends  Connection {
+public class GroupConnection extends Connection {
 
     private int verbindungenProTag;
     private double relativeAnzahlVerspaeteteAbfahrt;
