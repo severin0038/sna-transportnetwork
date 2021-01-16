@@ -3,51 +3,48 @@ import data.GroupConnection;
 import data.SingleConnection;
 import data.TrainStation;
 
-import javax.print.URIException;
+import java.io.File;
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
 import java.util.*;
 import java.util.function.Function;
 
-import static java.util.stream.Collectors.groupingBy;
-
 class Application {
 
-    private final int DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS = 60;
-    private final String CSV_CONNECTION_HEADER = "abfahrtsBahnhof;ankunftsBahnhof;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
-    private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;verbindungenProTag;relativeAnzahlVerspaeteteAbfahrt;relativeAnzahlVerspaeteteAnkunft;durchschnittlicheAbfahrtsverspaetung;durchschnittlicheAnkunftsverspaetung;durchschnittlicheAbfahrtsverspaetungNurVerspaetete;durchschnittlicheAnkunftsverspaetungNurVerspaetete";
-    private final String CSV_TRAINSTATION_HEADER = "bahnhofId;bahnhofName";
-    private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label;Longitude;Latitude";
+    private final int DELAY_TOLERANCE_IN_SECONDS = 60;
+    private final String CSV_CONNECTION_HEADER_READY_FOR_GEPHI = "Source;Target;Verbindungen pro Tag;relative Anzahl verspätete Abfahrt;relative Anzahl verspätete Ankunft;durchschnittliche Abfahrtsverspätung;durchschnittliche Ankunftsverspätung;durchschnittliche Abfahrtsverspötung (nur Verspätete berücksichtigt);durchschnittliche Ankunftsverspätung (nur Verspätete berücksichtigt)";
+    private final String CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI = "Id;Label;Longitude;Latitude;Anzahl Folgeverspätungen";
 
     private ArrayList<TrainStation> trainStations = new ArrayList<>();
     ArrayList<SingleConnection> connections = new ArrayList<>();
 
     private Writer writer = new Writer();
 
+    void readAllFilesfromFolderAndGenerateApplicationPerFile(String inputFolder) throws IOException, URISyntaxException {
+        File folder = new File(inputFolder + "/");
+        File[] listOfFiles = folder.listFiles();
+        String filePath;
+            for(
+        File file :listOfFiles)
 
-    Application() {
-    }
-
-    void sbbDataSetToConnectionsList(String inputFile) throws URISyntaxException, IOException {
-
-        Reader reader = new Reader(inputFile, this);
-        ArrayList<Item> items = reader.readFile();
-
-        Map<String, List<Item>> itemsGroupedByLinienId = groupItemsByLinienId(items);
-        groupedItemsToConnections(itemsGroupedByLinienId, connections);
+        {
+            if (file.isFile()) {
+                filePath = file.getPath().replace("\\", "/").replace("src/main/resources/", "");
+                ApplicationPerDataset dataset = new ApplicationPerDataset(this, connections);
+                connections = dataset.sbbDataSetToConnectionsList(filePath);
+                System.out.println(filePath + "erledigt");
+            }
+        }
 
     }
 
     void exportConnectionsToCSV(String outputFileNameConnections) throws IOException {
         ArrayList<SingleConnection> sortedConnections = sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(connections);
-        ArrayList<GroupConnection> connectionWithoutDuplicates = deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
+        ArrayList<GroupConnection> connectionWithoutDuplicates = summarizeConnectionListAndCalculateSomeSumAndAverageValues(sortedConnections);
 
         writer.writeConnectionCSV(connectionWithoutDuplicates, outputFileNameConnections, CSV_CONNECTION_HEADER_READY_FOR_GEPHI);
     }
-
-
 
     void addGeolocationToTrainstations(String GeoLocationFile) throws URISyntaxException, IOException {
             Reader reader = new Reader(GeoLocationFile, this);
@@ -68,38 +65,12 @@ class Application {
         writer.writeTrainstationCSV(trainStations, outputFileNameTrainStations, CSV_TRAINSTATION_HEADER_READY_FOR_GEPHI);
     }
 
-    private Map<String, List<Item>> groupItemsByLinienId(ArrayList<Item> items) {
-        return items.stream().collect(groupingBy(it -> it.getLinien_id()+it.getBetreiber_abk()));
-    }
-
-    private void groupedItemsToConnections(Map<String, List<Item>> itemsGroupedByConnection, ArrayList<SingleConnection> connections) {
-
-        itemsGroupedByConnection.forEach((linienId, listOfItems) -> {
-            listOfItems.sort(Comparator.comparing(Item::getAnkunftszeit));
-
-            for(int i = 0; i < listOfItems.size()-1; i++) {
-                Item item = listOfItems.get(i);
-                SingleConnection conn = new SingleConnection(
-                        item.getHaltestellen_id(),
-                        listOfItems.get(i+1).getHaltestellen_id(),
-                        item.getBetreiber_abk(),
-                        linienId,
-                        item.getAbfahrtszeit(),
-                        item.getAb_prognose(),
-                        item.getAnkunftszeit(),
-                        item.getAn_prognose());
-                connections.add(conn);
-            }
-        });
-
-    }
-
     private ArrayList<SingleConnection> sortConnectionsByAbfahrtsBahnhofAndAnkunftsBahnhof(ArrayList<SingleConnection> connections) {
         Collections.sort(connections, Comparator.comparing((Function<SingleConnection, Integer>) Connection::getAbfahrtsBahnhofId).thenComparing(Connection::getAnkunftsBahnhofId));
         return connections;
     }
 
-    private ArrayList<GroupConnection> deleteDuplicatesInConnectionListAndCalculateSomeSumAndAverageValues(ArrayList<SingleConnection> connections) {
+    private ArrayList<GroupConnection> summarizeConnectionListAndCalculateSomeSumAndAverageValues(ArrayList<SingleConnection> connections) {
         ArrayList<GroupConnection> connectionsWithoutDuplicates = new ArrayList<>();
         int abfahrtsBahnhof = -1;
         int ankunftsBahnhof = -1;
@@ -122,13 +93,13 @@ class Application {
                 long delayAnkunft = Duration.between(connections.get(i).getAnkunftszeit(), connections.get(i).getAnkunftPrognose()).getSeconds();
                 long delayAbfahrt = Duration.between(connections.get(i).getAbfahrtszeit(), connections.get(i).getAbfahrtPrognose()).getSeconds();
 
-                if(delayAnkunft >= DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS && delayAnkunft < 60*60*24) {
+                if(delayAnkunft >= DELAY_TOLERANCE_IN_SECONDS && delayAnkunft < 60*60*24) {
                     countDelayedConnectionsAnkunft++;
-                    countDelayInSecondsAnkunft += (delayAnkunft - DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS);
+                    countDelayInSecondsAnkunft += (delayAnkunft - DELAY_TOLERANCE_IN_SECONDS);
                 }
-                if(delayAbfahrt >= DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS && delayAbfahrt < 60*60*24) {
+                if(delayAbfahrt >= DELAY_TOLERANCE_IN_SECONDS && delayAbfahrt < 60*60*24) {
                     countDelayedConnectionsAbfahrt++;
-                    countDelayInSecondsAbfahrt += (delayAbfahrt - DELAY_ABWEICHUNG_KEI_AHNIG_WIE_DA_HEISST_IN_SECONDS);
+                    countDelayInSecondsAbfahrt += (delayAbfahrt - DELAY_TOLERANCE_IN_SECONDS);
                 }
             } else {
                 if(i != 0) {

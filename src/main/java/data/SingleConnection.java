@@ -10,6 +10,8 @@ public class SingleConnection extends Connection {
     private LocalDateTime abfahrtPrognose;
     private LocalDateTime ankunftszeit;
     private LocalDateTime ankunftProgrnose;
+    private long abfahrtsverspaetungInSekunden;
+    private long ankunftsverspaetungInSekunden;
 
     public SingleConnection(int abfahrtsBahnhof, int ankunftsBahnhof, String betreiber_abk, String linienId, LocalDateTime abfahrtszeit, LocalDateTime abfahrtPrognose, LocalDateTime ankunftszeit, LocalDateTime ankunftProgrnose) {
         super(abfahrtsBahnhof, ankunftsBahnhof);
@@ -74,5 +76,21 @@ public class SingleConnection extends Connection {
 
     public void setAnkunftProgrnose(LocalDateTime ankunftProgrnose) {
         this.ankunftProgrnose = ankunftProgrnose;
+    }
+
+    public long getAbfahrtsverspaetungInSekunden() {
+        return abfahrtsverspaetungInSekunden;
+    }
+
+    public void setAbfahrtsverspaetungInSekunden(long abfahrtsverspaetungInSekunden) {
+        this.abfahrtsverspaetungInSekunden = abfahrtsverspaetungInSekunden;
+    }
+
+    public long getAnkunftsverspaetungInSekunden() {
+        return ankunftsverspaetungInSekunden;
+    }
+
+    public void setAnkunftsverspaetungInSekunden(long ankunftsverspaetungInSekunden) {
+        this.ankunftsverspaetungInSekunden = ankunftsverspaetungInSekunden;
     }
 }

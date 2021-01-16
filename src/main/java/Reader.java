@@ -93,7 +93,6 @@ public class Reader {
             }
 
             //- Delete Commas
-            System.out.println("ReadGeoLocation: --------------");
             it[2] = deleteCommas(it[2]);
 
                 GeoItem geoItem = new GeoItem(
