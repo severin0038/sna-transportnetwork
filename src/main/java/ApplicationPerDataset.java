@@ -1,13 +1,13 @@
-import data.Connection;
-import data.GroupConnection;
 import data.SingleConnection;
-import data.TrainStation;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 
 import static java.util.stream.Collectors.groupingBy;
 
@@ -36,7 +36,7 @@ class ApplicationPerDataset {
     }
 
     void countKnockOnDelaysPerTrainstation() {
-        ArrayList<SingleConnection> connectionsWithMinimum10MinutesArrivalDelay = new ArrayList<>();
+        ArrayList<SingleConnection> connectionsWithMinimum5MinutesArrivalDelay = new ArrayList<>();
         ArrayList<SingleConnection> connectionsWithMinimum5MinutesDepartureDelay = new ArrayList<>();
 
         System.out.println("Start countKnockOnDelaysPerTrainstation");
@@ -45,12 +45,9 @@ class ApplicationPerDataset {
             long delayAnkunft = Duration.between(connections.get(i).getAnkunftszeit(), connections.get(i).getAnkunftPrognose()).getSeconds();
             long delayAbfahrt = Duration.between(connections.get(i).getAbfahrtszeit(), connections.get(i).getAbfahrtPrognose()).getSeconds();
 
-            if (delayAnkunft >= 10 * 60 + DELAY_TOLERANCE_IN_SECONDS && delayAnkunft < 60 * 60 * 24) {
+            if (delayAnkunft >= 5 * 60 + DELAY_TOLERANCE_IN_SECONDS && delayAnkunft < 60 * 60 * 24) {
                 connections.get(i).setAnkunftsverspaetungInSekunden(delayAnkunft);
-                connectionsWithMinimum10MinutesArrivalDelay.add(connections.get(i));
-//                System.out.println("neuer Eintrag: angekommen in " + connections.get(i).getAnkunftsBahnhofId() +
-//                        " um " + connections.get(i).getAnkunftPrognose() +
-//                        " mit " + connections.get(i).getAnkunftsverspaetungInSekunden()/60 + "Minuten Verspätung.");
+                connectionsWithMinimum5MinutesArrivalDelay.add(connections.get(i));
             }
 
             if (delayAbfahrt >= 5 * 60 + DELAY_TOLERANCE_IN_SECONDS && delayAbfahrt < 60 * 60 * 24) {
@@ -59,22 +56,21 @@ class ApplicationPerDataset {
             }
         }
 
-        for(int a = 0; a < connectionsWithMinimum10MinutesArrivalDelay.size()-1; a++) {
-            SingleConnection con = connectionsWithMinimum10MinutesArrivalDelay.get(a);
-            System.out.println("Bahnhof: " + con.getAnkunftsBahnhofId() + ", Zeit: " + con.getAnkunftPrognose() + ", Verspätung (min): " + con.getAnkunftsverspaetungInSekunden()/60);
+        for(int a = 0; a < connectionsWithMinimum5MinutesArrivalDelay.size()-1; a++) {
+            SingleConnection con = connectionsWithMinimum5MinutesArrivalDelay.get(a);
         }
 
         int trainStationId;
         int numberOfKnockOnDelays;
 
         System.out.println("Anzahl Verbindungen: " + connections.size());
-        System.out.println("Anzahl mind. 10 Minuten Ankunftsverspätung: " + connectionsWithMinimum10MinutesArrivalDelay.size());
+        System.out.println("Anzahl mind. 5 Minuten Ankunftsverspätung: " + connectionsWithMinimum5MinutesArrivalDelay.size());
         System.out.println("Anzahl mind. 5 Minuten Abfahrtsverspätung: " + connectionsWithMinimum5MinutesDepartureDelay.size());
 
-        for(int l = 0; l < connectionsWithMinimum10MinutesArrivalDelay.size()-1; l++) {
-            trainStationId = connectionsWithMinimum10MinutesArrivalDelay.get(l).getAnkunftsBahnhofId();
+        for(int l = 0; l < connectionsWithMinimum5MinutesArrivalDelay.size()-1; l++) {
+            trainStationId = connectionsWithMinimum5MinutesArrivalDelay.get(l).getAnkunftsBahnhofId();
             numberOfKnockOnDelays = 0;
-            LocalDateTime arrivalTime = connectionsWithMinimum10MinutesArrivalDelay.get(l).getAnkunftPrognose();
+            LocalDateTime arrivalTime = connectionsWithMinimum5MinutesArrivalDelay.get(l).getAnkunftPrognose();
 
             for(int j = 0; j < connectionsWithMinimum5MinutesDepartureDelay.size()-1; j++) {
                 if(connectionsWithMinimum5MinutesDepartureDelay.get(j).getAbfahrtsBahnhofId() == trainStationId) {
@@ -93,18 +89,13 @@ class ApplicationPerDataset {
 
                 while (k > -1) {
                     if (application.getTrainStations().get(k).getTrainStationId() == trainStationId) {
-                        application.getTrainStations().get(k).setNumberOfKnockOnDelays(numberOfKnockOnDelays);
+                        application.getTrainStations().get(k).setNumberOfKnockOnDelays(application.getTrainStations().get(k).getNumberOfKnockOnDelays()+numberOfKnockOnDelays);
                         k = -1;
                     }
                     k--;
                 }
 
             }
-
-//            System.out.println("(" + l + ") abgeschlossen für: angekommen in " + connectionsWithMinimum10MinutesArrivalDelay.get(l).getAnkunftsBahnhofId() +
-//                    " um " + connectionsWithMinimum10MinutesArrivalDelay.get(l).getAnkunftPrognose() +
-//                    " mit " + connectionsWithMinimum10MinutesArrivalDelay.get(l).getAnkunftsverspaetungInSekunden()/60 + " Minuten Verspätung.");
-
         }
 
     }

@@ -13,13 +13,9 @@ public class Main {
 
         application.readAllFilesfromFolderAndGenerateApplicationPerFile(inputFolder);
 
-        System.out.println("alle Files abgearbeitet");
-        application.exportConnectionsToCSV("2019_01_01-31.csv");
-        System.out.println("blabla");
+        application.exportConnectionsToCSV("2020_04_01-30.csv");
         application.addGeolocationToTrainstations("stations_geolocation_v07_02.csv");
-        System.out.println("blabla2");
         application.trainStationsToNodesList("trainStations.csv");
-        System.out.println("geschafft");
 
     }
 }
