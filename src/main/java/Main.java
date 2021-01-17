@@ -13,8 +13,8 @@ public class Main {
 
         application.readAllFilesfromFolderAndGenerateApplicationPerFile(inputFolder);
 
-        application.exportConnectionsToCSV("2020_04_01-30.csv");
-        application.addGeolocationToTrainstations("stations_geolocation_v07_03.csv");
+        application.exportConnectionsToCSV("2019_04_Monday_5D.csv");
+        application.addGeolocationToTrainstations("stations_geolocation_v07_05.csv");
         application.trainStationsToNodesList("trainStations.csv");
 
     }
